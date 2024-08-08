@@ -5,7 +5,7 @@ using UnityEngine;
 public class ClickObjects : MonoBehaviour
 {
 
-    public bool CanClick = true;
+   [HideInInspector] public bool CanClick = true;
 
     void Update()
     {
@@ -29,6 +29,25 @@ public class ClickObjects : MonoBehaviour
 
     private void ClickHandler(GameObject ClickedObject)
     {
-        
+        if (ClickedObject.CompareTag("Changeable"))
+        {
+            //Logic for objects that change on click
+        }
+
+        else if (ClickedObject.CompareTag("Interactable"))
+        {
+            //Logic for objects that enable dialogue on click
+        }
+
+        else if (ClickedObject.CompareTag("Minigame"))
+        {
+            //Logic for objects that enable the minigame on click
+        }
+
+        else
+        {
+            //Non interactable object clicked
+            return;
+        }
     }
 }
