@@ -4,8 +4,16 @@ using UnityEngine;
 
 public class ClickObjects : MonoBehaviour
 {
-
+   [HideInInspector] public static ClickObjects Instance { get; private set; }
    [HideInInspector] public bool CanClick = true;
+   
+    private ChangingObject changingObject;
+    private InteractObject interactObject;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     void Update()
     {
@@ -31,21 +39,30 @@ public class ClickObjects : MonoBehaviour
     {
         if (ClickedObject.CompareTag("Changeable"))
         {
+            CanClick = false;
+            changingObject = ClickedObject.GetComponent<ChangingObject>();
+            changingObject.change_click();
+
             //Logic for objects that change on click
         }
 
         else if (ClickedObject.CompareTag("Interactable"))
         {
+            CanClick = false;
+            interactObject = ClickedObject.GetComponent<InteractObject>();
+            
             //Logic for objects that enable dialogue on click
         }
 
         else if (ClickedObject.CompareTag("Minigame"))
         {
+            CanClick = false;
             //Logic for objects that enable the minigame on click
         }
 
         else
         {
+            CanClick = true;
             //Non interactable object clicked
             return;
         }

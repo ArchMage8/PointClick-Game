@@ -6,6 +6,7 @@ public class ChangingObject : MonoBehaviour
 {
     private InteractHolder interactHolder;
     private PreRequisite preRequisite;
+    private ClickObjects clickObjects;
 
     [SerializeField]private GameObject FirstObject;
     [SerializeField]private GameObject SecondObject;
@@ -24,7 +25,7 @@ public class ChangingObject : MonoBehaviour
         preRequisite.CheckConditions();             //Check if prerequisites are met
         CanProceed = preRequisite.conditionsMet;
 
-
+        clickObjects = FindObjectOfType<ClickObjects>();
     }
     
     public void change_click()  //Call from the click objects system
@@ -52,6 +53,7 @@ public class ChangingObject : MonoBehaviour
     {
         yield return new WaitForSeconds(enablingAnimationDelay);
         SecondObject.SetActive(true);
+        clickObjects.CanClick = true;
              
     }
 }
