@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ChangingObject : MonoBehaviour
 {
-    private InteractHolder interactHolder;
+    private HasBeenInteractedHolder hasBeenInteractedHolder;
     private PreRequisite preRequisite;
     private ClickObjects clickObjects;
 
@@ -19,7 +19,7 @@ public class ChangingObject : MonoBehaviour
 
     private void Start()
     {
-        interactHolder = GetComponent<InteractHolder>();
+        hasBeenInteractedHolder = GetComponent<HasBeenInteractedHolder>();
         preRequisite = GetComponent<PreRequisite>();
 
         preRequisite.CheckConditions();             //Check if prerequisites are met
@@ -34,6 +34,7 @@ public class ChangingObject : MonoBehaviour
         {
             FirstObject.SetActive(false);
             StartCoroutine(enablingAnimation());
+            hasBeenInteractedHolder.HasBeenInteracted = true;
         }
 
         else

@@ -17,7 +17,7 @@ public class PreRequisite : MonoBehaviour
 
         foreach (GameObject obj in interactableObjects)
         {
-            InteractHolder holder = obj.GetComponent<InteractHolder>();
+            HasBeenInteractedHolder holder = obj.GetComponent<HasBeenInteractedHolder>();
             if (holder != null && !holder.HasBeenInteracted)
             {
                 conditionsMet = false;
