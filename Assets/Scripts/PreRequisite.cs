@@ -9,8 +9,6 @@ public class PreRequisite : MonoBehaviour
 
     public void CheckConditions()
     {
-        Debug.Log("Test");
-
         if (interactableObjects == null || interactableObjects.Length == 0)
         {
             conditionsMet = true;

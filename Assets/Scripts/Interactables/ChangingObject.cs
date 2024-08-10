@@ -38,6 +38,7 @@ public class ChangingObject : MonoBehaviour
     
     public void change_click()  //Call from the click objects system
     {
+        CanProceed = preRequisite.conditionsMet;
         if (CanProceed)
         {
             FirstObject.SetActive(false);
@@ -47,6 +48,7 @@ public class ChangingObject : MonoBehaviour
 
         else
         {
+            Debug.Log("Fail");
             StartCoroutine(cannotProceed());
         }
     }

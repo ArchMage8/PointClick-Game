@@ -27,7 +27,8 @@ public class MinigameObject : MonoBehaviour
 
     public void Minigame_Interact()
     {
-        if(CanProceed && !isCompleted)
+        CanProceed = preRequisite.conditionsMet;
+        if (CanProceed && !isCompleted)
         {
             clickObjects.CanClick = false;
             miniGameBool.gameObject.SetActive(true);

@@ -55,6 +55,7 @@ public class InteractObject : MonoBehaviour
 
     public void Click_Interact()
     {
+        CanProceed = preRequisite.conditionsMet;
         if (CanProceed)
         {
             StartCoroutine(startSystem());

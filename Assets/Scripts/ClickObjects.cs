@@ -19,7 +19,6 @@ public class ClickObjects : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(CanClick);
 
         if (Input.GetMouseButtonDown(0) && CanClick)
         {
@@ -48,35 +47,38 @@ public class ClickObjects : MonoBehaviour
         {
             preRequisite.CheckConditions();
 
-            if (ClickedObject.CompareTag("Change"))
+            if (preRequisite.conditionsMet)
             {
-                CanClick = false;
-                changingObject = ClickedObject.GetComponent<ChangingObject>();
-                changingObject.change_click();
+                if (ClickedObject.CompareTag("Change"))
+                {
+                    CanClick = false;
+                    changingObject = ClickedObject.GetComponent<ChangingObject>();
+                    changingObject.change_click();
 
-                //Logic for objects that change on click
-            }
+                    //Logic for objects that change on click
+                }
 
-            else if (ClickedObject.CompareTag("Interact"))
-            {
-                CanClick = false;
-                interactObject = ClickedObject.GetComponent<InteractObject>();
-                interactObject.Click_Interact();
+                else if (ClickedObject.CompareTag("Interact"))
+                {
+                    CanClick = false;
+                    interactObject = ClickedObject.GetComponent<InteractObject>();
+                    interactObject.Click_Interact();
 
-                //Logic for objects that enable dialogue on click
-            }
+                    //Logic for objects that enable dialogue on click
+                }
 
-            else if (ClickedObject.CompareTag("Minigame"))
-            {
-                CanClick = false;
-                //Logic for objects that enable the minigame on click
-            }
+                else if (ClickedObject.CompareTag("Minigame"))
+                {
+                    CanClick = false;
+                    //Logic for objects that enable the minigame on click
+                }
 
-            else
-            {
-                CanClick = true;
-                //Non interactable object clicked
-                return;
+                else
+                {
+                    CanClick = true;
+                    //Non interactable object clicked
+                    return;
+                }
             }
         }
         else
