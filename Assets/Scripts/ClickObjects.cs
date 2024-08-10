@@ -17,8 +17,11 @@ public class ClickObjects : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(CanClick);
+
         if (Input.GetMouseButtonDown(0) && CanClick)
         {
+           
             DetectClickedObject();
         }
     }
@@ -37,7 +40,7 @@ public class ClickObjects : MonoBehaviour
 
     private void ClickHandler(GameObject ClickedObject)
     {
-        if (ClickedObject.CompareTag("Changeable"))
+        if (ClickedObject.CompareTag("Change"))
         {
             CanClick = false;
             changingObject = ClickedObject.GetComponent<ChangingObject>();
@@ -46,11 +49,12 @@ public class ClickObjects : MonoBehaviour
             //Logic for objects that change on click
         }
 
-        else if (ClickedObject.CompareTag("Interactable"))
+        else if (ClickedObject.CompareTag("Interact"))
         {
             CanClick = false;
             interactObject = ClickedObject.GetComponent<InteractObject>();
-            
+            interactObject.Click_Interact();
+
             //Logic for objects that enable dialogue on click
         }
 

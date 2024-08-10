@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class HasBeenInteractedHolder : MonoBehaviour
 {
-    public bool HasBeenInteracted = false;
+   public bool HasBeenInteracted = false;
 }

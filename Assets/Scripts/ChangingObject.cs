@@ -8,12 +8,16 @@ public class ChangingObject : MonoBehaviour
     private PreRequisite preRequisite;
     private ClickObjects clickObjects;
 
+    [Header("Changing Objects:")]
     [SerializeField]private GameObject FirstObject;
     [SerializeField]private GameObject SecondObject;
+    [Space(20)]
 
+    [Header("Animations:")]
     [SerializeField]private GameObject FailNotification;
-    [SerializeField] private int failAnimation;
+    [SerializeField] private int failAnimationDelay;
     [SerializeField] private int enablingAnimationDelay;
+    [Space(20)]
 
     private bool CanProceed;
 
@@ -24,8 +28,12 @@ public class ChangingObject : MonoBehaviour
 
         preRequisite.CheckConditions();             //Check if prerequisites are met
         CanProceed = preRequisite.conditionsMet;
-
+        
         clickObjects = FindObjectOfType<ClickObjects>();
+
+        //Deactivating Stuffs
+        FailNotification.SetActive(false);
+        SecondObject.SetActive(false);
     }
     
     public void change_click()  //Call from the click objects system
@@ -46,8 +54,9 @@ public class ChangingObject : MonoBehaviour
     private IEnumerator cannotProceed() //Animation for prerequisites not met
     {
         FailNotification.SetActive(true);
-        yield return new WaitForSeconds(failAnimation);
+        yield return new WaitForSeconds(failAnimationDelay);
         FailNotification.SetActive(false);
+        clickObjects.CanClick = true;
     }
 
     private IEnumerator enablingAnimation() //Animation for object being enabled

@@ -5,19 +5,36 @@ using TMPro;
 
 public class DialogueController : MonoBehaviour
 {
-    public TextMeshProUGUI DialogueText;
-  
+    private TextMeshProUGUI DialogueText;
+
+    private ClickObjects clickObjects;
     [HideInInspector]public string[] Sentences;
     [HideInInspector]public int Index = 0;
     private bool isTyping = false;
     [SerializeField] private float writeSpeed;
 
+    private void Start()
+    {
+        clickObjects = FindObjectOfType<ClickObjects>();
+        Transform DialogueTextObject = transform.GetChild(0);
+        DialogueText = DialogueTextObject.GetComponent<TextMeshProUGUI>();
+    }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) && DialogueText.isActiveAndEnabled)
         {
+
+            if (Index >= Sentences.Length)
+            {
+                StartCoroutine(DisableThis()); // Call your coroutine here
+            }
+
+            else 
+            { 
             NextSentence();
+            }
+
         }
         else
         {
@@ -32,10 +49,11 @@ public class DialogueController : MonoBehaviour
             DialogueText.text = "";
             StartCoroutine(WriteSentence());
         }
+
     }
 
 
-    IEnumerator WriteSentence()
+   public IEnumerator WriteSentence()
     {
         foreach(char Character in Sentences[Index].ToCharArray())
         {
@@ -54,5 +72,16 @@ public class DialogueController : MonoBehaviour
         {
             Sentences[i] = SentSentences[i];
         }
+    }
+
+    IEnumerator DisableThis()
+    {
+        yield return new WaitForSeconds(0f);
+
+        DialogueText.text = "";
+        clickObjects.CanClick = true;
+        Index = 0;
+        Sentences = new string[0];
+        this.gameObject.SetActive(false);
     }
 }
