@@ -55,8 +55,14 @@ public class ChangingObject : MonoBehaviour
     {
         FailNotification.SetActive(true);
         yield return new WaitForSeconds(failAnimationDelay);
-        FailNotification.SetActive(false);
-        clickObjects.CanClick = true;
+        clickObjects.CanClick = false;
+
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            FailNotification.SetActive(false);
+            clickObjects.CanClick = true;
+        }
     }
 
     private IEnumerator enablingAnimation() //Animation for object being enabled

@@ -10,6 +10,8 @@ public class ClickObjects : MonoBehaviour
     private ChangingObject changingObject;
     private InteractObject interactObject;
 
+    private PreRequisite preRequisite;
+
     private void Awake()
     {
         Instance = this;
@@ -40,34 +42,45 @@ public class ClickObjects : MonoBehaviour
 
     private void ClickHandler(GameObject ClickedObject)
     {
-        if (ClickedObject.CompareTag("Change"))
+        preRequisite = ClickedObject.GetComponent<PreRequisite>();
+
+        if (preRequisite != null)
         {
-            CanClick = false;
-            changingObject = ClickedObject.GetComponent<ChangingObject>();
-            changingObject.change_click();
+            preRequisite.CheckConditions();
 
-            //Logic for objects that change on click
+            if (ClickedObject.CompareTag("Change"))
+            {
+                CanClick = false;
+                changingObject = ClickedObject.GetComponent<ChangingObject>();
+                changingObject.change_click();
+
+                //Logic for objects that change on click
+            }
+
+            else if (ClickedObject.CompareTag("Interact"))
+            {
+                CanClick = false;
+                interactObject = ClickedObject.GetComponent<InteractObject>();
+                interactObject.Click_Interact();
+
+                //Logic for objects that enable dialogue on click
+            }
+
+            else if (ClickedObject.CompareTag("Minigame"))
+            {
+                CanClick = false;
+                //Logic for objects that enable the minigame on click
+            }
+
+            else
+            {
+                CanClick = true;
+                //Non interactable object clicked
+                return;
+            }
         }
-
-        else if (ClickedObject.CompareTag("Interact"))
-        {
-            CanClick = false;
-            interactObject = ClickedObject.GetComponent<InteractObject>();
-            interactObject.Click_Interact();
-
-            //Logic for objects that enable dialogue on click
-        }
-
-        else if (ClickedObject.CompareTag("Minigame"))
-        {
-            CanClick = false;
-            //Logic for objects that enable the minigame on click
-        }
-
         else
         {
-            CanClick = true;
-            //Non interactable object clicked
             return;
         }
     }

@@ -39,6 +39,20 @@ public class InteractObject : MonoBehaviour
         VisualObject.SetActive(false);
     }
 
+    private void Update()
+    {
+        if (VisualObject.activeSelf)
+        {
+            if (dialogueController.Index >= Sentences.Length)
+            {
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    VisualObject.SetActive(false);
+                }
+            }
+        }
+    }
+
     public void Click_Interact()
     {
         if (CanProceed)
@@ -66,7 +80,14 @@ public class InteractObject : MonoBehaviour
     {
         FailNotification.SetActive(true);
         yield return new WaitForSeconds(failAnimationDelay);
-        FailNotification.SetActive(false);
+        clickObjects.CanClick = false;
+
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            FailNotification.SetActive(false);
+            clickObjects.CanClick = true;
+        }
     }
 
     private IEnumerator startSystem()
@@ -75,6 +96,7 @@ public class InteractObject : MonoBehaviour
         {
             VisualObject.SetActive(true);
             yield return new WaitForSeconds(animationDelay);
+            dialogueController.Index = 0;
             startDialogue();
         }
 
@@ -84,4 +106,6 @@ public class InteractObject : MonoBehaviour
             startDialogue();
         }
     }
+
+    
 }
