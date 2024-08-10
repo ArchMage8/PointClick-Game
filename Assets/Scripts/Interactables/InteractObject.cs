@@ -20,6 +20,7 @@ public class InteractObject : MonoBehaviour
     [Space(13)]
     [SerializeField] private GameObject FailNotification;
     public GameObject VisualObject;
+    public GameObject TextFade;
     
     [Space(20)]
     private bool CanProceed;
@@ -37,6 +38,7 @@ public class InteractObject : MonoBehaviour
         clickObjects = FindObjectOfType<ClickObjects>();
         FailNotification.SetActive(false);
         VisualObject.SetActive(false);
+        TextFade.SetActive(false);
     }
 
     private void Update()
@@ -48,6 +50,7 @@ public class InteractObject : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
                     VisualObject.SetActive(false);
+                    TextFade.SetActive(false);
                 }
             }
         }
@@ -69,6 +72,7 @@ public class InteractObject : MonoBehaviour
 
     private void startDialogue()
     {
+        TextFade.SetActive(false);
         clickObjects.CanClick = false;
         dialogueController.gameObject.SetActive(true);
         dialogueController.RecieveDialogue(Sentences);
