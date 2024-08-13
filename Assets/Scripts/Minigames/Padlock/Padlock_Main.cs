@@ -9,15 +9,16 @@ public class Padlock_Main : MonoBehaviour
     public GameObject First;
     public GameObject Second;
     public float CompletionDelay = 5f;
+    public float disableDelay = 5f;
 
-    private Animator SecondAnimator;
+    private Animator MainAnimator;
 
     private void Start()
     {
         First.SetActive(true);
         Second.SetActive(false);
 
-        SecondAnimator = Second.GetComponent<Animator>();
+        MainAnimator = GetComponent<Animator>();
     }
 
     public void CheckPadlocks()
@@ -44,8 +45,23 @@ public class Padlock_Main : MonoBehaviour
 
     private IEnumerator completion()
     {
-        SecondAnimator.SetTrigger("Padlock_Disable");
+        MainAnimator.SetTrigger("Padlock_Disable");
         yield return new WaitForSeconds(CompletionDelay);
-        Second.SetActive(false);
+        this.gameObject.SetActive(false);
+    }
+
+    public void UIDisable()
+    {
+        if (!Completed)
+        {
+            StartCoroutine(disableUI());
+        }
+    }
+
+    private IEnumerator disableUI()
+    {
+        MainAnimator.SetTrigger("Padlock_Disable");
+        yield return new WaitForSeconds(disableDelay);
+        this.gameObject.SetActive(false);
     }
 }
