@@ -12,6 +12,7 @@ public class Padlock_Main : MonoBehaviour
     public float disableDelay = 5f;
 
     private Animator MainAnimator;
+    private MiniGameBool miniGameBool;
 
     private void Start()
     {
@@ -19,6 +20,7 @@ public class Padlock_Main : MonoBehaviour
         Second.SetActive(false);
 
         MainAnimator = GetComponent<Animator>();
+        miniGameBool = GetComponent<MiniGameBool>();
     }
 
     public void CheckPadlocks()
@@ -45,6 +47,7 @@ public class Padlock_Main : MonoBehaviour
 
     private IEnumerator completion()
     {
+        miniGameBool.isCompleted = true;
         MainAnimator.SetTrigger("Padlock_Disable");
         yield return new WaitForSeconds(CompletionDelay);
         this.gameObject.SetActive(false);
