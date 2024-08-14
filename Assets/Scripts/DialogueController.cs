@@ -22,7 +22,11 @@ public class DialogueController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && DialogueText.isActiveAndEnabled)
+        
+        if (DialogueText.isActiveAndEnabled)
+        {
+
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
 
             if (Index >= Sentences.Length)
@@ -40,6 +44,9 @@ public class DialogueController : MonoBehaviour
         {
             return;
         }
+
+        }
+        
     }
 
     public void NextSentence()
