@@ -9,6 +9,15 @@ public class Keypad_Main : MonoBehaviour
     public string CorrectAnswer = "1234";
     public string currentString = "";
     private int MaxLength = 4;
+    public MiniGameBool miniGameBool;
+    private bool Completed;
+
+    public float CompletionDelay = 5f;
+    public float disableDelay = 5f;
+
+    private Animator MainAnimator;
+    private ClickObjects clickObjects;
+
 
     public void AppendToString(string value)
     {
@@ -33,13 +42,18 @@ public class Keypad_Main : MonoBehaviour
 
     public void CheckAnswer()
     {
-        if (currentString == CorrectAnswer)
+        if (currentString == CorrectAnswer && !Completed)
         {
-            Debug.Log("Correct Answer!");
+            //Debug.Log("Correct Answer!");
+            Completed = true;
+            miniGameBool.isCompleted = true;
+
+            StartCoroutine(completion());
         }
         else
         {
-            Debug.Log("Incorrect Answer.");
+            Completed = false;
+            //Debug.Log("Incorrect Answer.");
         }
     }
 
@@ -47,5 +61,29 @@ public class Keypad_Main : MonoBehaviour
     {
         currentString = "";
         UpdateDisplay();
+    }
+
+    private IEnumerator completion()
+    {
+        miniGameBool.isCompleted = true;
+        MainAnimator.SetTrigger("Keypad_Disable");
+        yield return new WaitForSeconds(CompletionDelay);
+        this.gameObject.SetActive(false);
+        clickObjects.CanClick = true;
+    }
+
+    public void UIDisable()
+    {
+        if (!Completed)
+        {
+            StartCoroutine(disableUI());
+        }
+    }
+
+    private IEnumerator disableUI()
+    {
+        MainAnimator.SetTrigger("Padlock_Disable");
+        yield return new WaitForSeconds(disableDelay);
+        this.gameObject.SetActive(false);
     }
 }
