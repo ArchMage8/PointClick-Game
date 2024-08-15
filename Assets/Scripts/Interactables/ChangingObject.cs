@@ -17,6 +17,7 @@ public class ChangingObject : MonoBehaviour
     [SerializeField]private GameObject FailNotification;
     [SerializeField] private int failAnimationDelay;
     [SerializeField] private int enablingAnimationDelay;
+    public GameObject TextFade;
     [Space(20)]
 
     private bool CanProceed;
@@ -56,12 +57,14 @@ public class ChangingObject : MonoBehaviour
     private IEnumerator cannotProceed() //Animation for prerequisites not met
     {
         FailNotification.SetActive(true);
+        TextFade.SetActive(true);
         yield return new WaitForSeconds(failAnimationDelay);
         clickObjects.CanClick = false;
 
 
         if (Input.GetMouseButtonDown(0))
         {
+            TextFade.SetActive(false);
             FailNotification.SetActive(false);
             clickObjects.CanClick = true;
         }

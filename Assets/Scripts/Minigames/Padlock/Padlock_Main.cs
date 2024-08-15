@@ -13,6 +13,7 @@ public class Padlock_Main : MonoBehaviour
 
     private Animator MainAnimator;
     private MiniGameBool miniGameBool;
+    private ClickObjects clickObjects;
 
     private void Start()
     {
@@ -21,6 +22,8 @@ public class Padlock_Main : MonoBehaviour
 
         MainAnimator = GetComponent<Animator>();
         miniGameBool = GetComponent<MiniGameBool>();
+
+        clickObjects = GetComponent<ClickObjects>();
     }
 
     public void CheckPadlocks()
@@ -51,6 +54,7 @@ public class Padlock_Main : MonoBehaviour
         MainAnimator.SetTrigger("Padlock_Disable");
         yield return new WaitForSeconds(CompletionDelay);
         this.gameObject.SetActive(false);
+        clickObjects.CanClick = true;
     }
 
     public void UIDisable()

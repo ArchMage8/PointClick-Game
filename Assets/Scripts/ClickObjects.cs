@@ -9,6 +9,8 @@ public class ClickObjects : MonoBehaviour
    
     private ChangingObject changingObject;
     private InteractObject interactObject;
+    private MinigameObject minigameObject;
+    private EnvironmentObject environmentObject;
 
     private PreRequisite preRequisite;
 
@@ -35,13 +37,17 @@ public class ClickObjects : MonoBehaviour
         if (hit.collider != null)
         {
             GameObject clickedObject = hit.collider.gameObject;
+            
             ClickHandler(clickedObject);
+           
         }
     }
 
     private void ClickHandler(GameObject ClickedObject)
     {
+        
         preRequisite = ClickedObject.GetComponent<PreRequisite>();
+       
 
         if (preRequisite != null)
         {
@@ -70,15 +76,27 @@ public class ClickObjects : MonoBehaviour
                 else if (ClickedObject.CompareTag("Minigame"))
                 {
                     CanClick = false;
+                    minigameObject = ClickedObject.GetComponent<MinigameObject>();
+                    minigameObject.MiniGame_Click();
                     //Logic for objects that enable the minigame on click
                 }
 
-                else
+                else if (ClickedObject.CompareTag("Environment"))
                 {
-                    CanClick = true;
-                    //Non interactable object clicked
-                    return;
+                    
+
+                    environmentObject = ClickedObject.GetComponent<EnvironmentObject>();
+                    environmentObject.Environment_Click();
+                    
+                    //Logic for objects that are environment animated
                 }
+
+                else
+            {
+                CanClick = true;
+                //Non interactable object clicked
+                return;
+            }
             }
         }
         else
