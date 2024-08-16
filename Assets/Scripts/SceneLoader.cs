@@ -33,6 +33,7 @@ public class SceneLoader : MonoBehaviour
 
     private IEnumerator LoadingScene()
     {
+        LevelLoader.SetActive(true);
         Animator LevelLoad = LevelLoader.GetComponentInChildren<Animator>();
         LevelLoad.SetTrigger("EndOfScene");
         yield return new WaitForSeconds(1f);
