@@ -53,6 +53,11 @@ public class InteractObject : MonoBehaviour
                     TextFade.SetActive(false);
                 }
             }
+
+            else if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+            {
+                dialogueController.NextSentence();
+            }
         }
     }
 
@@ -61,6 +66,7 @@ public class InteractObject : MonoBehaviour
         CanProceed = preRequisite.conditionsMet;
         if (CanProceed)
         {
+            dialogueController.RecieveDialogue(Sentences);
             StartCoroutine(startSystem());
         }
 
@@ -72,12 +78,13 @@ public class InteractObject : MonoBehaviour
 
     private void startDialogue()
     {
+        Debug.Log("Start");
 
-        TextFade.SetActive(false);
+        TextFade.SetActive(true);
         clickObjects.CanClick = false;
         dialogueController.gameObject.SetActive(true);
-        dialogueController.RecieveDialogue(Sentences);
-        dialogueController.Index = 0;
+       
+     
         StartCoroutine(dialogueController.WriteSentence());
         hasBeenInteractedHolder.HasBeenInteracted = true;
     }
@@ -100,7 +107,8 @@ public class InteractObject : MonoBehaviour
 
     private IEnumerator startSystem()
     {
-        if(VisualObject != null)
+        
+        if (VisualObject != null)
         {
             VisualObject.SetActive(true);
             yield return new WaitForSeconds(animationDelay);

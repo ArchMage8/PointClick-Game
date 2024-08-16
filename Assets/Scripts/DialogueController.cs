@@ -9,7 +9,7 @@ public class DialogueController : MonoBehaviour
 
     private ClickObjects clickObjects;
     [HideInInspector]public string[] Sentences;
-    [HideInInspector]public int Index = -1;
+    [HideInInspector]public int Index = 0;
     private bool isTyping = false;
     [SerializeField] private float writeSpeed;
 
@@ -35,11 +35,6 @@ public class DialogueController : MonoBehaviour
                 StartCoroutine(DisableThis()); // Call your coroutine here
             }
 
-            else 
-            { 
-            NextSentence();
-            }
-
         }
         else
         {
@@ -52,7 +47,9 @@ public class DialogueController : MonoBehaviour
 
     public void NextSentence()
     {
-        if(Index <= Sentences.Length - 1 && !isTyping)
+        Debug.Log("Next");
+
+        if (Index <= Sentences.Length - 1 && !isTyping)
         {
             DialogueText.text = "";
             StartCoroutine(WriteSentence());
@@ -63,7 +60,9 @@ public class DialogueController : MonoBehaviour
 
    public IEnumerator WriteSentence()
     {
-        foreach(char Character in Sentences[Index].ToCharArray())
+        Debug.Log("write");
+
+        foreach (char Character in Sentences[Index].ToCharArray())
         {
             DialogueText.text += Character;
             isTyping = true;
