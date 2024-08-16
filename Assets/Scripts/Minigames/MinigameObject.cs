@@ -7,6 +7,7 @@ public class MinigameObject : MonoBehaviour
     private MiniGameBool miniGameBool;
     private PreRequisite preRequisite;
     private ClickObjects clickObjects;
+ 
 
     [Header("Minigame UI:")]
     [SerializeField] private GameObject GameCanvas;
@@ -25,6 +26,7 @@ public class MinigameObject : MonoBehaviour
         miniGameBool = GetComponent<MiniGameBool>();
         preRequisite = GetComponent<PreRequisite>();
         clickObjects = FindObjectOfType<ClickObjects>();
+      
 
         GameCanvas.SetActive(false);
     }
@@ -45,17 +47,20 @@ public class MinigameObject : MonoBehaviour
 
     private IEnumerator cannotProceed() //Animation for prerequisites not met
     {
-        failNotification.SetActive(true);
-        TextFade.SetActive(true);
-        yield return new WaitForSeconds(failNotificationsDelay);
-        clickObjects.CanClick = false;
-
-
-        if (Input.GetMouseButtonDown(0))
+        if (failNotification != null)
         {
-            TextFade.SetActive(false);
-            failNotification.SetActive(false);
-            clickObjects.CanClick = true;
+            failNotification.SetActive(true);
+            TextFade.SetActive(true);
+            yield return new WaitForSeconds(failNotificationsDelay);
+            clickObjects.CanClick = false;
+
+
+            if (Input.GetMouseButtonDown(0))
+            {
+                TextFade.SetActive(false);
+                failNotification.SetActive(false);
+                clickObjects.CanClick = true;
+            }
         }
     }
 }

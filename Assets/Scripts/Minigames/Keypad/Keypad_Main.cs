@@ -9,15 +9,26 @@ public class Keypad_Main : MonoBehaviour
     public string CorrectAnswer = "1234";
     public string currentString = "";
     private int MaxLength = 4;
-    public MiniGameBool miniGameBool;
+
+    public GameObject TriggerObject;
     private bool Completed;
+    
 
     public float CompletionDelay = 5f;
     public float disableDelay = 5f;
 
     private Animator MainAnimator;
     private ClickObjects clickObjects;
+    private HasBeenInteractedHolder hasBeenInteractedHolder;
+    private MiniGameBool miniGameBool;
 
+
+    private void Start()
+    {
+        clickObjects = FindObjectOfType<ClickObjects>();
+        miniGameBool = TriggerObject.GetComponent<MiniGameBool>();
+        hasBeenInteractedHolder = TriggerObject.GetComponent<HasBeenInteractedHolder>();
+    }
 
     public void AppendToString(string value)
     {
@@ -47,6 +58,8 @@ public class Keypad_Main : MonoBehaviour
             //Debug.Log("Correct Answer!");
             Completed = true;
             miniGameBool.isCompleted = true;
+            hasBeenInteractedHolder.HasBeenInteracted = true;
+            clickObjects.CanClick = true;
 
             StartCoroutine(completion());
         }
@@ -68,6 +81,7 @@ public class Keypad_Main : MonoBehaviour
         miniGameBool.isCompleted = true;
         MainAnimator.SetTrigger("Keypad_Disable");
         yield return new WaitForSeconds(CompletionDelay);
+       
         this.gameObject.SetActive(false);
         clickObjects.CanClick = true;
     }
@@ -85,5 +99,6 @@ public class Keypad_Main : MonoBehaviour
         MainAnimator.SetTrigger("Padlock_Disable");
         yield return new WaitForSeconds(disableDelay);
         this.gameObject.SetActive(false);
+        clickObjects.CanClick = true;
     }
 }

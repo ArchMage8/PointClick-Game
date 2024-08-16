@@ -1507,8 +1507,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6132918087482782461}
   - component: {fileID: 6132918087482782460}
-  - component: {fileID: 6132918087482782458}
-  - component: {fileID: 6132918087482782459}
   m_Layer: 0
   m_Name: PadlockMinigame
   m_TagString: Untagged
@@ -1556,36 +1554,7 @@ MonoBehaviour:
   Second: {fileID: 6132918087536686025}
   CompletionDelay: 2
   disableDelay: 5
---- !u!114 &6132918087482782458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6132918087482782462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39be4dcb8cd370743a853d53cc26aa14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isCompleted: 0
---- !u!114 &6132918087482782459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6132918087482782462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5655bba36f79f2341a2680050a3366b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GameCanvas: {fileID: 0}
-  disablingAnimationDelay: 0
-  failNotification: {fileID: 0}
-  failNotificationsDelay: 0
-  TextFade: {fileID: 0}
+  TriggerObject: {fileID: 6132918087906574394}
 --- !u!1 &6132918087491802909
 GameObject:
   m_ObjectHideFlags: 0
@@ -2646,10 +2615,11 @@ GameObject:
   m_Component:
   - component: {fileID: 6132918087906574393}
   - component: {fileID: 6132918087906574374}
-  - component: {fileID: 6132918087906574375}
-  - component: {fileID: 6132918087906574392}
-  - component: {fileID: 6132918087906574372}
   - component: {fileID: 6132918087906574373}
+  - component: {fileID: 6132918087906574375}
+  - component: {fileID: 6132918087906574372}
+  - component: {fileID: 5745053577776231913}
+  - component: {fileID: 8809338899458545095}
   m_Layer: 0
   m_Name: Padlock Trigger
   m_TagString: Minigame
@@ -2724,50 +2694,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6132918087906574375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6132918087906574394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f7f4a24c23a59646a856cdee12a932d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactableObjects: []
-  conditionsMet: 0
---- !u!114 &6132918087906574392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6132918087906574394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39be4dcb8cd370743a853d53cc26aa14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isCompleted: 0
---- !u!114 &6132918087906574372
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6132918087906574394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5655bba36f79f2341a2680050a3366b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GameCanvas: {fileID: 0}
-  disablingAnimationDelay: 0
-  failNotification: {fileID: 0}
-  failNotificationsDelay: 0
-  TextFade: {fileID: 0}
 --- !u!61 &6132918087906574373
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2794,6 +2720,63 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &6132918087906574375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6132918087906574394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f7f4a24c23a59646a856cdee12a932d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactableObjects: []
+  conditionsMet: 0
+--- !u!114 &6132918087906574372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6132918087906574394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5655bba36f79f2341a2680050a3366b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameCanvas: {fileID: 6132918087482782462}
+  disablingAnimationDelay: 0
+  failNotification: {fileID: 0}
+  failNotificationsDelay: 0
+  TextFade: {fileID: 0}
+--- !u!114 &5745053577776231913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6132918087906574394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab07d6cf10c037645a9e84068177906a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HasBeenInteracted: 0
+--- !u!114 &8809338899458545095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6132918087906574394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39be4dcb8cd370743a853d53cc26aa14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCompleted: 0
 --- !u!1 &6132918087919705420
 GameObject:
   m_ObjectHideFlags: 0

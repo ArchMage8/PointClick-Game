@@ -11,9 +11,12 @@ public class Padlock_Main : MonoBehaviour
     public float CompletionDelay = 5f;
     public float disableDelay = 5f;
 
+    public GameObject TriggerObject;
+
     private Animator MainAnimator;
     private MiniGameBool miniGameBool;
     private ClickObjects clickObjects;
+    private HasBeenInteractedHolder hasBeenInteractedHolder;
 
     private void Start()
     {
@@ -21,9 +24,9 @@ public class Padlock_Main : MonoBehaviour
         Second.SetActive(false);
 
         MainAnimator = GetComponent<Animator>();
-        miniGameBool = GetComponent<MiniGameBool>();
-
-        clickObjects = GetComponent<ClickObjects>();
+        miniGameBool = TriggerObject.GetComponent<MiniGameBool>();
+        hasBeenInteractedHolder = TriggerObject.GetComponent<HasBeenInteractedHolder>();
+        clickObjects = FindObjectOfType<ClickObjects>();
     }
 
     public void CheckPadlocks()
@@ -50,6 +53,7 @@ public class Padlock_Main : MonoBehaviour
 
     private IEnumerator completion()
     {
+        hasBeenInteractedHolder.HasBeenInteracted = true;
         miniGameBool.isCompleted = true;
         MainAnimator.SetTrigger("Padlock_Disable");
         yield return new WaitForSeconds(CompletionDelay);
@@ -69,6 +73,8 @@ public class Padlock_Main : MonoBehaviour
     {
         MainAnimator.SetTrigger("Padlock_Disable");
         yield return new WaitForSeconds(disableDelay);
+        clickObjects.CanClick = true;
         this.gameObject.SetActive(false);
+
     }
 }
