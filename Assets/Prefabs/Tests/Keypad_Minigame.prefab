@@ -1269,8 +1269,8 @@ MonoBehaviour:
   CorrectAnswer: 1234
   currentString: 
   TriggerObject: {fileID: 0}
-  CompletionDelay: 5
-  disableDelay: 5
+  CompletionDelay: 2
+  disableDelay: 0
 --- !u!1 &2317401763094297
 GameObject:
   m_ObjectHideFlags: 0
