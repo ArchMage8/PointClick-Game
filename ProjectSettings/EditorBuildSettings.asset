@@ -8,4 +8,16 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/TestBenches/JT's Stuff/Scene3Hallway.unity
+    guid: e0cfe559936ce06409a138fdbcdec0c3
+  - enabled: 1
+    path: Assets/Scenes/TestBenches/JT's Stuff/Scene3PostBell.unity
+    guid: 756c4b95dd6a28d4da06b7a64b22e275
+  - enabled: 1
+    path: Assets/Scenes/TestBenches/JT's Stuff/Cutscenes/Meeting Friend.unity
+    guid: 6fd2dd0e731c2334d9b51fd562be892b
+  - enabled: 1
+    path: Assets/Scenes/TestBenches/JT's Stuff/Scene4SeniorHallway.unity
+    guid: c6f284eacf93a8f42b1e0f57806d157d
   m_configObjects: {}
