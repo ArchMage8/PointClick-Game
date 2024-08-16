@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class ClickObjects : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class ClickObjects : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && CanClick)
+        if (Input.GetMouseButtonDown(0) && CanClick && !EventSystem.current.IsPointerOverGameObject())
         {
 
            
