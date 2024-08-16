@@ -1016,6 +1016,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChangeObject (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4331887537617519518, guid: be8005aca6eaeb141aff45ac73e4bb95, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4331887537617519519, guid: be8005aca6eaeb141aff45ac73e4bb95, type: 3}
       propertyPath: SecondObject
       value: 
