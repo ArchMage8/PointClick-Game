@@ -47,7 +47,7 @@ public class InteractObject : MonoBehaviour
         {
             if (dialogueController.Index >= Sentences.Length)
             {
-                if (Input.GetKeyDown(KeyCode.Space))
+                if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
                 {
                     VisualObject.SetActive(false);
                     TextFade.SetActive(false);
@@ -72,11 +72,12 @@ public class InteractObject : MonoBehaviour
 
     private void startDialogue()
     {
+
         TextFade.SetActive(false);
         clickObjects.CanClick = false;
         dialogueController.gameObject.SetActive(true);
         dialogueController.RecieveDialogue(Sentences);
-
+        dialogueController.Index = 0;
         StartCoroutine(dialogueController.WriteSentence());
         hasBeenInteractedHolder.HasBeenInteracted = true;
     }

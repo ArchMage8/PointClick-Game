@@ -9,7 +9,7 @@ public class DialogueController : MonoBehaviour
 
     private ClickObjects clickObjects;
     [HideInInspector]public string[] Sentences;
-    [HideInInspector]public int Index = 0;
+    [HideInInspector]public int Index = -1;
     private bool isTyping = false;
     [SerializeField] private float writeSpeed;
 
@@ -18,6 +18,7 @@ public class DialogueController : MonoBehaviour
         clickObjects = FindObjectOfType<ClickObjects>();
         Transform DialogueTextObject = transform.GetChild(0);
         DialogueText = DialogueTextObject.GetComponent<TextMeshProUGUI>();
+       
     }
 
     private void Update()

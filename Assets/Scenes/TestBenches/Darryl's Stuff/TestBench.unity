@@ -601,6 +601,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CameraMoverButtons
       objectReference: {fileID: 0}
+    - target: {fileID: 6364188079620908425, guid: aca2b0949517d9140b6cc1f671f06c47, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aca2b0949517d9140b6cc1f671f06c47, type: 3}
 --- !u!1001 &8984017721544100425
