@@ -47,7 +47,7 @@ public class DialogueController : MonoBehaviour
 
     public void NextSentence()
     {
-        Debug.Log("Next");
+       
 
         if (Index <= Sentences.Length - 1 && !isTyping)
         {
@@ -60,7 +60,7 @@ public class DialogueController : MonoBehaviour
 
    public IEnumerator WriteSentence()
     {
-        Debug.Log("write");
+       
 
         foreach (char Character in Sentences[Index].ToCharArray())
         {
