@@ -14,7 +14,7 @@ public class InteractSS_Main : MonoBehaviour
     private HasBeenInteractedHolder solutionCondition;
 
     [Space (25)]
-    [Header("SlideShow")]
+    [Header("SlideSho")]
     [SerializeField] private GameObject[] Phases;
     [SerializeField] private GameObject solutionPreReq;
 
