@@ -323,6 +323,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  maxLeft: -5
+  maxRight: 5
 --- !u!1001 &1153248916
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -505,6 +507,10 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1135035452}
+    - target: {fileID: 6364188078081320279, guid: aca2b0949517d9140b6cc1f671f06c47, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -212
+      objectReference: {fileID: 0}
     - target: {fileID: 6364188078134309579, guid: aca2b0949517d9140b6cc1f671f06c47, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -513,6 +519,10 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1135035452}
+    - target: {fileID: 6364188078162465937, guid: aca2b0949517d9140b6cc1f671f06c47, type: 3}
+      propertyPath: m_text
+      value: <
+      objectReference: {fileID: 0}
     - target: {fileID: 6364188079620908421, guid: aca2b0949517d9140b6cc1f671f06c47, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -603,7 +613,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6364188079620908425, guid: aca2b0949517d9140b6cc1f671f06c47, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aca2b0949517d9140b6cc1f671f06c47, type: 3}
