@@ -37,6 +37,7 @@ public class MinigameObject : MonoBehaviour
         if (canProceed && !miniGameBool.isCompleted)
         {
             GameCanvas.SetActive(true);
+            clickObjects.CanClick = false;
         }
 
         else
