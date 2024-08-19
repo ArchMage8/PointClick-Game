@@ -8,4 +8,28 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/TestBenches/JT's Stuff/Scene3Hallway.unity
+    guid: e0cfe559936ce06409a138fdbcdec0c3
+  - enabled: 1
+    path: Assets/Scenes/TestBenches/JT's Stuff/Scene3PostBell.unity
+    guid: 756c4b95dd6a28d4da06b7a64b22e275
+  - enabled: 1
+    path: Assets/Scenes/TestBenches/JT's Stuff/Cutscenes/Meeting Friend.unity
+    guid: 6fd2dd0e731c2334d9b51fd562be892b
+  - enabled: 1
+    path: Assets/Scenes/TestBenches/JT's Stuff/Scene4SeniorHallway.unity
+    guid: c6f284eacf93a8f42b1e0f57806d157d
+  - enabled: 1
+    path: Assets/Scenes/TestBenches/JT's Stuff/Scene5Library.unity
+    guid: 8a66f3777cc8b8246b9c5c0eea7a4433
+  - enabled: 1
+    path: Assets/Scenes/TestBenches/JT's Stuff/Scene5NoOneLibrary.unity
+    guid: a0e70e283a07fd344b11f987cb2c6bb7
+  - enabled: 1
+    path: Assets/Scenes/TestBenches/JT's Stuff/Scene6&7Hallway.unity
+    guid: 2cbc98a9ed706cf468a16047e8fe0959
+  - enabled: 1
+    path: Assets/Scenes/TestBenches/JT's Stuff/Scene8Principal.unity
+    guid: b75348c98f49d014b8a23c914326c93e
   m_configObjects: {}
