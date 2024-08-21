@@ -60,12 +60,14 @@ public class DialogueController : MonoBehaviour
 
    public IEnumerator WriteSentence()
     {
-       
+        if (isTyping)
+            yield break; // Prevent starting a new coroutine if one is already running
 
-        foreach (char Character in Sentences[Index].ToCharArray())
+        isTyping = true;
+        DialogueText.text = "";
+        foreach (char character in Sentences[Index].ToCharArray())
         {
-            DialogueText.text += Character;
-            isTyping = true;
+            DialogueText.text += character;
             yield return new WaitForSeconds(writeSpeed);
         }
         isTyping = false;
@@ -83,6 +85,7 @@ public class DialogueController : MonoBehaviour
 
     IEnumerator DisableThis()
     {
+        Debug.Log("Disable");
         yield return new WaitForSeconds(0f);
 
         DialogueText.text = "";

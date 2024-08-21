@@ -82,7 +82,7 @@ public class InteractObject : MonoBehaviour
 
         TextFade.SetActive(true);
         clickObjects.CanClick = false;
-        dialogueController.gameObject.SetActive(true);
+       
        
      
         StartCoroutine(dialogueController.WriteSentence());
@@ -108,15 +108,19 @@ public class InteractObject : MonoBehaviour
     private IEnumerator startSystem()
     {
         
-        if (VisualObject != null)
+        if (VisualObject != null && dialogueController.Index == 0)
         {
             VisualObject.SetActive(true);
+            dialogueController.gameObject.SetActive(true);
             yield return new WaitForSeconds(animationDelay);
-            dialogueController.Index = 0;
-            startDialogue();
+
+            if (dialogueController.Index == 0)
+            {
+                startDialogue();
+            }
         }
 
-        else
+        else if(dialogueController.Index == 0)
         {
             yield return new WaitForSeconds(0f);
             startDialogue();
