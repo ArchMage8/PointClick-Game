@@ -51,6 +51,9 @@ TagManager:
   - name: Objects
     uniqueID: 2043650987
     locked: 0
+  - name: Interactables
+    uniqueID: 2009331625
+    locked: 0
   - name: Pop-Up
     uniqueID: 2948650129
     locked: 0

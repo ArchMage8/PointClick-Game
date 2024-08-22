@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4331887537533774816}
   - component: {fileID: 4331887537533774818}
   - component: {fileID: 4331887537533774817}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Object (1)
   m_TagString: Change
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 4331887537617519514}
   - component: {fileID: 4331887537617519513}
   - component: {fileID: 4331887537617519515}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ChangeObject
   m_TagString: Change
   m_Icon: {fileID: 0}
@@ -166,6 +166,7 @@ MonoBehaviour:
   FailNotification: {fileID: 4331887537714213984}
   failAnimationDelay: 1
   enablingAnimationDelay: 0
+  TextFade: {fileID: 0}
 --- !u!114 &4331887537617519514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,7 +230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4331887537714213986}
   - component: {fileID: 4331887537714213985}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FailNotif
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -244,7 +245,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4331887537714213984}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.51192087}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.175, y: 0.18749, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -314,7 +315,7 @@ GameObject:
   - component: {fileID: 4331887538380831699}
   - component: {fileID: 4331887538380831709}
   - component: {fileID: 4331887538380831708}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -329,7 +330,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4331887538380831698}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.564}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -414,7 +415,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4331887539123025246}
   - component: {fileID: 4331887539123025247}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Object (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
