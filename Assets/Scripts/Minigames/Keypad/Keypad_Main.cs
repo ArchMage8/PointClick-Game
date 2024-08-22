@@ -79,7 +79,7 @@ public class Keypad_Main : MonoBehaviour
     private IEnumerator completion()
     {
         miniGameBool.isCompleted = true;
-        MainAnimator.SetTrigger("Keypad_Disable");
+        //MainAnimator.SetTrigger("Keypad_Disable");
         yield return new WaitForSeconds(CompletionDelay);
        
         this.gameObject.SetActive(false);
