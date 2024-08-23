@@ -96,7 +96,7 @@ public class Keypad_Main : MonoBehaviour
 
     private IEnumerator disableUI()
     {
-        MainAnimator.SetTrigger("Padlock_Disable");
+        //MainAnimator.SetTrigger("Padlock_Disable");
         yield return new WaitForSeconds(disableDelay);
         this.gameObject.SetActive(false);
         clickObjects.CanClick = true;
