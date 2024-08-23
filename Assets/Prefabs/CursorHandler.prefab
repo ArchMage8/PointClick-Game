@@ -51,7 +51,8 @@ MonoBehaviour:
   - {fileID: 2800000, guid: c9fa641f2d30921479cd03afb5bf2cd7, type: 3}
   - {fileID: 2800000, guid: 7145c480e30cb0b4cbfb5a0b90fb4075, type: 3}
   frameRate: 0.1
-  hotSpot: {x: 7, y: 0}
+  DefaultHotSpot: {x: 7, y: 0}
+  HoverHotSpot: {x: 15, y: 15}
   interactableLayer:
     serializedVersion: 2
     m_Bits: 8

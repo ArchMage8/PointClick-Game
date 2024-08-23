@@ -251,4 +251,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sentences: []
   Index: 0
-  writeSpeed: 0.01
+  writeSpeed: 0.04

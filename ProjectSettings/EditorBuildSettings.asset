@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestBenches/JT's Stuff/Cutscenes/Caught.unity
     guid: 8eb44fe885529c84c9a24b69c1566245
+  - enabled: 1
+    path: Assets/Scenes/TestBenches/JT's Stuff/Scene9Panic.unity
+    guid: b8cedc5ad7f0a734ca5c075bbc0d8ddf
   m_configObjects: {}
