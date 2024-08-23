@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestBenches/JT's Stuff/Scene8Principal.unity
     guid: b75348c98f49d014b8a23c914326c93e
+  - enabled: 1
+    path: Assets/Scenes/TestBenches/JT's Stuff/Cutscenes/Caught.unity
+    guid: 8eb44fe885529c84c9a24b69c1566245
   m_configObjects: {}
