@@ -1014,11 +1014,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6132918086578762001, guid: 4976a7ea289b2724cb8bb61c1341aef1, type: 3}
       propertyPath: CorrectAnswer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6132918086578762001, guid: 4976a7ea289b2724cb8bb61c1341aef1, type: 3}
       propertyPath: currentAnswer
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6132918086578762015, guid: 4976a7ea289b2724cb8bb61c1341aef1, type: 3}
       propertyPath: m_Enabled
@@ -1270,7 +1270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6132918087102517114, guid: 4976a7ea289b2724cb8bb61c1341aef1, type: 3}
       propertyPath: currentAnswer
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6132918087102517116, guid: 4976a7ea289b2724cb8bb61c1341aef1, type: 3}
       propertyPath: m_Enabled
@@ -1365,6 +1365,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6132918087518482985, guid: 4976a7ea289b2724cb8bb61c1341aef1, type: 3}
+      propertyPath: CorrectAnswer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6132918087518482985, guid: 4976a7ea289b2724cb8bb61c1341aef1, type: 3}
       propertyPath: currentAnswer
       value: 0
       objectReference: {fileID: 0}
@@ -1450,7 +1454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6132918087664382205, guid: 4976a7ea289b2724cb8bb61c1341aef1, type: 3}
       propertyPath: currentAnswer
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6132918087664382207, guid: 4976a7ea289b2724cb8bb61c1341aef1, type: 3}
       propertyPath: m_Enabled
@@ -1629,6 +1633,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 369113159}
   m_CullTransparentMesh: 1
+--- !u!1 &369113162 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6132918087906574394, guid: 4976a7ea289b2724cb8bb61c1341aef1, type: 3}
+  m_PrefabInstance: {fileID: 369113158}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &428186070 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6132918086411071168, guid: 4976a7ea289b2724cb8bb61c1341aef1, type: 3}
@@ -3281,7 +3290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactableObjects:
-  - {fileID: 1035254200}
+  - {fileID: 369113162}
   conditionsMet: 0
 --- !u!1 &874926432
 GameObject:
