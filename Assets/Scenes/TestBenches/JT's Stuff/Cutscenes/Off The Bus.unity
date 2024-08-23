@@ -192,7 +192,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.size
-      value: 20
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[0]
@@ -242,7 +242,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[11]
-      value: Eko might have it..!
+      value: Eko might have it.
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[12]
@@ -266,14 +266,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[17]
-      value: Right..
+      value: Am I really going to steal from my own friend..?
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[18]
-      value: Notes...
+      value: ...
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[19]
+      value: Notes...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: Sentences.Array.data[20]
       value: I need to get his notes...
       objectReference: {fileID: 0}
     m_RemovedComponents: []
