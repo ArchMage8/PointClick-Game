@@ -51,7 +51,6 @@ public class CutsceneText : MonoBehaviour
 
     public IEnumerator WriteSentence()
     {
-        colorHexCodes = new string[Sentences.Length];
 
         foreach (char Character in Sentences[Index].ToCharArray())
         {

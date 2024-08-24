@@ -1619,8 +1619,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueController: {fileID: 1305988586}
   Sentences:
-  - Is banana
-  - You banana
+  - Another day to school.
+  - I should check my surroundings before the bus stops.
+  - (You can click on objects to interact with them)
+  - (The button on the bottom right will appear once all required interactibles have
+    been interacted with.)
   TextFade: {fileID: 1969280216}
   startDelay: 2
 --- !u!4 &669831052

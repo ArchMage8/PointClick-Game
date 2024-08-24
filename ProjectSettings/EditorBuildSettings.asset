@@ -71,4 +71,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestBenches/JT's Stuff/Scene9WindDownPrincipal.unity
     guid: ec7134fcc8e27cf4985c8775715f4659
+  - enabled: 1
+    path: Assets/Scenes/TestBenches/JT's Stuff/Cutscenes/Resolution.unity
+    guid: 2efecd715833da945b0ad80359933bd3
+  - enabled: 1
+    path: Assets/Scenes/TestBenches/JT's Stuff/Cutscenes/End.unity
+    guid: 2317af7ad79d2314ba3878c5f3a57ed6
   m_configObjects: {}
