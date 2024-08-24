@@ -205,7 +205,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[2]
-      value: "\u201CEko: Hey Ethan! Long time no see!\u201D "
+      value: "\u201CHey Ethan! Long time no see!\u201D "
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[3]
@@ -217,8 +217,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[5]
-      value: "\u201CEko: Hey man, how\u2019s life? C\u2019mon let\u2019s chat and
-        take a walk.\u201D "
+      value: "\u201CHey man, how\u2019s life? C\u2019mon let\u2019s chat and take
+        a walk.\u201D "
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[6]
@@ -227,6 +227,18 @@ PrefabInstance:
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[7]
       value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: colorHexCodes.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: colorHexCodes.Array.data[2]
+      value: FFEE00
+      objectReference: {fileID: 0}
+    - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: colorHexCodes.Array.data[5]
+      value: FFEE00
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}

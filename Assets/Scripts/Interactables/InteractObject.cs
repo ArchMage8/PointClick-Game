@@ -106,6 +106,7 @@ public class InteractObject : MonoBehaviour
         clickObjects.CanClick = false;
         FailNotification.SetActive(false);
         TextFade.SetActive(false);
+        clickObjects.CanClick = true;
     }
 
     private IEnumerator startSystem()

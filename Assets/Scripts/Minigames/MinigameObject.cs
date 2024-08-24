@@ -56,5 +56,6 @@ public class MinigameObject : MonoBehaviour
         clickObjects.CanClick = false;
         failNotification.SetActive(false);
         TextFade.SetActive(false);
+        clickObjects.CanClick = true;
     }
 }
