@@ -33,6 +33,7 @@ public class MinigameObject : MonoBehaviour
 
     public void MiniGame_Click()
     {
+        preRequisite.CheckConditions();
         canProceed = preRequisite.conditionsMet;
         if (canProceed && !miniGameBool.isCompleted)
         {
@@ -42,6 +43,7 @@ public class MinigameObject : MonoBehaviour
 
         else
         {
+            Debug.Log("Cannot Proceed");
             StartCoroutine(cannotProceed());
         }
     }

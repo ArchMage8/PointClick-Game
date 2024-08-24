@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 public class ClickObjects : MonoBehaviour
 {
    [HideInInspector] public static ClickObjects Instance { get; private set; }
-   [HideInInspector] public bool CanClick = true;
+    public bool CanClick = true;
    
     private ChangingObject changingObject;
     private InteractObject interactObject;

@@ -39,6 +39,7 @@ public class ChangingObject : MonoBehaviour
     
     public void change_click()  //Call from the click objects system
     {
+        preRequisite.CheckConditions();
         CanProceed = preRequisite.conditionsMet;
         if (CanProceed)
         {

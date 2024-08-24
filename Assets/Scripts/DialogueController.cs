@@ -97,7 +97,7 @@ public class DialogueController : MonoBehaviour
 
     IEnumerator DisableThis()
     {
-        Debug.Log("Disable");
+        //Debug.Log("Disable");
         yield return new WaitForSeconds(0f);
 
         DialogueText.text = "";

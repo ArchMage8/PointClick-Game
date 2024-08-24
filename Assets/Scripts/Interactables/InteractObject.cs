@@ -78,8 +78,9 @@ public class InteractObject : MonoBehaviour
             StartCoroutine(startSystem());
         }
 
-        else
+        else if(!CanProceed)
         {
+            Debug.Log("Cannot Proceed");
             StartCoroutine(cannotProceed());
         }
     }
