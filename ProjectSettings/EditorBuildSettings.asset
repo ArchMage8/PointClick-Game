@@ -11,9 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestBenches/Hans' stuff/Title Screen.unity
     guid: d9f21167f54159f47980627d20248742
-  - enabled: 0
-    path: Assets/Scenes/TestBenches/JT's Stuff/MainMenu.unity
-    guid: 181b96eb5de8fc443805561977220d16
   - enabled: 1
     path: Assets/Scenes/TestBenches/JT's Stuff/Scene1&2Bus.unity
     guid: 19ed34118fcd418468ceec17fa073eba
@@ -52,8 +49,26 @@ EditorBuildSettings:
     guid: b75348c98f49d014b8a23c914326c93e
   - enabled: 1
     path: Assets/Scenes/TestBenches/JT's Stuff/Cutscenes/Caught.unity
-    guid: 8eb44fe885529c84c9a24b69c1566245
+    guid: cc2609bbdcdca8f4d8eee5ba8209bafe
   - enabled: 1
     path: Assets/Scenes/TestBenches/JT's Stuff/Scene9Panic.unity
     guid: b8cedc5ad7f0a734ca5c075bbc0d8ddf
+  - enabled: 1
+    path: Assets/Scenes/TestBenches/JT's Stuff/Cutscenes/The Talk 1.unity
+    guid: 8eb44fe885529c84c9a24b69c1566245
+  - enabled: 1
+    path: Assets/Scenes/TestBenches/JT's Stuff/Scene9ViewbackHallway.unity
+    guid: 6ba98b1549fbc284c9d9747b58fc1c18
+  - enabled: 1
+    path: Assets/Scenes/TestBenches/JT's Stuff/Cutscenes/The Talk 2.unity
+    guid: 12c38fa25bfd0d147a31d8c8e9fb6cef
+  - enabled: 1
+    path: Assets/Scenes/TestBenches/JT's Stuff/Scene9ViewbackLibrary.unity
+    guid: 038dd1f707f33eb499396d61ebf03634
+  - enabled: 1
+    path: Assets/Scenes/TestBenches/JT's Stuff/Cutscenes/The Talk 3.unity
+    guid: 3095d9ec5e2192c478edac239da39c90
+  - enabled: 1
+    path: Assets/Scenes/TestBenches/JT's Stuff/Scene9WindDownPrincipal.unity
+    guid: ec7134fcc8e27cf4985c8775715f4659
   m_configObjects: {}
