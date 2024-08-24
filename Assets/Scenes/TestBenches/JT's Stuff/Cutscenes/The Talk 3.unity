@@ -188,47 +188,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: DestinationScene
-      value: 14
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.size
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[0]
-      value: '"Ethan?"'
+      value: '"Ethan."'
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[1]
-      value: ...
+      value: '"I know it''s been a tough few months for you."'
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[2]
-      value: '"What are you doing in my office?"'
+      value: ...
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[3]
-      value: '"Why is the file cabinet unlocked?"'
+      value: '"Just know that you''re not in trouble."'
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[4]
-      value: ...
+      value: '"I just want you to know that you don''t have to do all of this."'
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[5]
-      value: '"Ethan.."'
+      value: '"I know this is not you."'
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[6]
-      value: '"Can I have a word with you outside of my office?"'
-      objectReference: {fileID: 0}
-    - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
-      propertyPath: Sentences.Array.data[7]
       value: ...
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: Sentences.Array.data[7]
+      value: '"C''mon Ethan, you haven''t even stamped your keycard yet."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[8]
-      value: "Someone has to have the materials, the complete syllabus for the exam\u2026"
+      value: ...
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[9]

@@ -6447,15 +6447,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[0]
-      value: I can finally break into his locker now that it's empty.
+      value: I need to break into the principal's office.
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[1]
-      value: His passcode has got to be some kind of thing he really likes...
+      value: The passcode has got to be something that's very important to him.
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[2]
-      value: A date maybe..?
+      value: An anniversary perhaps..?
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite

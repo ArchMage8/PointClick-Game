@@ -372,20 +372,35 @@ PrefabInstance:
       objectReference: {fileID: 194199356}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[0]
-      value: "How stupid of me to even think I\u2019d see that class with all my
-        friends alongside me."
+      value: If I run to that room, what then?
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[1]
-      value: ...
+      value: Jump out the window?
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[2]
       value: I don't want to be here any longer.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099097381422365, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099097381422365, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1953099097381422366, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_LocalPosition.x
@@ -397,11 +412,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c010b4df98189434592d83267037a796, type: 3}
---- !u!1 &115251251 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1953099096220437370, guid: c010b4df98189434592d83267037a796, type: 3}
-  m_PrefabInstance: {fileID: 115251250}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &115251252 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1953099096220437374, guid: c010b4df98189434592d83267037a796, type: 3}
@@ -913,7 +923,7 @@ PrefabInstance:
     - target: {fileID: 3972952473723327361, guid: d11c1ce42d4deca449715b75a3296526, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: c6347d438b873244ab14de45f1f42611, type: 3}
+      objectReference: {fileID: 21300000, guid: 49cb3afe8974dfb4a9eb98915546296e, type: 3}
     - target: {fileID: 3972952475127607518, guid: d11c1ce42d4deca449715b75a3296526, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -965,7 +975,7 @@ PrefabInstance:
     - target: {fileID: 3972952475168671280, guid: d11c1ce42d4deca449715b75a3296526, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: c6347d438b873244ab14de45f1f42611, type: 3}
+      objectReference: {fileID: 21300000, guid: 49cb3afe8974dfb4a9eb98915546296e, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d11c1ce42d4deca449715b75a3296526, type: 3}
 --- !u!1 &895199698
@@ -1359,15 +1369,15 @@ PrefabInstance:
       objectReference: {fileID: 194199356}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[0]
-      value: If only I was standing here as a senior.
+      value: I need to get out of here.
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[1]
-      value: ...
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[2]
@@ -1378,12 +1388,20 @@ PrefabInstance:
       value: I have a test to save.
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_SortingLayer
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_SortingLayerID
       value: 2043650987
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181850, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1427,11 +1445,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c010b4df98189434592d83267037a796, type: 3}
---- !u!1 &1136241567 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1953099096220437370, guid: c010b4df98189434592d83267037a796, type: 3}
-  m_PrefabInstance: {fileID: 1136241566}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1136241568 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1953099096220437374, guid: c010b4df98189434592d83267037a796, type: 3}
@@ -1454,7 +1467,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8381570870422746566, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
       propertyPath: destinationScene
-      value: 7
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8381570870422746567, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
       propertyPath: m_RootOrder
@@ -1550,7 +1563,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8381570871230866982, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
       propertyPath: m_text
-      value: Go to the library
+      value: Listen...
       objectReference: {fileID: 0}
     - target: {fileID: 8381570871230866982, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
       propertyPath: m_fontSize
@@ -1619,10 +1632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactableObjects:
-  - {fileID: 0}
-  - {fileID: 1136241567}
   - {fileID: 1346255183}
-  - {fileID: 115251251}
   conditionsMet: 0
 --- !u!4 &1244829170 stripped
 Transform:
@@ -1810,7 +1820,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1953099096220437370, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Name
-      value: InteractObjectFriend
+      value: InteractObjectPrincipal
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437373, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Size.x
@@ -1898,31 +1908,95 @@ PrefabInstance:
       objectReference: {fileID: 194199356}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.size
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[0]
-      value: "Why\u2019s he still talking to me?"
+      value: '"Ethan, let''s talk."'
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[1]
-      value: Is it pity?
+      value: '"What''s gotten into you?"'
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[2]
-      value: There's no reason for him to call me his friend.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
-      propertyPath: Sentences.Array.data[3]
-      value: I even broke into his locker without his permission.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
-      propertyPath: Sentences.Array.data[4]
       value: ...
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: Sentences.Array.data[3]
+      value: '"You used to be very active around this school."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: Sentences.Array.data[4]
+      value: '"Then, ever since you''ve failed your grades.."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[5]
-      value: "I\u2019m sorry."
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: Sentences.Array.data[6]
+      value: '"Ethan."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: Sentences.Array.data[7]
+      value: '"You''ve got to have hope."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: Sentences.Array.data[8]
+      value: '"Know that you''re not alone. Never alone."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: Sentences.Array.data[9]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: Sentences.Array.data[10]
+      value: '"I''ve also gotten reports of a few missing items."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: Sentences.Array.data[11]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: Sentences.Array.data[12]
+      value: '"I know, Ethan."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: Sentences.Array.data[13]
+      value: '"I know it''s hard to be stuck a grade."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: Sentences.Array.data[14]
+      value: '"I know that you feel ashamed and embarrassed to be here."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: Sentences.Array.data[15]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: Sentences.Array.data[16]
+      value: '"Please don''t turn your back on us."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: Sentences.Array.data[17]
+      value: '"Don''t turn your back on your peers."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: Sentences.Array.data[18]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: Sentences.Array.data[19]
+      value: '"Eko would''ve given you those notes if you asked."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: Sentences.Array.data[20]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: m_Sprite
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_SortingLayer
@@ -1935,6 +2009,10 @@ PrefabInstance:
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_SortingLayerID
       value: 2043650987
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181850, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_LocalScale.x
@@ -2550,15 +2628,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[0]
-      value: That's the principal's office.
+      value: I wish I didn't go into that room.
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[1]
-      value: It's code locked.
+      value: What am I going to do now?
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[2]
-      value: I shouldn't touch it.
+      value: Definitely not running back into that room.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099097381422365, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099097381422365, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1953099097381422366, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_LocalPosition.x
