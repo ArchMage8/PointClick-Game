@@ -35,13 +35,14 @@ public class MinigameObject : MonoBehaviour
     {
         preRequisite.CheckConditions();
         canProceed = preRequisite.conditionsMet;
+
         if (canProceed && !miniGameBool.isCompleted)
         {
             GameCanvas.SetActive(true);
             clickObjects.CanClick = false;
         }
 
-        else
+        else if(!canProceed)
         {
             Debug.Log("Cannot Proceed");
             StartCoroutine(cannotProceed());
@@ -63,6 +64,7 @@ public class MinigameObject : MonoBehaviour
 
         else
         {
+            clickObjects.CanClick = true;
             yield return null;
         }
     }
