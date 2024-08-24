@@ -591,6 +591,10 @@ PrefabInstance:
       propertyPath: colorHexCodes.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.data[0]
+      value: DDDDFF
+      objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -880,6 +884,10 @@ PrefabInstance:
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: colorHexCodes.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.data[0]
+      value: DDDDFF
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite
@@ -1427,6 +1435,10 @@ PrefabInstance:
       propertyPath: colorHexCodes.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.data[0]
+      value: DDDDFF
+      objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1954,6 +1966,10 @@ PrefabInstance:
       propertyPath: colorHexCodes.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.data[0]
+      value: DDDDFF
+      objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2131,6 +2147,10 @@ PrefabInstance:
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: colorHexCodes.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.data[0]
+      value: DDDDFF
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite
@@ -2571,6 +2591,10 @@ PrefabInstance:
       propertyPath: colorHexCodes.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.data[0]
+      value: DDDDFF
+      objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2756,6 +2780,10 @@ PrefabInstance:
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: colorHexCodes.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.data[0]
+      value: DDDDFF
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite
@@ -2956,6 +2984,10 @@ PrefabInstance:
       propertyPath: colorHexCodes.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.data[0]
+      value: DDDDFF
+      objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -3141,6 +3173,10 @@ PrefabInstance:
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: colorHexCodes.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.data[0]
+      value: DDDDFF
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite
@@ -3484,6 +3520,10 @@ PrefabInstance:
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: colorHexCodes.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.data[0]
+      value: DDDDFF
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite
@@ -4354,6 +4394,10 @@ PrefabInstance:
       propertyPath: colorHexCodes.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.data[0]
+      value: DDDDFF
+      objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -4650,6 +4694,10 @@ PrefabInstance:
       propertyPath: colorHexCodes.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.data[0]
+      value: DDDDFF
+      objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -4827,6 +4875,10 @@ PrefabInstance:
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: colorHexCodes.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.data[0]
+      value: DDDDFF
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite
@@ -5065,6 +5117,22 @@ PrefabInstance:
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: colorHexCodes.Array.size
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.data[0]
+      value: FFFFFF
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.data[1]
+      value: FFEE00
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.data[2]
+      value: FFFFFF
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.data[3]
+      value: FFEE00
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite
@@ -5371,6 +5439,10 @@ PrefabInstance:
       propertyPath: colorHexCodes.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.data[0]
+      value: DDDDFF
+      objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -5605,6 +5677,10 @@ PrefabInstance:
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: colorHexCodes.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.data[0]
+      value: DDDDFF
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite
@@ -5950,6 +6026,10 @@ PrefabInstance:
       propertyPath: colorHexCodes.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.data[0]
+      value: DDDDFF
+      objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -6293,6 +6373,10 @@ PrefabInstance:
       propertyPath: colorHexCodes.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.data[0]
+      value: DDDDFF
+      objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -6482,6 +6566,10 @@ PrefabInstance:
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: colorHexCodes.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.data[0]
+      value: DDDDFF
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite
@@ -6761,6 +6849,10 @@ PrefabInstance:
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: colorHexCodes.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.data[0]
+      value: DDDDFF
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite
@@ -7136,6 +7228,10 @@ PrefabInstance:
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: colorHexCodes.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.data[0]
+      value: DDDDFF
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite

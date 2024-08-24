@@ -278,6 +278,26 @@ PrefabInstance:
       propertyPath: colorHexCodes.Array.size
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: colorHexCodes.Array.data[0]
+      value: DDDDFF
+      objectReference: {fileID: 0}
+    - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: colorHexCodes.Array.data[2]
+      value: DDDDFF
+      objectReference: {fileID: 0}
+    - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: colorHexCodes.Array.data[3]
+      value: DDDDFF
+      objectReference: {fileID: 0}
+    - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: colorHexCodes.Array.data[5]
+      value: DDDDFF
+      objectReference: {fileID: 0}
+    - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: colorHexCodes.Array.data[6]
+      value: DDDDFF
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
 --- !u!1 &1810264367

@@ -5294,7 +5294,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: colorHexCodes.Array.data[0]
-      value: 00ff00
+      value: FFFFFF
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.data[1]
+      value: 00FF00
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite

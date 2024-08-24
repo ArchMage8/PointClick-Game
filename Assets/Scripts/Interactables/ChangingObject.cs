@@ -59,13 +59,21 @@ public class ChangingObject : MonoBehaviour
 
     private IEnumerator cannotProceed() //Animation for prerequisites not met
     {
-        FailNotification.SetActive(true);
-        TextFade.SetActive(true);
-        yield return new WaitForSeconds(failAnimationDelay);
-        clickObjects.CanClick = false;
-        FailNotification.SetActive(false);
-        TextFade.SetActive(false);
-        clickObjects.CanClick = true;
+        if (FailNotification != null)
+        {
+            FailNotification.SetActive(true);
+            TextFade.SetActive(true);
+            yield return new WaitForSeconds(failAnimationDelay);
+            clickObjects.CanClick = false;
+            FailNotification.SetActive(false);
+            TextFade.SetActive(false);
+            clickObjects.CanClick = true;
+        }
+
+        else
+        {
+            yield return null;
+        }
 
 
 

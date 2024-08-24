@@ -702,6 +702,10 @@ PrefabInstance:
       propertyPath: colorHexCodes.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.data[0]
+      value: DDDDFF
+      objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2883,7 +2887,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8381570870563907624, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 194
+      value: 303
       objectReference: {fileID: 0}
     - target: {fileID: 8381570870563907624, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
       propertyPath: m_SizeDelta.y
@@ -2891,7 +2895,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8381570870563907624, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 327
+      value: 271.69244
       objectReference: {fileID: 0}
     - target: {fileID: 8381570870563907624, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2907,7 +2911,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8381570871230866982, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
       propertyPath: m_text
-      value: Steal the keycard
+      value: Get your keycard stamped
       objectReference: {fileID: 0}
     - target: {fileID: 8381570871230866982, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
       propertyPath: m_fontSize
