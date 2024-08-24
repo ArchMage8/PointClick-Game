@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
 public class AnimatedCursor : MonoBehaviour
@@ -10,7 +11,11 @@ public class AnimatedCursor : MonoBehaviour
 
 
     public float frameRate = 0.1f;
-    public Vector2 hotSpot = Vector2.zero;
+    private Vector2 hotSpot = Vector2.zero;
+
+    [SerializeField] private Vector2 DefaultHotSpot = new Vector2(7,0);
+    [SerializeField] private Vector2 HoverHotSpot;
+
     public LayerMask interactableLayer;
 
     private Texture2D[] currentCursorTextures;
@@ -57,10 +62,12 @@ public class AnimatedCursor : MonoBehaviour
 
         if (hit.collider != null && clickObjects.CanClick)
         {
+            hotSpot = HoverHotSpot;
             currentCursorTextures = interactableCursorTextures;
         }
         else
         {
+            hotSpot = DefaultHotSpot;
             currentCursorTextures = defaultCursorTextures;
         }
     }

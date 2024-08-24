@@ -188,7 +188,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: DestinationScene
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.size
@@ -204,7 +204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[2]
-      value: 'Friend: "Hey, where did he go..?"'
+      value: 'Eko: "Hey, where did Ethan go..?"'
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[3]
