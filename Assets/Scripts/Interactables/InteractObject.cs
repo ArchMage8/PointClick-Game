@@ -25,6 +25,8 @@ public class InteractObject : MonoBehaviour
     public GameObject TextFade;
     
     [Space(20)]
+    [SerializeField] private AudioClip soundEffect;
+    private AudioSource audioSource;
     private bool CanProceed;
 
 
@@ -41,6 +43,17 @@ public class InteractObject : MonoBehaviour
         FailNotification.SetActive(false);
         VisualObject.SetActive(false);
         TextFade.SetActive(false);
+
+        GameObject sfxSourceObject = GameObject.Find("SFXSource");
+
+        if (sfxSourceObject != null)
+        {
+            audioSource = sfxSourceObject.GetComponent<AudioSource>();
+        }
+        else
+        {
+            Debug.LogWarning("SFXSource GameObject not found in the scene.");
+        }
     }
 
     private void Update()
@@ -73,6 +86,7 @@ public class InteractObject : MonoBehaviour
         CanProceed = preRequisite.conditionsMet;
         if (CanProceed)
         {
+            audioSource.PlayOneShot(soundEffect);
             dialogueController.RecieveDialogue(Sentences);
             dialogueController.RecieveColors(colorHexCodes);
             StartCoroutine(startSystem());

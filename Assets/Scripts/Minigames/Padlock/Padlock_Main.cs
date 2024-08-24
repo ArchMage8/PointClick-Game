@@ -10,6 +10,7 @@ public class Padlock_Main : MonoBehaviour
     public GameObject Second;
     public float CompletionDelay = 5f;
     public float disableDelay = 5f;
+    [SerializeField] private AudioClip soundEffect;
 
     public GameObject TriggerObject;
 
@@ -17,6 +18,8 @@ public class Padlock_Main : MonoBehaviour
     private MiniGameBool miniGameBool;
     private ClickObjects clickObjects;
     private HasBeenInteractedHolder hasBeenInteractedHolder;
+    private AudioSource audioSource;
+
 
     private void Start()
     {
@@ -27,11 +30,24 @@ public class Padlock_Main : MonoBehaviour
         miniGameBool = TriggerObject.GetComponent<MiniGameBool>();
         hasBeenInteractedHolder = TriggerObject.GetComponent<HasBeenInteractedHolder>();
         clickObjects = FindObjectOfType<ClickObjects>();
+
+        GameObject sfxSourceObject = GameObject.Find("SFXSource");
+
+        if (sfxSourceObject != null)
+        {
+            audioSource = sfxSourceObject.GetComponent<AudioSource>();
+        }
+        else
+        {
+            Debug.LogWarning("SFXSource GameObject not found in the scene.");
+        }
     }
 
     public void CheckPadlocks()
     {
         Completed = true;
+        audioSource.PlayOneShot(soundEffect);
+
 
         foreach (Padlock_Tile tile in padlockTiles)
         {

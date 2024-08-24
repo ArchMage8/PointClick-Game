@@ -11,6 +11,9 @@ public class MinigameObject : MonoBehaviour
 
     [Header("Minigame UI:")]
     [SerializeField] private GameObject GameCanvas;
+    [SerializeField] private AudioClip soundEffect;
+    private AudioSource audioSource;
+
     [Space(20)]
 
     [Header("Animations:")]
@@ -29,6 +32,17 @@ public class MinigameObject : MonoBehaviour
       
 
         GameCanvas.SetActive(false);
+
+        GameObject sfxSourceObject = GameObject.Find("SFXSource");
+
+        if (sfxSourceObject != null)
+        {
+            audioSource = sfxSourceObject.GetComponent<AudioSource>();
+        }
+        else
+        {
+            Debug.LogWarning("SFXSource GameObject not found in the scene.");
+        }
     }
 
     public void MiniGame_Click()
@@ -38,6 +52,7 @@ public class MinigameObject : MonoBehaviour
 
         if (canProceed && !miniGameBool.isCompleted)
         {
+            audioSource.PlayOneShot(soundEffect);
             GameCanvas.SetActive(true);
             clickObjects.CanClick = false;
         }

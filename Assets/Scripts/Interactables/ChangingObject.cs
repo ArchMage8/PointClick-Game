@@ -11,6 +11,8 @@ public class ChangingObject : MonoBehaviour
     [Header("Changing Objects:")]
     [SerializeField]private GameObject FirstObject;
     [SerializeField]private GameObject SecondObject;
+    [SerializeField] private AudioClip soundEffect;
+    private AudioSource audioSource;
     [Space(20)]
 
     [Header("Animations:")]
@@ -35,6 +37,17 @@ public class ChangingObject : MonoBehaviour
         //Deactivating Stuffs
         FailNotification.SetActive(false);
         SecondObject.SetActive(false);
+
+        GameObject sfxSourceObject = GameObject.Find("SFXSource");
+
+        if (sfxSourceObject != null)
+        {
+            audioSource = sfxSourceObject.GetComponent<AudioSource>();
+        }
+        else
+        {
+            Debug.LogWarning("SFXSource GameObject not found in the scene.");
+        }
     }
     
     public void change_click()  //Call from the click objects system
@@ -43,6 +56,7 @@ public class ChangingObject : MonoBehaviour
         CanProceed = preRequisite.conditionsMet;
         if (CanProceed)
         {
+            audioSource.PlayOneShot(soundEffect);
             FirstObject.SetActive(false);
             StartCoroutine(enablingAnimation());
             hasBeenInteractedHolder.HasBeenInteracted = true;

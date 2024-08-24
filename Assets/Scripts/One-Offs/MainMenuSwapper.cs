@@ -10,7 +10,9 @@ public class MainMenuSwapper : MonoBehaviour
 
     [SerializeField] private GameObject LevelLoader;
     [SerializeField] private int DestintationInt;
+    [SerializeField] private AudioClip soundEffect;
     private Animator LoaderAnimator;
+    private AudioSource audioSource;
 
     private void Start()
     {
@@ -18,6 +20,17 @@ public class MainMenuSwapper : MonoBehaviour
         secondObject.SetActive(false);
 
         LoaderAnimator = LevelLoader.GetComponent<Animator>();
+
+        GameObject sfxSourceObject = GameObject.Find("SFXSource");
+        
+        if (sfxSourceObject != null)
+        {
+            audioSource = sfxSourceObject.GetComponent<AudioSource>();
+        }
+        else
+        {
+            Debug.LogWarning("SFXSource GameObject not found in the scene.");
+        }
     }
 
     public void swapObjects()
@@ -30,6 +43,7 @@ public class MainMenuSwapper : MonoBehaviour
     public void PlayGame()
     {
         StartCoroutine(playTheGame());
+        audioSource.PlayOneShot(soundEffect);
     }
 
     private IEnumerator playTheGame()
@@ -48,5 +62,10 @@ public class MainMenuSwapper : MonoBehaviour
             yield return new WaitForSeconds(1.5f);
             SceneManager.LoadScene(DestintationInt);
         }
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 }

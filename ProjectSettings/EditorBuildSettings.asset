@@ -5,11 +5,8 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/TestBenches/Hans' stuff/Title Screen.unity
+    path: Assets/Scenes/TestBenches/JT's Stuff/MainMenu.unity
     guid: d9f21167f54159f47980627d20248742
   - enabled: 1
     path: Assets/Scenes/TestBenches/JT's Stuff/Scene1&2Bus.unity
