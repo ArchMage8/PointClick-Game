@@ -48,10 +48,12 @@ public class ChangingObject : MonoBehaviour
             hasBeenInteractedHolder.HasBeenInteracted = true;
         }
 
-        else
+        else if(CanProceed == false)
         {
             Debug.Log("Fail");
             StartCoroutine(cannotProceed());
+
+            
         }
     }
 
@@ -61,14 +63,11 @@ public class ChangingObject : MonoBehaviour
         TextFade.SetActive(true);
         yield return new WaitForSeconds(failAnimationDelay);
         clickObjects.CanClick = false;
+        FailNotification.SetActive(false);
+        TextFade.SetActive(false);
 
 
-        if (Input.GetMouseButtonDown(0))
-        {
-            TextFade.SetActive(false);
-            FailNotification.SetActive(false);
-            clickObjects.CanClick = true;
-        }
+
     }
 
     private IEnumerator enablingAnimation() //Animation for object being enabled

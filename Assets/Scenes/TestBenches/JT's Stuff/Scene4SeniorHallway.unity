@@ -387,6 +387,10 @@ PrefabInstance:
       propertyPath: Sentences.Array.data[2]
       value: I don't want to be here any longer.
       objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1455,6 +1459,10 @@ PrefabInstance:
       propertyPath: Sentences.Array.data[3]
       value: I have a test to save.
       objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1746,6 +1754,10 @@ PrefabInstance:
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[3]
       value: "I\u2019m ashamed to even be near them."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite
@@ -2049,6 +2061,10 @@ PrefabInstance:
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[5]
       value: "I\u2019m sorry, Eko."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.size
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite
@@ -2894,6 +2910,10 @@ PrefabInstance:
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[2]
       value: I shouldn't touch it.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite
