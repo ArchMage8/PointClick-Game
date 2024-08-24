@@ -619,6 +619,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChangeObjectLocker
       objectReference: {fileID: 0}
+    - target: {fileID: 4331887537617519519, guid: be8005aca6eaeb141aff45ac73e4bb95, type: 3}
+      propertyPath: TextFade
+      value: 
+      objectReference: {fileID: 35571505}
     - target: {fileID: 4331887539123025247, guid: be8005aca6eaeb141aff45ac73e4bb95, type: 3}
       propertyPath: m_Sprite
       value: 
