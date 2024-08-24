@@ -54,8 +54,6 @@ public class ClickObjects : MonoBehaviour
         {
             preRequisite.CheckConditions();
 
-            if (preRequisite.conditionsMet)
-            {
                 if (ClickedObject.CompareTag("Change"))
                 {
                     CanClick = false;
@@ -99,7 +97,7 @@ public class ClickObjects : MonoBehaviour
                 return;
             }
             }
-        }
+        
         else
         {
             return;
