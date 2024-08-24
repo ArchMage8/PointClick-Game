@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenuHandler : MonoBehaviour
+public class MainMenuSwapper : MonoBehaviour
 {
     [SerializeField] private GameObject initialObject;
     [SerializeField] private GameObject secondObject;
@@ -27,7 +27,7 @@ public class MainMenuHandler : MonoBehaviour
         playTheGame();
     }
 
-    private void PlayGame()
+    public void PlayGame()
     {
         StartCoroutine(playTheGame());
     }
@@ -42,6 +42,8 @@ public class MainMenuHandler : MonoBehaviour
 
         else
         {
+            yield return new WaitForSeconds(1.5f);
+            LevelLoader.SetActive(true);
             LoaderAnimator.SetTrigger("EndOfScene");
             yield return new WaitForSeconds(1.5f);
             SceneManager.LoadScene(DestintationInt);
