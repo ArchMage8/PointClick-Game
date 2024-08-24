@@ -21,6 +21,7 @@ public class AnimatedCursor : MonoBehaviour
     private Texture2D[] currentCursorTextures;
     private int currentFrame;
     private float timer;
+    private HasBeenInteractedHolder hasBeenInteractedHolder;
 
     void Start()
     {
@@ -60,10 +61,15 @@ public class AnimatedCursor : MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit2D hit = Physics2D.GetRayIntersection(ray, Mathf.Infinity, interactableLayer);
 
-        if (hit.collider != null && clickObjects.CanClick)
+        if (hit.collider != null)
         {
-            hotSpot = HoverHotSpot;
-            currentCursorTextures = interactableCursorTextures;
+            hasBeenInteractedHolder = hit.collider.gameObject.GetComponent<HasBeenInteractedHolder>();
+
+            if (clickObjects.CanClick && !hasBeenInteractedHolder.HasBeenInteracted)
+            {
+                hotSpot = HoverHotSpot;
+                currentCursorTextures = interactableCursorTextures;
+            }
         }
         else
         {

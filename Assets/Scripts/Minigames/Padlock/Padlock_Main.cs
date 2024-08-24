@@ -63,6 +63,8 @@ public class Padlock_Main : MonoBehaviour
             First.SetActive(false);
             Second.SetActive(true);
 
+
+
             StartCoroutine(completion());
         }
     }

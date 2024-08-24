@@ -50,7 +50,14 @@ public class MinigameObject : MonoBehaviour
         preRequisite.CheckConditions();
         canProceed = preRequisite.conditionsMet;
 
-        if (canProceed && !miniGameBool.isCompleted)
+        if (miniGameBool.isCompleted)
+        {
+            Debug.Log("Bananans");
+            clickObjects.CanClick = true;
+            return;
+        }
+
+        else if (canProceed && !miniGameBool.isCompleted)
         {
             audioSource.PlayOneShot(soundEffect);
             GameCanvas.SetActive(true);
