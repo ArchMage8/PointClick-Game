@@ -20,8 +20,9 @@ public class TutorialText : MonoBehaviour
 
     private void Start()
     {
-        clickObjects.CanClick = false;
+
         clickObjects = FindObjectOfType<ClickObjects>();
+        clickObjects.CanClick = false;
         dialogueController.RecieveDialogue(Sentences);
         StartCoroutine(Starting());
        

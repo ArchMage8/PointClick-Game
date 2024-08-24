@@ -252,6 +252,10 @@ PrefabInstance:
       value: SceneLoaderButton
       objectReference: {fileID: 0}
     - target: {fileID: 8381570870422746566, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
+      propertyPath: LevelLoader
+      value: 
+      objectReference: {fileID: 2061215218}
+    - target: {fileID: 8381570870422746566, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
       propertyPath: destinationScene
       value: 4
       objectReference: {fileID: 0}
@@ -8319,6 +8323,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4331887537617519512, guid: be8005aca6eaeb141aff45ac73e4bb95, type: 3}
   m_PrefabInstance: {fileID: 1238120929}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2061215218 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8435697680013200334, guid: f9ad25f8542ef8a449d81c84c3c33f31, type: 3}
+  m_PrefabInstance: {fileID: 929173695}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2068495860
 GameObject:
   m_ObjectHideFlags: 0
@@ -11327,6 +11336,7 @@ MonoBehaviour:
   - '"Catch flight on 15th of October, next year."'
   - Heh..
   - I bet he's been counting the days for that.
+  colorHexCodes: []
   failAnimationDelay: 0
   animationDelay: 0
   FailNotification: {fileID: 1953099095825822590}

@@ -1231,6 +1231,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8435697681574720375, guid: f9ad25f8542ef8a449d81c84c3c33f31, type: 3}
   m_PrefabInstance: {fileID: 896885725}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &896885727 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8435697680013200334, guid: f9ad25f8542ef8a449d81c84c3c33f31, type: 3}
+  m_PrefabInstance: {fileID: 896885725}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &920625049
 GameObject:
   m_ObjectHideFlags: 0
@@ -2442,6 +2447,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneLoaderButton
       objectReference: {fileID: 0}
+    - target: {fileID: 8381570870422746566, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
+      propertyPath: LevelLoader
+      value: 
+      objectReference: {fileID: 896885727}
     - target: {fileID: 8381570870422746566, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
       propertyPath: destinationScene
       value: 7

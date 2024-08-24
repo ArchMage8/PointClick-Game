@@ -12,6 +12,8 @@ public class InteractObject : MonoBehaviour
     [Header("TextStuffs:")] [Space(10)]
     public DialogueController dialogueController;
     public string[] Sentences;
+    public string[] colorHexCodes;
+
     [Space(20)]
 
     [Header("Animations:")] [Space(10)]
@@ -57,6 +59,11 @@ public class InteractObject : MonoBehaviour
             else if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
             {
                 dialogueController.NextSentence();
+
+                if(Sentences.Length != colorHexCodes.Length)
+                {
+                    Debug.LogError("Length of color and text arrays need to be same");
+                }
             }
         }
     }
@@ -67,6 +74,7 @@ public class InteractObject : MonoBehaviour
         if (CanProceed)
         {
             dialogueController.RecieveDialogue(Sentences);
+            dialogueController.RecieveColors(colorHexCodes);
             StartCoroutine(startSystem());
         }
 

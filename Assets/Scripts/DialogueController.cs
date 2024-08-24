@@ -9,6 +9,8 @@ public class DialogueController : MonoBehaviour
 
     private ClickObjects clickObjects;
     [HideInInspector]public string[] Sentences;
+    [HideInInspector]public string[] colorHexCodes;
+
     [HideInInspector]public int Index = 0;
     private bool isTyping = false;
     [SerializeField] private float writeSpeed;
@@ -67,6 +69,7 @@ public class DialogueController : MonoBehaviour
         DialogueText.text = "";
         foreach (char character in Sentences[Index].ToCharArray())
         {
+            ChangeTextColor(Index);
             DialogueText.text += character;
             yield return new WaitForSeconds(writeSpeed);
         }
@@ -83,6 +86,15 @@ public class DialogueController : MonoBehaviour
         }
     }
 
+    public void RecieveColors(string[] colors)
+    {
+        colorHexCodes = new string[Sentences.Length];
+        for (int i = 0; i < colors.Length; i++)
+        {
+            colorHexCodes[i] = colors[i];
+        }
+    }
+
     IEnumerator DisableThis()
     {
         Debug.Log("Disable");
@@ -93,5 +105,22 @@ public class DialogueController : MonoBehaviour
         Index = 0;
         Sentences = new string[0];
         this.gameObject.SetActive(false);
+    }
+
+    private void ChangeTextColor(int index)
+    {
+        if (index >= 0 && index < colorHexCodes.Length)
+        {
+            string hexCode = colorHexCodes[index];
+
+            if (string.IsNullOrEmpty(hexCode))
+            {
+                DialogueText.color = Color.white;
+            }
+            else if (ColorUtility.TryParseHtmlString("#" + hexCode, out Color newColor))
+            {
+                DialogueText.color = newColor;
+            }
+        }
     }
 }
