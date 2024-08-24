@@ -5,6 +5,7 @@ using UnityEngine;
 public class TutorialText : MonoBehaviour
 {
     private ClickObjects clickObjects;
+    private bool TutActive;
 
     [Header("TextStuffs:")]
     [Space(10)]
@@ -19,8 +20,32 @@ public class TutorialText : MonoBehaviour
 
     private void Start()
     {
+        clickObjects.CanClick = false;
         clickObjects = FindObjectOfType<ClickObjects>();
+        dialogueController.RecieveDialogue(Sentences);
         StartCoroutine(Starting());
+       
+    }
+
+    private void Update()
+    {
+        if (TutActive)
+        {
+            if (dialogueController.Index >= Sentences.Length)
+            {
+                if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+                {
+                    TextFade.SetActive(false);
+                    TutActive = false;
+                    clickObjects.CanClick = true;
+                }
+            }
+
+            else if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+            {
+                dialogueController.NextSentence();
+            }
+        }
     }
 
     private IEnumerator Starting()
@@ -32,6 +57,7 @@ public class TutorialText : MonoBehaviour
     private void TutDialogue()
     {
         TextFade.SetActive(true);
+        TutActive = true;
         StartCoroutine(startSystem());
     }
 

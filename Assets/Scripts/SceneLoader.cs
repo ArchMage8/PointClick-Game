@@ -9,11 +9,13 @@ public class SceneLoader : MonoBehaviour
     [SerializeField] private GameObject LevelLoader;
     [SerializeField] private int destinationScene;
     private PreRequisite preRequisite;
+    private ClickObjects clickObjects;
 
     private void Start()
     {
         preRequisite = GetComponent<PreRequisite>();
         NextSceneButton.SetActive(false);
+        clickObjects = FindObjectOfType<ClickObjects>();
     }
 
     private void FixedUpdate()
@@ -28,7 +30,10 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadScene()
     {
-        StartCoroutine(LoadingScene());
+        if (clickObjects.CanClick)
+        {
+            StartCoroutine(LoadingScene());
+        }
     }
 
     private IEnumerator LoadingScene()
