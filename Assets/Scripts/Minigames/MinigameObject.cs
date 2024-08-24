@@ -50,20 +50,11 @@ public class MinigameObject : MonoBehaviour
 
     private IEnumerator cannotProceed() //Animation for prerequisites not met
     {
-        if (failNotification != null)
-        {
-            failNotification.SetActive(true);
-            TextFade.SetActive(true);
-            yield return new WaitForSeconds(failNotificationsDelay);
-            clickObjects.CanClick = false;
-
-
-            if (Input.GetMouseButtonDown(0))
-            {
-                TextFade.SetActive(false);
-                failNotification.SetActive(false);
-                clickObjects.CanClick = true;
-            }
-        }
+        failNotification.SetActive(true);
+        TextFade.SetActive(true);
+        yield return new WaitForSeconds(failNotificationsDelay);
+        clickObjects.CanClick = false;
+        failNotification.SetActive(false);
+        TextFade.SetActive(false);
     }
 }
