@@ -13,6 +13,8 @@ public class SceneLoader : MonoBehaviour
     private PreRequisite preRequisite;
     private ClickObjects clickObjects;
 
+    
+
     private void Start()
     {
         preRequisite = GetComponent<PreRequisite>();
