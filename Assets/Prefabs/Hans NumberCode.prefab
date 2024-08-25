@@ -1632,7 +1632,7 @@ MonoBehaviour:
   Second: {fileID: 6132918087536686025}
   CompletionDelay: 2
   disableDelay: 5
-  soundEffect: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: be9772d186ad1da44948dc1dd7f2264a, type: 3}
   TriggerObject: {fileID: 6132918087906574394}
 --- !u!1 &6132918087491802909
 GameObject:

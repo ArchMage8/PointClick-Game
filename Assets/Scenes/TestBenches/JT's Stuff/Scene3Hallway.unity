@@ -264,6 +264,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2061215218}
     - target: {fileID: 8381570870422746566, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 77fad19ec2f3d0f468bd1d296f243f3f, type: 3}
+    - target: {fileID: 8381570870422746566, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
       propertyPath: destinationScene
       value: 4
       objectReference: {fileID: 0}
@@ -398,17 +402,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6132918087556864236, guid: 7813b3c778777ed4896f01110e90b7fb, type: 3}
   m_PrefabInstance: {fileID: 522522691}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &122643921 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6364188078081320277, guid: aca2b0949517d9140b6cc1f671f06c47, type: 3}
-  m_PrefabInstance: {fileID: 645983128}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &143489439 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3972952475127607518, guid: d11c1ce42d4deca449715b75a3296526, type: 3}
@@ -668,6 +661,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bfc2c0137d7807428069164ef1b4495, type: 3}
+--- !u!1 &242350886 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6298124830953309934, guid: aca2b0949517d9140b6cc1f671f06c47, type: 3}
+  m_PrefabInstance: {fileID: 645983128}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &254153902 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1953099096220437374, guid: c010b4df98189434592d83267037a796, type: 3}
@@ -1612,6 +1610,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0109a9deaab2e974889a53de0a86a337, type: 3}
+--- !u!1 &439252282 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2086374651796171356, guid: aca2b0949517d9140b6cc1f671f06c47, type: 3}
+  m_PrefabInstance: {fileID: 645983128}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &440694425
 GameObject:
   m_ObjectHideFlags: 0
@@ -2055,7 +2058,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6132918086578762001, guid: 7813b3c778777ed4896f01110e90b7fb, type: 3}
       propertyPath: currentAnswer
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6132918086578762015, guid: 7813b3c778777ed4896f01110e90b7fb, type: 3}
       propertyPath: m_Enabled
@@ -2470,6 +2473,10 @@ PrefabInstance:
       value: 4293983229
       objectReference: {fileID: 0}
     - target: {fileID: 6132918087482782460, guid: 7813b3c778777ed4896f01110e90b7fb, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: be9772d186ad1da44948dc1dd7f2264a, type: 3}
+    - target: {fileID: 6132918087482782460, guid: 7813b3c778777ed4896f01110e90b7fb, type: 3}
       propertyPath: disableDelay
       value: 0
       objectReference: {fileID: 0}
@@ -2535,7 +2542,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6132918087518482985, guid: 7813b3c778777ed4896f01110e90b7fb, type: 3}
       propertyPath: currentAnswer
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6132918087518482987, guid: 7813b3c778777ed4896f01110e90b7fb, type: 3}
       propertyPath: m_Enabled
@@ -2575,7 +2582,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6132918087539012985, guid: 7813b3c778777ed4896f01110e90b7fb, type: 3}
       propertyPath: m_text
-      value: 'Start
+      value: 'Set
 
 '
       objectReference: {fileID: 0}
@@ -2753,7 +2760,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6132918087664382205, guid: 7813b3c778777ed4896f01110e90b7fb, type: 3}
       propertyPath: currentAnswer
-      value: 0
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6132918087664382207, guid: 7813b3c778777ed4896f01110e90b7fb, type: 3}
       propertyPath: m_Enabled
@@ -3127,8 +3134,8 @@ MonoBehaviour:
   moveSpeed: 5
   maxLeft: -10
   maxRight: 10
-  leftButton: {fileID: 122643921}
-  rightButton: {fileID: 625344014}
+  leftVisual: {fileID: 439252282}
+  rightVisual: {fileID: 242350886}
 --- !u!224 &583526352 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6132918087491802908, guid: 7813b3c778777ed4896f01110e90b7fb, type: 3}
@@ -3174,17 +3181,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &625344014 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6364188078134309580, guid: aca2b0949517d9140b6cc1f671f06c47, type: 3}
-  m_PrefabInstance: {fileID: 645983128}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &642620391
 GameObject:
   m_ObjectHideFlags: 0
@@ -11614,7 +11610,7 @@ MonoBehaviour:
   dialogueController: {fileID: 1090692575}
   Sentences:
   - Nothing here.
-  - Except for the poster of this game he's so hyped about..
+  - Except for the poster of this game my friend is so hyped about..
   - '"Cosmic Scavenger"'
   - '"Catch flight on 15th of October, next year."'
   - Heh..

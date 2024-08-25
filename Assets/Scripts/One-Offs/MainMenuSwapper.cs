@@ -56,7 +56,7 @@ public class MainMenuSwapper : MonoBehaviour
 
         else
         {
-            DecreaseVolume(2f);
+            //DecreaseVolume(2f);
             audioSource.PlayOneShot(AlarmSoundEffect);
             yield return new WaitForSeconds(1.5f);
             LevelLoader.SetActive(true);
@@ -73,7 +73,7 @@ public class MainMenuSwapper : MonoBehaviour
 
     private IEnumerator QuitGame()
     {
-        DecreaseVolume(2f);
+        //DecreaseVolume(2f);
         audioSource.PlayOneShot(ButtonPressSound);
         yield return new WaitForSeconds(1.5f);
         LevelLoader.SetActive(true);

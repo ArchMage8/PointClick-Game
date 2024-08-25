@@ -1619,8 +1619,8 @@ MonoBehaviour:
   moveSpeed: 5
   maxLeft: -49
   maxRight: 10
-  LeftButton: {fileID: 0}
-  RightButton: {fileID: 0}
+  leftVisual: {fileID: 645983129}
+  rightVisual: {fileID: 645983130}
 --- !u!1 &598444952
 GameObject:
   m_ObjectHideFlags: 0
@@ -2004,6 +2004,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aca2b0949517d9140b6cc1f671f06c47, type: 3}
+--- !u!1 &645983129 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2086374651796171356, guid: aca2b0949517d9140b6cc1f671f06c47, type: 3}
+  m_PrefabInstance: {fileID: 645983128}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &645983130 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6298124830953309934, guid: aca2b0949517d9140b6cc1f671f06c47, type: 3}
+  m_PrefabInstance: {fileID: 645983128}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &652993073
 GameObject:
   m_ObjectHideFlags: 0

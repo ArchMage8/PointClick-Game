@@ -5988,8 +5988,8 @@ MonoBehaviour:
   moveSpeed: 5
   maxLeft: -9
   maxRight: 6
-  LeftButton: {fileID: 0}
-  RightButton: {fileID: 0}
+  leftVisual: {fileID: 2066239262}
+  rightVisual: {fileID: 2066239263}
 --- !u!114 &1770694616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6849,6 +6849,10 @@ PrefabInstance:
       propertyPath: TextFade
       value: 
       objectReference: {fileID: 175788111}
+    - target: {fileID: 4331887537617519519, guid: be8005aca6eaeb141aff45ac73e4bb95, type: 3}
+      propertyPath: failAnimationDelay
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4331887539123025247, guid: be8005aca6eaeb141aff45ac73e4bb95, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -7608,5 +7612,15 @@ PrefabInstance:
 --- !u!224 &2066239261 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6364188079620908421, guid: aca2b0949517d9140b6cc1f671f06c47, type: 3}
+  m_PrefabInstance: {fileID: 2066239260}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2066239262 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2086374651796171356, guid: aca2b0949517d9140b6cc1f671f06c47, type: 3}
+  m_PrefabInstance: {fileID: 2066239260}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2066239263 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6298124830953309934, guid: aca2b0949517d9140b6cc1f671f06c47, type: 3}
   m_PrefabInstance: {fileID: 2066239260}
   m_PrefabAsset: {fileID: 0}

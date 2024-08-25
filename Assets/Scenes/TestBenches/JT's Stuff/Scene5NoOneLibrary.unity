@@ -1060,8 +1060,8 @@ MonoBehaviour:
   moveSpeed: 5
   maxLeft: -10
   maxRight: 10
-  LeftButton: {fileID: 0}
-  RightButton: {fileID: 0}
+  leftVisual: {fileID: 1886652967}
+  rightVisual: {fileID: 1886652968}
 --- !u!114 &286095188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4951,6 +4951,16 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6364188079620908421, guid: aca2b0949517d9140b6cc1f671f06c47, type: 3}
   m_PrefabInstance: {fileID: 1886652965}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1886652967 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2086374651796171356, guid: aca2b0949517d9140b6cc1f671f06c47, type: 3}
+  m_PrefabInstance: {fileID: 1886652965}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1886652968 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6298124830953309934, guid: aca2b0949517d9140b6cc1f671f06c47, type: 3}
+  m_PrefabInstance: {fileID: 1886652965}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1886737637
 GameObject:
   m_ObjectHideFlags: 0
@@ -6986,23 +6996,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8381570870563907624, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.22
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8381570870563907624, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.22
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8381570870563907624, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2.22
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8381570870563907624, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 276
+      value: 385
       objectReference: {fileID: 0}
     - target: {fileID: 8381570870563907624, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -212
+      value: -224
       objectReference: {fileID: 0}
     - target: {fileID: 8381570870563907624, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
       propertyPath: m_ConstrainProportionsScale
@@ -7018,7 +7028,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8381570871230866982, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
       propertyPath: m_fontSize
-      value: 18
+      value: 33.52
       objectReference: {fileID: 0}
     - target: {fileID: 8381570871230866982, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
       propertyPath: m_fontAsset
@@ -7038,7 +7048,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8381570871230866982, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
       propertyPath: m_fontSizeBase
-      value: 18
+      value: 33.52
       objectReference: {fileID: 0}
     - target: {fileID: 8381570871230866982, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
       propertyPath: m_sharedMaterial

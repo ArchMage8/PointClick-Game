@@ -272,7 +272,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929169473376, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 74.60317
+      value: -96
+      objectReference: {fileID: 0}
+    - target: {fileID: 6463445929169473377, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6463445929169473377, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: m_margin.y
+      value: 195.21786
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: DestinationScene

@@ -2861,7 +2861,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8381570870563907624, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 271.69244
+      value: 376
       objectReference: {fileID: 0}
     - target: {fileID: 8381570870563907624, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2882,6 +2882,14 @@ PrefabInstance:
     - target: {fileID: 8381570871230866982, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
       propertyPath: m_fontSize
       value: 39.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 8381570871230866982, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
+      propertyPath: m_margin.x
+      value: 55.98053
+      objectReference: {fileID: 0}
+    - target: {fileID: 8381570871230866982, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
+      propertyPath: m_margin.z
+      value: 29.856354
       objectReference: {fileID: 0}
     - target: {fileID: 8381570871230866982, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
       propertyPath: m_fontAsset
@@ -2913,7 +2921,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8381570871230866982, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
       propertyPath: m_HorizontalAlignment
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c5d02ea7662cc9418bc39088eda9d9b, type: 3}
@@ -4915,8 +4923,8 @@ MonoBehaviour:
   moveSpeed: 5
   maxLeft: -9
   maxRight: 6
-  LeftButton: {fileID: 0}
-  RightButton: {fileID: 0}
+  leftVisual: {fileID: 2066239262}
+  rightVisual: {fileID: 2066239263}
 --- !u!114 &1770694616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5450,6 +5458,16 @@ PrefabInstance:
 --- !u!224 &2066239261 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6364188079620908421, guid: aca2b0949517d9140b6cc1f671f06c47, type: 3}
+  m_PrefabInstance: {fileID: 2066239260}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2066239262 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2086374651796171356, guid: aca2b0949517d9140b6cc1f671f06c47, type: 3}
+  m_PrefabInstance: {fileID: 2066239260}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2066239263 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6298124830953309934, guid: aca2b0949517d9140b6cc1f671f06c47, type: 3}
   m_PrefabInstance: {fileID: 2066239260}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2091652863
