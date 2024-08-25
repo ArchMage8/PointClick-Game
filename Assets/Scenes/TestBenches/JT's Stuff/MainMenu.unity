@@ -5868,7 +5868,7 @@ MonoBehaviour:
   secondObject: {fileID: 1876676287}
   LevelLoader: {fileID: 926405346}
   DestintationInt: 1
-  soundEffect: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: f1b92a738babe414a9262d9312fe5216, type: 3}
 --- !u!1 &828596348
 GameObject:
   m_ObjectHideFlags: 0

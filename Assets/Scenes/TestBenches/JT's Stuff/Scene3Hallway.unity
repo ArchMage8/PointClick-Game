@@ -199,6 +199,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 209708703}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: be9772d186ad1da44948dc1dd7f2264a, type: 3}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
       objectReference: {fileID: 1090692575}
@@ -808,6 +812,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 209708703}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: be9772d186ad1da44948dc1dd7f2264a, type: 3}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
       objectReference: {fileID: 1090692575}
@@ -1132,6 +1140,10 @@ PrefabInstance:
       propertyPath: TextFade
       value: 
       objectReference: {fileID: 209708703}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: be9772d186ad1da44948dc1dd7f2264a, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
@@ -2028,7 +2040,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6132918086578762001, guid: 7813b3c778777ed4896f01110e90b7fb, type: 3}
       propertyPath: CorrectAnswer
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6132918086578762001, guid: 7813b3c778777ed4896f01110e90b7fb, type: 3}
       propertyPath: currentAnswer
@@ -2535,6 +2547,10 @@ PrefabInstance:
       value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 6132918087536686024, guid: 7813b3c778777ed4896f01110e90b7fb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6132918087536686024, guid: 7813b3c778777ed4896f01110e90b7fb, type: 3}
       propertyPath: m_SortingLayer
       value: 3
       objectReference: {fileID: 0}
@@ -2665,12 +2681,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6132918087579097063, guid: 7813b3c778777ed4896f01110e90b7fb, type: 3}
+      propertyPath: m_TargetGraphic
+      value: 
+      objectReference: {fileID: 522522694}
+    - target: {fileID: 6132918087579097063, guid: 7813b3c778777ed4896f01110e90b7fb, type: 3}
       propertyPath: m_Colors.m_NormalColor.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6132918087579097063, guid: 7813b3c778777ed4896f01110e90b7fb, type: 3}
       propertyPath: m_Colors.m_NormalColor.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6132918087579097063, guid: 7813b3c778777ed4896f01110e90b7fb, type: 3}
       propertyPath: m_Colors.m_NormalColor.r
@@ -2678,7 +2698,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6132918087579097063, guid: 7813b3c778777ed4896f01110e90b7fb, type: 3}
       propertyPath: m_Colors.m_HighlightedColor.b
-      value: 0.022976637
+      value: 0.4198113
       objectReference: {fileID: 0}
     - target: {fileID: 6132918087579097063, guid: 7813b3c778777ed4896f01110e90b7fb, type: 3}
       propertyPath: m_Colors.m_HighlightedColor.g
@@ -2686,7 +2706,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6132918087579097063, guid: 7813b3c778777ed4896f01110e90b7fb, type: 3}
       propertyPath: m_Colors.m_HighlightedColor.r
-      value: 0
+      value: 0.9950406
       objectReference: {fileID: 0}
     - target: {fileID: 6132918087579097080, guid: 7813b3c778777ed4896f01110e90b7fb, type: 3}
       propertyPath: m_SizeDelta.x
@@ -2805,6 +2825,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6132918087919705419, guid: 7813b3c778777ed4896f01110e90b7fb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6132918087919705419, guid: 7813b3c778777ed4896f01110e90b7fb, type: 3}
       propertyPath: m_SortingLayer
       value: 3
       objectReference: {fileID: 0}
@@ -2920,6 +2944,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6132918087906574394, guid: 7813b3c778777ed4896f01110e90b7fb, type: 3}
   m_PrefabInstance: {fileID: 522522691}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &522522694 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6132918087539012985, guid: 7813b3c778777ed4896f01110e90b7fb, type: 3}
+  m_PrefabInstance: {fileID: 522522691}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &537105403 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6132918087482782462, guid: 7813b3c778777ed4896f01110e90b7fb, type: 3}
@@ -3543,6 +3578,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 209708703}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 5cdfb99752b11604ba1e9d1bb27941dd, type: 3}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
       objectReference: {fileID: 1090692575}
@@ -3759,6 +3798,10 @@ PrefabInstance:
       propertyPath: TextFade
       value: 
       objectReference: {fileID: 209708703}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: be9772d186ad1da44948dc1dd7f2264a, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
@@ -4040,7 +4083,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 138.8, y: 134.1}
+  m_AnchoredPosition: {x: 135.6, y: 145.8}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &703699514
@@ -4063,10 +4106,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '23/11/24 11:20:'
+  m_text: 'DATE: 23/11/24 TIME: 11:20'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 136a80a334962774399a4d9d4a85683e, type: 2}
+  m_sharedMaterial: {fileID: -513703693675920361, guid: 136a80a334962774399a4d9d4a85683e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4090,8 +4133,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 23.02
+  m_fontSizeBase: 23.02
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4126,7 +4169,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -47.759468, w: 0}
+  m_margin: {x: 0, y: 0, z: 18.437439, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -5495,6 +5538,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 209708703}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: be9772d186ad1da44948dc1dd7f2264a, type: 3}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
       objectReference: {fileID: 1090692575}
@@ -5865,6 +5912,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4331887537617519519, guid: be8005aca6eaeb141aff45ac73e4bb95, type: 3}
+      propertyPath: TextFade
+      value: 
+      objectReference: {fileID: 209708703}
+    - target: {fileID: 4331887538380831698, guid: be8005aca6eaeb141aff45ac73e4bb95, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4331887538380831699, guid: be8005aca6eaeb141aff45ac73e4bb95, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
@@ -6112,6 +6167,10 @@ PrefabInstance:
       propertyPath: TextFade
       value: 
       objectReference: {fileID: 209708703}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: be9772d186ad1da44948dc1dd7f2264a, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
@@ -6628,6 +6687,10 @@ PrefabInstance:
       propertyPath: TextFade
       value: 
       objectReference: {fileID: 209708703}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: be9772d186ad1da44948dc1dd7f2264a, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
@@ -7531,6 +7594,10 @@ PrefabInstance:
       propertyPath: TextFade
       value: 
       objectReference: {fileID: 209708703}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: be9772d186ad1da44948dc1dd7f2264a, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
@@ -8936,6 +9003,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 7
   keypadMain: {fileID: 2317403111233096}
+  soundEffect: {fileID: 0}
 --- !u!224 &2317401515834235
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9072,6 +9140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 1
   keypadMain: {fileID: 2317403111233096}
+  soundEffect: {fileID: 0}
 --- !u!224 &2317401563146329
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9208,6 +9277,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 3
   keypadMain: {fileID: 2317403111233096}
+  soundEffect: {fileID: 0}
 --- !u!224 &2317401638843926
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9454,6 +9524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 5
   keypadMain: {fileID: 2317403111233096}
+  soundEffect: {fileID: 0}
 --- !u!224 &2317401902465962
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9574,6 +9645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameCanvas: {fileID: 2317403111233101}
+  soundEffect: {fileID: 0}
   disablingAnimationDelay: 0
   failNotification: {fileID: 0}
   failNotificationsDelay: 0
@@ -9783,6 +9855,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 9
   keypadMain: {fileID: 2317403111233096}
+  soundEffect: {fileID: 0}
 --- !u!224 &2317402029287383
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9965,6 +10038,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 2
   keypadMain: {fileID: 2317403111233096}
+  soundEffect: {fileID: 0}
 --- !u!224 &2317402133437308
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10141,6 +10215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 4
   keypadMain: {fileID: 2317403111233096}
+  soundEffect: {fileID: 0}
 --- !u!1 &2317402582214080
 GameObject:
   m_ObjectHideFlags: 0
@@ -10257,6 +10332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 0
   keypadMain: {fileID: 2317403111233096}
+  soundEffect: {fileID: 0}
 --- !u!224 &2317402582214095
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10640,6 +10716,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 8
   keypadMain: {fileID: 2317403111233096}
+  soundEffect: {fileID: 0}
 --- !u!224 &2317403066847975
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11137,6 +11214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 6
   keypadMain: {fileID: 2317403111233096}
+  soundEffect: {fileID: 0}
 --- !u!212 &1953099095825822576
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11384,6 +11462,7 @@ MonoBehaviour:
   FailNotification: {fileID: 1953099095825822590}
   VisualObject: {fileID: 1622433574}
   TextFade: {fileID: 209708703}
+  soundEffect: {fileID: 8300000, guid: ecf1c1ec53cb2e24bb744e14d841f4e6, type: 3}
 --- !u!4 &1953099097350268461
 Transform:
   m_ObjectHideFlags: 0
