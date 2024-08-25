@@ -470,7 +470,7 @@ PrefabInstance:
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: soundEffect
       value: 
-      objectReference: {fileID: 8300000, guid: 0476e92d4591dc0498312f7f3af29114, type: 3}
+      objectReference: {fileID: 8300000, guid: be9772d186ad1da44948dc1dd7f2264a, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
@@ -1779,7 +1779,7 @@ PrefabInstance:
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: soundEffect
       value: 
-      objectReference: {fileID: 8300000, guid: 0476e92d4591dc0498312f7f3af29114, type: 3}
+      objectReference: {fileID: 8300000, guid: be9772d186ad1da44948dc1dd7f2264a, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: VisualObject
       value: 
@@ -2415,7 +2415,7 @@ PrefabInstance:
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: soundEffect
       value: 
-      objectReference: {fileID: 8300000, guid: 0476e92d4591dc0498312f7f3af29114, type: 3}
+      objectReference: {fileID: 8300000, guid: be9772d186ad1da44948dc1dd7f2264a, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: VisualObject
       value: 

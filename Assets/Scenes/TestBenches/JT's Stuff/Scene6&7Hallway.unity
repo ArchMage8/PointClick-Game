@@ -619,10 +619,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChangeObjectLocker
       objectReference: {fileID: 0}
-    - target: {fileID: 4331887537617519519, guid: be8005aca6eaeb141aff45ac73e4bb95, type: 3}
-      propertyPath: TextFade
-      value: 
-      objectReference: {fileID: 35571505}
     - target: {fileID: 4331887539123025247, guid: be8005aca6eaeb141aff45ac73e4bb95, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -688,6 +684,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: InteractObjectPhoto
       objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437370, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437373, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Size.x
       value: 5.479659
@@ -722,11 +722,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437374, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -46.241703
+      value: -45.94
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437374, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.71
+      value: 0.62
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437374, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_LocalPosition.z
@@ -842,11 +842,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099097381422365, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1953099097381422365, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_SortingLayerID
-      value: 2043650987
+      value: 2009331625
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c010b4df98189434592d83267037a796, type: 3}
@@ -1427,6 +1427,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChangeObjectLocker
       objectReference: {fileID: 0}
+    - target: {fileID: 4331887537617519519, guid: be8005aca6eaeb141aff45ac73e4bb95, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: ecf1c1ec53cb2e24bb744e14d841f4e6, type: 3}
     - target: {fileID: 4331887539123025247, guid: be8005aca6eaeb141aff45ac73e4bb95, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1563,6 +1567,10 @@ PrefabInstance:
       propertyPath: TextFade
       value: 
       objectReference: {fileID: 35571505}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 5cdfb99752b11604ba1e9d1bb27941dd, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
@@ -2705,11 +2713,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437374, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.210854
+      value: -15.060001
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437374, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.1875
+      value: -2.0225
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437374, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2825,11 +2833,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099097381422365, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1953099097381422365, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_SortingLayerID
-      value: 2043650987
+      value: 2009331625
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c010b4df98189434592d83267037a796, type: 3}
@@ -3312,6 +3320,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 35571505}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: ecf1c1ec53cb2e24bb744e14d841f4e6, type: 3}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: VisualObject
       value: 
       objectReference: {fileID: 1369304083}
@@ -3563,6 +3575,10 @@ PrefabInstance:
       propertyPath: TextFade
       value: 
       objectReference: {fileID: 35571505}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: daad041f7c813d643a0a8f754b0eb2df, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
@@ -4724,6 +4740,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 35571505}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: daad041f7c813d643a0a8f754b0eb2df, type: 3}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
       objectReference: {fileID: 1558304814}
@@ -5364,11 +5384,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437374, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -92.78341
+      value: -92.18
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437374, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.09
+      value: 3.5699997
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437374, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5484,11 +5504,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099097381422365, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1953099097381422365, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_SortingLayerID
-      value: 2043650987
+      value: 2009331625
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c010b4df98189434592d83267037a796, type: 3}
@@ -5804,6 +5824,10 @@ PrefabInstance:
       propertyPath: TextFade
       value: 
       objectReference: {fileID: 35571505}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 5cdfb99752b11604ba1e9d1bb27941dd, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
@@ -7409,6 +7433,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 35571505}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: daad041f7c813d643a0a8f754b0eb2df, type: 3}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
       objectReference: {fileID: 1558304814}
@@ -8053,6 +8081,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 35571505}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 5cdfb99752b11604ba1e9d1bb27941dd, type: 3}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
       objectReference: {fileID: 1558304814}
@@ -8291,6 +8323,10 @@ PrefabInstance:
       propertyPath: TextFade
       value: 
       objectReference: {fileID: 35571505}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 5cdfb99752b11604ba1e9d1bb27941dd, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 

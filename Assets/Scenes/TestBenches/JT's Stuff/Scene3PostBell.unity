@@ -199,6 +199,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 209708703}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: be9772d186ad1da44948dc1dd7f2264a, type: 3}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
       objectReference: {fileID: 1090692575}
@@ -435,6 +439,10 @@ PrefabInstance:
       propertyPath: TextFade
       value: 
       objectReference: {fileID: 209708703}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: be9772d186ad1da44948dc1dd7f2264a, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
@@ -3183,6 +3191,7 @@ MonoBehaviour:
   FailNotification: {fileID: 744772446}
   VisualObject: {fileID: 1979189839}
   TextFade: {fileID: 209708703}
+  soundEffect: {fileID: 8300000, guid: ecf1c1ec53cb2e24bb744e14d841f4e6, type: 3}
 --- !u!4 &578830857
 Transform:
   m_ObjectHideFlags: 0
@@ -3841,6 +3850,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 209708703}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 5cdfb99752b11604ba1e9d1bb27941dd, type: 3}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
       objectReference: {fileID: 1090692575}
@@ -3973,6 +3986,10 @@ PrefabInstance:
       propertyPath: TextFade
       value: 
       objectReference: {fileID: 209708703}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: be9772d186ad1da44948dc1dd7f2264a, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
@@ -6740,6 +6757,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 209708703}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: ecf1c1ec53cb2e24bb744e14d841f4e6, type: 3}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: VisualObject
       value: 
       objectReference: {fileID: 1506460625}
@@ -7441,6 +7462,10 @@ PrefabInstance:
       propertyPath: TextFade
       value: 
       objectReference: {fileID: 209708703}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: be9772d186ad1da44948dc1dd7f2264a, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
@@ -8630,6 +8655,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 209708703}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: be9772d186ad1da44948dc1dd7f2264a, type: 3}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
       objectReference: {fileID: 1090692575}
@@ -9710,6 +9739,10 @@ PrefabInstance:
       propertyPath: TextFade
       value: 
       objectReference: {fileID: 209708703}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: be9772d186ad1da44948dc1dd7f2264a, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
@@ -11657,6 +11690,7 @@ MonoBehaviour:
   FailNotification: {fileID: 0}
   VisualObject: {fileID: 1953099096887558925}
   TextFade: {fileID: 209708703}
+  soundEffect: {fileID: 0}
 --- !u!1 &1953099096004580460
 GameObject:
   m_ObjectHideFlags: 0
@@ -12299,6 +12333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FirstObject: {fileID: 4331887539236893207}
   SecondObject: {fileID: 4331887537621429421}
+  soundEffect: {fileID: 0}
   FailNotification: {fileID: 4331887538225950096}
   failAnimationDelay: 1
   enablingAnimationDelay: 0
@@ -12658,6 +12693,7 @@ MonoBehaviour:
   CorrectAnswer: 5
   currentAnswer: 3
   answerText: {fileID: 6132918088334939514}
+  soundEffect: {fileID: 8300000, guid: f280dc951a7a2ca488447397d9fa0887, type: 3}
 --- !u!1 &6132918086547973486
 GameObject:
   m_ObjectHideFlags: 0
@@ -13263,6 +13299,7 @@ MonoBehaviour:
   CorrectAnswer: 1
   currentAnswer: 0
   answerText: {fileID: 6132918087491298822}
+  soundEffect: {fileID: 8300000, guid: f280dc951a7a2ca488447397d9fa0887, type: 3}
 --- !u!1 &6132918086635791754
 GameObject:
   m_ObjectHideFlags: 0
@@ -13453,6 +13490,7 @@ MonoBehaviour:
   Second: {fileID: 4331887539119053422}
   CompletionDelay: 0
   disableDelay: 0
+  soundEffect: {fileID: 0}
   TriggerObject: {fileID: 6132918087294890669}
 --- !u!1 &6132918086713182800
 GameObject:
@@ -14000,6 +14038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameCanvas: {fileID: 6132918086644285545}
+  soundEffect: {fileID: 8300000, guid: f280dc951a7a2ca488447397d9fa0887, type: 3}
   disablingAnimationDelay: 0
   failNotification: {fileID: 0}
   failNotificationsDelay: 0
@@ -14274,6 +14313,7 @@ MonoBehaviour:
   CorrectAnswer: 0
   currentAnswer: 8
   answerText: {fileID: 6132918086911826496}
+  soundEffect: {fileID: 8300000, guid: f280dc951a7a2ca488447397d9fa0887, type: 3}
 --- !u!224 &6132918087548306311
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14834,6 +14874,7 @@ MonoBehaviour:
   CorrectAnswer: 1
   currentAnswer: 2
   answerText: {fileID: 6132918086713182802}
+  soundEffect: {fileID: 8300000, guid: f280dc951a7a2ca488447397d9fa0887, type: 3}
 --- !u!1 &6132918088137661167
 GameObject:
   m_ObjectHideFlags: 0

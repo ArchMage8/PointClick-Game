@@ -560,6 +560,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1337041420}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d1401351fed77f41b3ecf7a8ac55c7a, type: 3}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: VisualObject
       value: 
       objectReference: {fileID: 163842512}
@@ -853,6 +857,10 @@ PrefabInstance:
       propertyPath: TextFade
       value: 
       objectReference: {fileID: 1337041420}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d1401351fed77f41b3ecf7a8ac55c7a, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
@@ -1408,6 +1416,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1337041420}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d1401351fed77f41b3ecf7a8ac55c7a, type: 3}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
       objectReference: {fileID: 1964157615}
@@ -1935,6 +1947,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1337041420}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d1401351fed77f41b3ecf7a8ac55c7a, type: 3}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
       objectReference: {fileID: 1964157615}
@@ -2112,6 +2128,10 @@ PrefabInstance:
       propertyPath: TextFade
       value: 
       objectReference: {fileID: 1337041420}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d1401351fed77f41b3ecf7a8ac55c7a, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
@@ -2561,6 +2581,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1337041420}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d1401351fed77f41b3ecf7a8ac55c7a, type: 3}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
       objectReference: {fileID: 1964157615}
@@ -2746,6 +2770,10 @@ PrefabInstance:
       propertyPath: TextFade
       value: 
       objectReference: {fileID: 1337041420}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d1401351fed77f41b3ecf7a8ac55c7a, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
@@ -2945,6 +2973,10 @@ PrefabInstance:
       propertyPath: TextFade
       value: 
       objectReference: {fileID: 1337041420}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d1401351fed77f41b3ecf7a8ac55c7a, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
@@ -3474,6 +3506,10 @@ PrefabInstance:
       propertyPath: TextFade
       value: 
       objectReference: {fileID: 1337041420}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d1401351fed77f41b3ecf7a8ac55c7a, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
@@ -4214,6 +4250,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1337041420}
     - target: {fileID: 4331887537617519519, guid: be8005aca6eaeb141aff45ac73e4bb95, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: be9772d186ad1da44948dc1dd7f2264a, type: 3}
+    - target: {fileID: 4331887537617519519, guid: be8005aca6eaeb141aff45ac73e4bb95, type: 3}
       propertyPath: failAnimationDelay
       value: 0
       objectReference: {fileID: 0}
@@ -4355,6 +4395,10 @@ PrefabInstance:
       propertyPath: TextFade
       value: 
       objectReference: {fileID: 1337041420}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d1401351fed77f41b3ecf7a8ac55c7a, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
@@ -4652,6 +4696,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1337041420}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d1401351fed77f41b3ecf7a8ac55c7a, type: 3}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
       objectReference: {fileID: 1964157615}
@@ -4829,6 +4877,10 @@ PrefabInstance:
       propertyPath: TextFade
       value: 
       objectReference: {fileID: 1337041420}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d1401351fed77f41b3ecf7a8ac55c7a, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
@@ -5073,7 +5125,7 @@ PrefabInstance:
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[1]
       value: She really enjoys those cozy campfire videos and would rather change
-        the channel than turning the TV off.
+        the channel than turn the TV off.
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[2]
@@ -5361,6 +5413,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1337041420}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: bdcdcf294f0ae5c4f84a9f8032318101, type: 3}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
       objectReference: {fileID: 1964157615}
@@ -5608,6 +5664,10 @@ PrefabInstance:
       propertyPath: TextFade
       value: 
       objectReference: {fileID: 1337041420}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d1401351fed77f41b3ecf7a8ac55c7a, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
@@ -6485,6 +6545,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1337041420}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d1401351fed77f41b3ecf7a8ac55c7a, type: 3}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
       objectReference: {fileID: 1964157615}
@@ -6763,6 +6827,10 @@ PrefabInstance:
       propertyPath: TextFade
       value: 
       objectReference: {fileID: 1337041420}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d1401351fed77f41b3ecf7a8ac55c7a, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
@@ -7416,6 +7484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameCanvas: {fileID: 522831670401148976}
+  soundEffect: {fileID: 0}
   disablingAnimationDelay: 0
   failNotification: {fileID: 0}
   failNotificationsDelay: 0
@@ -7562,6 +7631,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 5
   keypadMain: {fileID: 522831670401148981}
+  soundEffect: {fileID: 0}
 --- !u!114 &522831669193375189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7754,6 +7824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 9
   keypadMain: {fileID: 522831670401148981}
+  soundEffect: {fileID: 0}
 --- !u!222 &522831669307857326
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7940,6 +8011,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 2
   keypadMain: {fileID: 522831670401148981}
+  soundEffect: {fileID: 0}
 --- !u!114 &522831669340513543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8312,6 +8384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 7
   keypadMain: {fileID: 522831670401148981}
+  soundEffect: {fileID: 0}
 --- !u!222 &522831669813413146
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8418,6 +8491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 1
   keypadMain: {fileID: 522831670401148981}
+  soundEffect: {fileID: 0}
 --- !u!1 &522831669910279719
 GameObject:
   m_ObjectHideFlags: 0
@@ -8534,6 +8608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 3
   keypadMain: {fileID: 522831670401148981}
+  soundEffect: {fileID: 0}
 --- !u!114 &522831670002747497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8850,6 +8925,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 8
   keypadMain: {fileID: 522831670401148981}
+  soundEffect: {fileID: 0}
 --- !u!222 &522831670277270686
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9033,6 +9109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 6
   keypadMain: {fileID: 522831670401148981}
+  soundEffect: {fileID: 0}
 --- !u!114 &522831670498174995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9368,6 +9445,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 4
   keypadMain: {fileID: 522831670401148981}
+  soundEffect: {fileID: 0}
 --- !u!114 &522831670558238499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9626,6 +9704,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 0
   keypadMain: {fileID: 522831670401148981}
+  soundEffect: {fileID: 0}
 --- !u!222 &522831670930070454
 CanvasRenderer:
   m_ObjectHideFlags: 0

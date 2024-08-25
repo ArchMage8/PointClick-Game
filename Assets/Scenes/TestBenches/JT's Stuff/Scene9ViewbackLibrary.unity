@@ -858,6 +858,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1337041420}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d1401351fed77f41b3ecf7a8ac55c7a, type: 3}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
       objectReference: {fileID: 1964157615}
@@ -2754,6 +2758,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1337041420}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d1401351fed77f41b3ecf7a8ac55c7a, type: 3}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
       objectReference: {fileID: 1964157615}
@@ -2956,6 +2964,10 @@ PrefabInstance:
       propertyPath: TextFade
       value: 
       objectReference: {fileID: 1337041420}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d1401351fed77f41b3ecf7a8ac55c7a, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
@@ -3493,6 +3505,10 @@ PrefabInstance:
       propertyPath: TextFade
       value: 
       objectReference: {fileID: 1337041420}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d1401351fed77f41b3ecf7a8ac55c7a, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
@@ -4367,6 +4383,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1337041420}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d1401351fed77f41b3ecf7a8ac55c7a, type: 3}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
       objectReference: {fileID: 1964157615}
@@ -4666,6 +4686,10 @@ PrefabInstance:
       propertyPath: TextFade
       value: 
       objectReference: {fileID: 1337041420}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d1401351fed77f41b3ecf7a8ac55c7a, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
@@ -6540,6 +6564,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1337041420}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d1401351fed77f41b3ecf7a8ac55c7a, type: 3}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
       objectReference: {fileID: 1964157615}
@@ -6822,6 +6850,10 @@ PrefabInstance:
       propertyPath: TextFade
       value: 
       objectReference: {fileID: 1337041420}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d1401351fed77f41b3ecf7a8ac55c7a, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 

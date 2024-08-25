@@ -367,6 +367,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1655305548}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: daad041f7c813d643a0a8f754b0eb2df, type: 3}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
       objectReference: {fileID: 194199356}
@@ -1436,6 +1440,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1655305548}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: be9772d186ad1da44948dc1dd7f2264a, type: 3}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
       objectReference: {fileID: 194199356}
@@ -1731,6 +1739,10 @@ PrefabInstance:
       propertyPath: TextFade
       value: 
       objectReference: {fileID: 1655305548}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: be9772d186ad1da44948dc1dd7f2264a, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
@@ -2030,6 +2042,10 @@ PrefabInstance:
       propertyPath: TextFade
       value: 
       objectReference: {fileID: 1655305548}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: be9772d186ad1da44948dc1dd7f2264a, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 
@@ -2891,6 +2907,10 @@ PrefabInstance:
       propertyPath: TextFade
       value: 
       objectReference: {fileID: 1655305548}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: daad041f7c813d643a0a8f754b0eb2df, type: 3}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: dialogueController
       value: 

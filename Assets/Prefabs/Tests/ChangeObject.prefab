@@ -163,6 +163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FirstObject: {fileID: 4331887537533774823}
   SecondObject: {fileID: 4331887539123025245}
+  soundEffect: {fileID: 8300000, guid: be9772d186ad1da44948dc1dd7f2264a, type: 3}
   FailNotification: {fileID: 4331887537714213984}
   failAnimationDelay: 1
   enablingAnimationDelay: 0

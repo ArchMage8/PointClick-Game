@@ -54,11 +54,13 @@ MonoBehaviour:
   Sentences:
   - My Name is banana
   - What is yours
+  colorHexCodes: []
   failAnimationDelay: 0
   animationDelay: 0
   FailNotification: {fileID: 1953099096939847213}
   VisualObject: {fileID: 1953099096671181851}
   TextFade: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: be9772d186ad1da44948dc1dd7f2264a, type: 3}
 --- !u!114 &1953099096220437368
 MonoBehaviour:
   m_ObjectHideFlags: 0
