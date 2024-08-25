@@ -401,6 +401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 6
   keypadMain: {fileID: 522831669340118874}
+  soundEffect: {fileID: 0}
 --- !u!1 &522831669340118879
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,7 +479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -660,6 +661,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 8
   keypadMain: {fileID: 522831669340118874}
+  soundEffect: {fileID: 0}
 --- !u!1 &522831669723435075
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,6 +798,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 4
   keypadMain: {fileID: 522831669340118874}
+  soundEffect: {fileID: 0}
 --- !u!1 &522831669864795334
 GameObject:
   m_ObjectHideFlags: 0
@@ -1067,6 +1070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 0
   keypadMain: {fileID: 522831669340118874}
+  soundEffect: {fileID: 0}
 --- !u!1 &522831669936469345
 GameObject:
   m_ObjectHideFlags: 0
@@ -1269,6 +1273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 5
   keypadMain: {fileID: 522831669340118874}
+  soundEffect: {fileID: 0}
 --- !u!1 &522831670061171484
 GameObject:
   m_ObjectHideFlags: 0
@@ -1438,6 +1443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameCanvas: {fileID: 522831669340118879}
+  soundEffect: {fileID: 0}
   disablingAnimationDelay: 0
   failNotification: {fileID: 0}
   failNotificationsDelay: 0
@@ -1688,6 +1694,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 2
   keypadMain: {fileID: 522831669340118874}
+  soundEffect: {fileID: 0}
 --- !u!1 &522831670409727024
 GameObject:
   m_ObjectHideFlags: 0
@@ -1890,6 +1897,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 9
   keypadMain: {fileID: 522831669340118874}
+  soundEffect: {fileID: 0}
 --- !u!1 &522831670750751906
 GameObject:
   m_ObjectHideFlags: 0
@@ -2226,6 +2234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 3
   keypadMain: {fileID: 522831669340118874}
+  soundEffect: {fileID: 0}
 --- !u!1 &522831670904201544
 GameObject:
   m_ObjectHideFlags: 0
@@ -2362,6 +2371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 1
   keypadMain: {fileID: 522831669340118874}
+  soundEffect: {fileID: 0}
 --- !u!1 &522831670974916162
 GameObject:
   m_ObjectHideFlags: 0
@@ -2562,6 +2572,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 7
   keypadMain: {fileID: 522831669340118874}
+  soundEffect: {fileID: 0}
 --- !u!1 &525024534689444734
 GameObject:
   m_ObjectHideFlags: 0
