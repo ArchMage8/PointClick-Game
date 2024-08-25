@@ -53,7 +53,7 @@ public class SceneLoader : MonoBehaviour
 
     private IEnumerator LoadingScene()
     {
-        DecreaseVolume(2f);
+        //DecreaseVolume(2f);
         LevelLoader.SetActive(true);
         audioSource.PlayOneShot(soundEffect);
         Animator LevelLoad = LevelLoader.GetComponentInChildren<Animator>();

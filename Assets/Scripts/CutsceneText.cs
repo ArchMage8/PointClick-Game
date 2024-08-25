@@ -30,7 +30,7 @@ public class CutsceneText : MonoBehaviour
     {
         if (Index >= Sentences.Length)
         {
-            SceneManager.LoadScene(DestinationScene);
+            StartCoroutine(LoadNext());
         }
 
         else if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
@@ -78,5 +78,18 @@ public class CutsceneText : MonoBehaviour
                 DialogueText.color = newColor;
             }
         }
+    }
+
+    private IEnumerator LoadNext()
+    {
+        bool temp = false;
+
+        if (!isTyping && !temp)
+        {
+            temp = true;
+            yield return new WaitForSeconds(1f);
+            SceneManager.LoadScene(DestinationScene);
+        }
+        temp = false;
     }
 }
