@@ -1,8 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+
 public class CameraMover : MonoBehaviour
 {
+    public static CameraMover Instance { get; private set; }
+
     public float moveSpeed = 5f;
     [SerializeField] private int maxLeft;
     [SerializeField] private int maxRight;
@@ -15,7 +16,23 @@ public class CameraMover : MonoBehaviour
 
     private bool isMovingLeft = false;
     private bool isMovingRight = false;
-    void Update()
+
+    public bool isMoving = false;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            //DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void Update()
     {
         if (isMovingLeft)
         {
@@ -30,41 +47,45 @@ public class CameraMover : MonoBehaviour
         {
             leftVisual.SetActive(false);
         }
-
         else if (ReachedRight && !ReachedLeft)
         {
-           rightVisual.SetActive(false);
+            rightVisual.SetActive(false);
         }
-
         else if (!ReachedLeft && !ReachedRight)
         {
             leftVisual.SetActive(true);
             rightVisual.SetActive(true);
-          
-        }    
+        }
     }
+
     public void GoingLeft()
     {
         ReachedRight = false;
         isMovingLeft = true;
+        isMoving = true;
     }
+
     public void StoppingLeft()
     {
         isMovingLeft = false;
+        isMoving = false;
     }
+
     public void GoingRight()
     {
         ReachedLeft = false;
         isMovingRight = true;
+        isMoving = true;
     }
+
     public void StoppingRight()
     {
         isMovingRight = false;
+        isMoving = false;
     }
 
     private void MoveLeft()
     {
-     
         if (transform.position.x > maxLeft)
         {
             ReachedLeft = false;
@@ -78,7 +99,6 @@ public class CameraMover : MonoBehaviour
 
     private void MoveRight()
     {
-       
         if (transform.position.x < maxRight)
         {
             ReachedRight = false;

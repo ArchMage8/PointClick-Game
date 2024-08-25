@@ -8,6 +8,7 @@ public class AnimatedCursor : MonoBehaviour
     public Texture2D[] defaultCursorTextures;
     public Texture2D[] interactableCursorTextures;
     private ClickObjects clickObjects;
+    private CameraMover camMover;
 
 
     public float frameRate = 0.1f;
@@ -26,6 +27,7 @@ public class AnimatedCursor : MonoBehaviour
     void Start()
     {
         clickObjects = FindObjectOfType<ClickObjects>();
+        camMover = FindObjectOfType<CameraMover>();
 
         currentCursorTextures = defaultCursorTextures;
         if (currentCursorTextures.Length > 0)
@@ -61,7 +63,7 @@ public class AnimatedCursor : MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit2D hit = Physics2D.GetRayIntersection(ray, Mathf.Infinity, interactableLayer);
 
-        if (hit.collider != null)
+        if (hit.collider != null && !camMover.isMoving)
         {
             hasBeenInteractedHolder = hit.collider.gameObject.GetComponent<HasBeenInteractedHolder>();
 
