@@ -12,7 +12,7 @@ public class BGMHandler : MonoBehaviour
     private int destroyOnSceneIndex;
     [SerializeField]
     private float volumeIncreaseDuration = 5.0f;
-    [SerializeField]
+
     private AudioSource bgmSource;
 
     private void Awake()
@@ -25,7 +25,11 @@ public class BGMHandler : MonoBehaviour
             if (!hasInitialized)
             {
                 Initialize();
-                StartCoroutine(GraduallyIncreaseVolume());
+                bgmSource = GetComponent<AudioSource>();
+                if (bgmSource != null)
+                {
+                    StartCoroutine(GraduallyIncreaseVolume());
+                }
             }
         }
         else

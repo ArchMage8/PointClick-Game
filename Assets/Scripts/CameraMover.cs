@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class CameraMover : MonoBehaviour
 {
@@ -38,18 +39,21 @@ public class CameraMover : MonoBehaviour
             }
         }
 
-        if (ReachedLeft)
+        if (transform.position.x <= maxLeft)
         {
+            EventSystem.current.SetSelectedGameObject(null);
             LeftButton.SetActive(false);
         }
 
         else
         {
+            
             LeftButton.SetActive(true);
         }
 
-        if (ReachedRight)
+        if (transform.position.x >= maxRight)
         {
+            EventSystem.current.SetSelectedGameObject(null);
             RightButton.SetActive(false);
         }
 
@@ -83,25 +87,21 @@ public class CameraMover : MonoBehaviour
     {
         if (transform.position.x > maxLeft)
         {
+            ReachedLeft = false;
             transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
         }
-        else if(transform.position.x <= maxLeft)
-        {
-            ReachedLeft = true;
-        }
+       
     }
 
     private void MoveRight()
     {
         if (transform.position.x < maxRight)
         {
+            ReachedRight = false;
             transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
 
         }
 
-        else if (transform.position.x >= maxRight)
-        {
-            ReachedRight = true;
-        }
+       
     }
 }
