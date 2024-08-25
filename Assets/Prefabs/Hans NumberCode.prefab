@@ -440,6 +440,7 @@ MonoBehaviour:
   CorrectAnswer: 0
   currentAnswer: 2
   answerText: {fileID: 6132918088288987351}
+  soundEffect: {fileID: 8300000, guid: f280dc951a7a2ca488447397d9fa0887, type: 3}
 --- !u!1 &6132918086599768189
 GameObject:
   m_ObjectHideFlags: 0
@@ -1305,6 +1306,7 @@ MonoBehaviour:
   CorrectAnswer: 0
   currentAnswer: 8
   answerText: {fileID: 6132918087414020293}
+  soundEffect: {fileID: 8300000, guid: f280dc951a7a2ca488447397d9fa0887, type: 3}
 --- !u!1 &6132918087303692869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1630,6 +1632,7 @@ MonoBehaviour:
   Second: {fileID: 6132918087536686025}
   CompletionDelay: 2
   disableDelay: 5
+  soundEffect: {fileID: 0}
   TriggerObject: {fileID: 6132918087906574394}
 --- !u!1 &6132918087491802909
 GameObject:
@@ -1861,6 +1864,7 @@ MonoBehaviour:
   CorrectAnswer: 0
   currentAnswer: 1
   answerText: {fileID: 6132918086636295313}
+  soundEffect: {fileID: 8300000, guid: f280dc951a7a2ca488447397d9fa0887, type: 3}
 --- !u!1 &6132918087536686025
 GameObject:
   m_ObjectHideFlags: 0
@@ -2549,6 +2553,7 @@ MonoBehaviour:
   CorrectAnswer: 0
   currentAnswer: 2
   answerText: {fileID: 6132918086866528237}
+  soundEffect: {fileID: 8300000, guid: f280dc951a7a2ca488447397d9fa0887, type: 3}
 --- !u!1 &6132918087816704591
 GameObject:
   m_ObjectHideFlags: 0
@@ -2824,6 +2829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameCanvas: {fileID: 6132918087482782462}
+  soundEffect: {fileID: 8300000, guid: f280dc951a7a2ca488447397d9fa0887, type: 3}
   disablingAnimationDelay: 0
   failNotification: {fileID: 0}
   failNotificationsDelay: 0
