@@ -10,7 +10,8 @@ public class MainMenuSwapper : MonoBehaviour
 
     [SerializeField] private GameObject LevelLoader;
     [SerializeField] private int DestintationInt;
-    [SerializeField] private AudioClip soundEffect;
+    [SerializeField] private AudioClip AlarmSoundEffect;
+    [SerializeField] private AudioClip ButtonPressSound;
     private Animator LoaderAnimator;
     private AudioSource audioSource;
 
@@ -37,13 +38,12 @@ public class MainMenuSwapper : MonoBehaviour
     {
         initialObject.SetActive(false);
         secondObject.SetActive(true);
-        playTheGame();
+        PlayGame();
     }
 
     public void PlayGame()
     {
         StartCoroutine(playTheGame());
-        audioSource.PlayOneShot(soundEffect);
     }
 
     private IEnumerator playTheGame()
@@ -56,6 +56,8 @@ public class MainMenuSwapper : MonoBehaviour
 
         else
         {
+            DecreaseVolume(2f);
+            audioSource.PlayOneShot(AlarmSoundEffect);
             yield return new WaitForSeconds(1.5f);
             LevelLoader.SetActive(true);
             LoaderAnimator.SetTrigger("EndOfScene");
@@ -66,6 +68,37 @@ public class MainMenuSwapper : MonoBehaviour
 
     public void Quit()
     {
+       StartCoroutine(QuitGame());
+    }
+
+    private IEnumerator QuitGame()
+    {
+        DecreaseVolume(2f);
+        audioSource.PlayOneShot(ButtonPressSound);
+        yield return new WaitForSeconds(1.5f);
+        LevelLoader.SetActive(true);
+        LoaderAnimator.SetTrigger("EndOfScene");
+        yield return new WaitForSeconds(1.5f);
         Application.Quit();
+    }
+
+    public void DecreaseVolume(float duration)
+    {
+        StartCoroutine(FadeOutVolume(duration));
+    }
+
+    private IEnumerator FadeOutVolume(float duration)
+    {
+        float startVolume = audioSource.volume;
+        float elapsedTime = 0f;
+
+        while (elapsedTime < duration)
+        {
+            audioSource.volume = Mathf.Lerp(startVolume, 0f, elapsedTime / duration);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        audioSource.volume = 0f;
     }
 }

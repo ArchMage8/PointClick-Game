@@ -65,7 +65,7 @@ public class AnimatedCursor : MonoBehaviour
         {
             hasBeenInteractedHolder = hit.collider.gameObject.GetComponent<HasBeenInteractedHolder>();
 
-            if (clickObjects.CanClick && !hasBeenInteractedHolder.HasBeenInteracted)
+            if (clickObjects.CanClick)
             {
                 hotSpot = HoverHotSpot;
                 currentCursorTextures = interactableCursorTextures;
