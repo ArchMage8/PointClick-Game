@@ -623,6 +623,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChangeObjectLocker
       objectReference: {fileID: 0}
+    - target: {fileID: 4331887537617519519, guid: be8005aca6eaeb141aff45ac73e4bb95, type: 3}
+      propertyPath: TextFade
+      value: 
+      objectReference: {fileID: 35571505}
     - target: {fileID: 4331887539123025247, guid: be8005aca6eaeb141aff45ac73e4bb95, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1434,7 +1438,7 @@ PrefabInstance:
     - target: {fileID: 4331887537617519519, guid: be8005aca6eaeb141aff45ac73e4bb95, type: 3}
       propertyPath: soundEffect
       value: 
-      objectReference: {fileID: 8300000, guid: ecf1c1ec53cb2e24bb744e14d841f4e6, type: 3}
+      objectReference: {fileID: 8300000, guid: c22c8292520aeaa4ca539ee3c059eec8, type: 3}
     - target: {fileID: 4331887539123025247, guid: be8005aca6eaeb141aff45ac73e4bb95, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -6695,7 +6699,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1181698921}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.462017, y: 0.9612265, z: -0.03512173}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
