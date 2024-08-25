@@ -45,6 +45,7 @@ public class CameraMover : MonoBehaviour
     }
     public void GoingLeft()
     {
+        ReachedRight = false;
         isMovingLeft = true;
     }
     public void StoppingLeft()
@@ -53,6 +54,7 @@ public class CameraMover : MonoBehaviour
     }
     public void GoingRight()
     {
+        ReachedLeft = false;
         isMovingRight = true;
     }
     public void StoppingRight()
