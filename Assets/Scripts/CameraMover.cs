@@ -19,6 +19,13 @@ public class CameraMover : MonoBehaviour
 
     public bool isMoving = false;
 
+    private ClickObjects clickObjects;
+
+    private void Start()
+    {
+        clickObjects = FindObjectOfType<ClickObjects>();
+    }
+
     private void Awake()
     {
         if (Instance == null)
@@ -34,13 +41,16 @@ public class CameraMover : MonoBehaviour
 
     private void Update()
     {
-        if (isMovingLeft)
+        if (clickObjects.CanClick)
         {
-            MoveLeft();
-        }
-        else if (isMovingRight)
-        {
-            MoveRight();
+            if (isMovingLeft)
+            {
+                MoveLeft();
+            }
+            else if (isMovingRight)
+            {
+                MoveRight();
+            }
         }
 
         if (ReachedLeft && !ReachedRight)

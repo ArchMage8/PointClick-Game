@@ -24,6 +24,7 @@ public class AnimatedCursor : MonoBehaviour
     private float timer;
     private HasBeenInteractedHolder hasBeenInteractedHolder;
 
+
     void Start()
     {
         clickObjects = FindObjectOfType<ClickObjects>();
