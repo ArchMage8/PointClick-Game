@@ -80,7 +80,7 @@ public class CameraMover : MonoBehaviour
         if (transform.position.x < maxRight)
         {
             ReachedRight = false;
-            transform.Translate(Vector3.right * moveSpeed * Time.deltaTime;
+            transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
         }
         else
         {
