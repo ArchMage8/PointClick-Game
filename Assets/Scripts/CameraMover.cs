@@ -7,12 +7,6 @@ public class CameraMover : MonoBehaviour
     [SerializeField] private int maxLeft;
     [SerializeField] private int maxRight;
 
-    [SerializeField] private GameObject leftVisual;
-    [SerializeField] private GameObject rightVisual;
-
-    private bool ReachedLeft;
-    private bool ReachedRight;
-
     private bool isMovingLeft = false;
     private bool isMovingRight = false;
     void Update()
@@ -24,22 +18,6 @@ public class CameraMover : MonoBehaviour
         else if (isMovingRight)
         {
             MoveRight();
-        }
-
-        if (ReachedLeft && !ReachedRight)
-        {
-            leftVisual.SetActive(false);
-        }
-
-        else if (ReachedRight && !ReachedLeft)
-        {
-            rightVisual.SetActive(false);
-        }
-
-        else if(!ReachedLeft && !ReachedRight) { 
-        
-              leftVisual.SetActive(true);
-              rightVisual.SetActive(true);
         }
     }
     public void GoingLeft()
@@ -64,12 +42,7 @@ public class CameraMover : MonoBehaviour
         transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
         if (transform.position.x > maxLeft)
         {
-            ReachedLeft = false;
             transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
-        }
-        else
-        {
-            ReachedLeft = true;
         }
     }
 
@@ -78,12 +51,8 @@ public class CameraMover : MonoBehaviour
         transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
         if (transform.position.x < maxRight)
         {
-            ReachedRight = false;
             transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
-        }
-        else
-        {
-            ReachedRight = true;
+
         }
     }
 }
