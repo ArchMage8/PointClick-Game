@@ -416,6 +416,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c010b4df98189434592d83267037a796, type: 3}
+--- !u!1 &115251251 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1953099096220437370, guid: c010b4df98189434592d83267037a796, type: 3}
+  m_PrefabInstance: {fileID: 115251250}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &115251252 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1953099096220437374, guid: c010b4df98189434592d83267037a796, type: 3}
@@ -1468,6 +1473,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c010b4df98189434592d83267037a796, type: 3}
+--- !u!1 &1136241567 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1953099096220437370, guid: c010b4df98189434592d83267037a796, type: 3}
+  m_PrefabInstance: {fileID: 1136241566}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1136241568 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1953099096220437374, guid: c010b4df98189434592d83267037a796, type: 3}
@@ -1845,6 +1855,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1375820870}
     m_Modifications:
+    - target: {fileID: 1953099096220437368, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: interactableObjects.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437368, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: interactableObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 1136241567}
+    - target: {fileID: 1953099096220437368, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: interactableObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 115251251}
+    - target: {fileID: 1953099096220437368, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: interactableObjects.Array.data[2]
+      value: 
+      objectReference: {fileID: 1772770908}
     - target: {fileID: 1953099096220437370, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Name
       value: InteractObjectPrincipal
@@ -2800,15 +2826,15 @@ PrefabInstance:
       objectReference: {fileID: 194199356}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[0]
-      value: I wish I didn't go into that room.
+      value: What am I going to do now?
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[1]
-      value: What am I going to do now?
+      value: Definitely not running back into that room.
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[2]
@@ -2816,7 +2842,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: colorHexCodes.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite
@@ -2847,6 +2873,11 @@ PrefabInstance:
 --- !u!4 &1772770907 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1953099096220437374, guid: c010b4df98189434592d83267037a796, type: 3}
+  m_PrefabInstance: {fileID: 1772770906}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1772770908 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1953099096220437370, guid: c010b4df98189434592d83267037a796, type: 3}
   m_PrefabInstance: {fileID: 1772770906}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1778037730
@@ -3261,6 +3292,7 @@ MonoBehaviour:
   maxRight: 10
   leftVisual: {fileID: 196410652}
   rightVisual: {fileID: 196410653}
+  isMoving: 0
 --- !u!114 &2016856084
 MonoBehaviour:
   m_ObjectHideFlags: 0

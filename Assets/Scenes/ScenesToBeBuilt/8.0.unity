@@ -1365,6 +1365,7 @@ MonoBehaviour:
   maxRight: 10
   leftVisual: {fileID: 1886652966}
   rightVisual: {fileID: 1886652967}
+  isMoving: 0
 --- !u!114 &286095188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5258,28 +5259,27 @@ PrefabInstance:
       objectReference: {fileID: 1964157615}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[0]
-      value: '"Excuse me, miss.."'
+      value: Do you need some books Ethan
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[1]
-      value: '"Ethan! How are you? What do you need?"'
+      value: ...
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[2]
-      value: '"I need some books to prepare for today''s test..."'
+      value: Which ones do you need?
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[3]
-      value: '"Oh I got you, Ethan. No need to worry, just let me know which books
-        you need."'
+      value: ...
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[4]
-      value: 
+      value: Come on now, dont be shy
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[5]
@@ -5291,19 +5291,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: colorHexCodes.Array.data[0]
-      value: FFFFFF
+      value: FFF838
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: colorHexCodes.Array.data[1]
-      value: FFEE00
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: colorHexCodes.Array.data[2]
-      value: FFFFFF
+      value: FFF838
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: colorHexCodes.Array.data[3]
-      value: FFEE00
+      value: FFF838
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite

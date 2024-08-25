@@ -1562,7 +1562,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 548265749}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -33.94, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1617,10 +1617,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  maxLeft: -49
-  maxRight: 10
+  maxLeft: -37
+  maxRight: -30
   leftVisual: {fileID: 645983129}
   rightVisual: {fileID: 645983130}
+  isMoving: 0
 --- !u!1 &598444952
 GameObject:
   m_ObjectHideFlags: 0
@@ -2202,6 +2203,10 @@ PrefabInstance:
       value: 13.307655
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437373, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437373, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Offset.x
       value: 0.02652502
       objectReference: {fileID: 0}
@@ -2227,7 +2232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437374, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -661.96936
+      value: -695.54
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437374, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5414,20 +5419,19 @@ PrefabInstance:
       objectReference: {fileID: 1090692575}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[0]
-      value: 'Ethan: "Hey Eko.. Can I borrow your notes from last year?"'
+      value: Man do you need my notes?
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[1]
-      value: 'Eko: "Ethan! Man, of course! It''s in my locker, I''ll unlock it for
-        you."'
+      value: ...
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[2]
-      value: 'Eko: "How are you, man? How have you been?"'
+      value: Here you can have them...
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[3]
@@ -5443,15 +5447,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: colorHexCodes.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: colorHexCodes.Array.data[0]
-      value: FFFFFF
+      value: 00ff00
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: colorHexCodes.Array.data[1]
-      value: 00FF00
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.data[2]
+      value: 00ff00
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite

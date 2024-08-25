@@ -192,11 +192,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.size
-      value: 18
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[0]
-      value: '"I''ve gotten reports of a few missing items."'
+      value: What were you doing Ethan
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[1]
@@ -204,63 +204,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[2]
-      value: '"Please tell me, Ethan."'
+      value: Keeping silent will not help you
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[3]
-      value: '"What''s gotten into you?"'
+      value: ...
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[4]
-      value: ...
+      value: Its just...
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[5]
-      value: '"You used to be very active around this school."'
+      value: Its too much...
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[6]
-      value: '"Then, ever since you''ve failed your grades.."'
+      value: I just need help...
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[7]
-      value: ...
+      value: Its too much...
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[8]
-      value: '"Ethan."'
+      value: I just need some help...
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[9]
-      value: '"Know that you''re not alone. Never alone."'
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[10]
-      value: ...
-      objectReference: {fileID: 0}
-    - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
-      propertyPath: Sentences.Array.data[11]
       value: '"I know that you feel ashamed and embarrassed to be here."'
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
-      propertyPath: Sentences.Array.data[12]
+      propertyPath: Sentences.Array.data[11]
       value: '"..but please."'
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
-      propertyPath: Sentences.Array.data[13]
+      propertyPath: Sentences.Array.data[12]
       value: '"Please don''t turn your back on us."'
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
-      propertyPath: Sentences.Array.data[14]
+      propertyPath: Sentences.Array.data[13]
       value: '"Eko would''ve given you those notes if you asked."'
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
-      propertyPath: Sentences.Array.data[15]
+      propertyPath: Sentences.Array.data[14]
       value: ...
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
-      propertyPath: Sentences.Array.data[16]
+      propertyPath: Sentences.Array.data[15]
       value: '"He''s your friend since elementary, he won''t ignore you."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: Sentences.Array.data[16]
+      value: ...
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.data[17]
@@ -276,35 +276,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: colorHexCodes.Array.size
-      value: 18
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: colorHexCodes.Array.data[0]
-      value: DDDDFF
+      value: 0048FF
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: colorHexCodes.Array.data[2]
-      value: DDDDFF
+      value: 0048FF
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: colorHexCodes.Array.data[3]
-      value: DDDDFF
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: colorHexCodes.Array.data[4]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: colorHexCodes.Array.data[5]
-      value: DDDDFF
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: colorHexCodes.Array.data[6]
-      value: DDDDFF
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: colorHexCodes.Array.data[8]
-      value: DDDDFF
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: colorHexCodes.Array.data[9]
-      value: DDDDFF
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: colorHexCodes.Array.data[11]

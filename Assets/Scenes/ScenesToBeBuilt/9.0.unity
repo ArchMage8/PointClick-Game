@@ -612,19 +612,19 @@ PrefabInstance:
       objectReference: {fileID: 427934076}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[0]
-      value: '"It''s in the file cabinet."'
+      value: You couldve just ask me you know
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[1]
-      value: '"What''s gotten into you?"'
+      value: You didnt have to knock down my photo
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[2]
-      value: ...
+      value: The code is 2311 by the way
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[3]
@@ -700,10 +700,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: colorHexCodes.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: colorHexCodes.Array.data[0]
+      value: DDDDFF
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: colorHexCodes.Array.data[1]
       value: DDDDFF
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
@@ -2043,6 +2047,10 @@ PrefabInstance:
       value: 13.307655
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437373, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437373, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Offset.x
       value: 0.02652502
       objectReference: {fileID: 0}
@@ -2068,7 +2076,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437374, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.62
+      value: 5.31
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437374, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4925,6 +4933,7 @@ MonoBehaviour:
   maxRight: 6
   leftVisual: {fileID: 2066239262}
   rightVisual: {fileID: 2066239263}
+  isMoving: 0
 --- !u!114 &1770694616
 MonoBehaviour:
   m_ObjectHideFlags: 0

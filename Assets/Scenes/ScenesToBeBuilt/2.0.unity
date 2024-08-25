@@ -208,11 +208,11 @@ PrefabInstance:
       objectReference: {fileID: 1090692575}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[0]
-      value: That broom has seen it's days.
+      value: That broom has seen better days.
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[1]
-      value: From confetti strings to broken glass.
+      value: Its so dirty
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: colorHexCodes.Array.size
@@ -1159,19 +1159,19 @@ PrefabInstance:
       objectReference: {fileID: 1090692575}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[0]
-      value: Just announcements about school events.
+      value: The board of the distingushed
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[1]
-      value: Not like I'm gonna attend any of them...
+      value: All my friends are on there
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[2]
-      value: 
+      value: When will it be my turn?
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[3]
@@ -1179,7 +1179,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: colorHexCodes.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite
@@ -3136,6 +3136,7 @@ MonoBehaviour:
   maxRight: 10
   leftVisual: {fileID: 439252282}
   rightVisual: {fileID: 242350886}
+  isMoving: 0
 --- !u!224 &583526352 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6132918087491802908, guid: 7813b3c778777ed4896f01110e90b7fb, type: 3}
@@ -3840,7 +3841,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[1]
-      value: I have to break into his.
+      value: Where can i get more notes?
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[2]
@@ -6081,6 +6082,10 @@ PrefabInstance:
       propertyPath: TextFade
       value: 
       objectReference: {fileID: 209708703}
+    - target: {fileID: 4331887537617519519, guid: be8005aca6eaeb141aff45ac73e4bb95, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 1d892980ef6e425498413a9fd1f0cf8b, type: 3}
     - target: {fileID: 4331887538380831698, guid: be8005aca6eaeb141aff45ac73e4bb95, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -6342,23 +6347,27 @@ PrefabInstance:
       objectReference: {fileID: 1090692575}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[0]
-      value: When it rings, breaktime starts.
+      value: The bell marks breaktime
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[1]
-      value: If only I had the power to determine when..
+      value: The only time i feel away from the stress
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[2]
-      value: It's scheduled from a computer though...
+      value: Is there a way to turn it on?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: Sentences.Array.data[3]
+      value: The control room is nearby...
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: colorHexCodes.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096671181849, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_Sprite
@@ -7769,11 +7778,11 @@ PrefabInstance:
       objectReference: {fileID: 1090692575}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[0]
-      value: They're standing infront of his locker.
+      value: They're blocking the lockers
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[1]
-      value: Unless it's breaktime, they won't move.
+      value: I need to get them to move
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: colorHexCodes.Array.size
