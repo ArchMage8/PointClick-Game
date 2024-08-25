@@ -28,23 +28,18 @@ public class CameraMover : MonoBehaviour
 
         if (ReachedLeft && !ReachedRight)
         {
-            SpriteRenderer LeftRenderer = leftVisual.GetComponent<SpriteRenderer>();
-            LeftRenderer.enabled = false;
+            leftVisual.SetActive(false);
         }
 
         else if (ReachedRight && !ReachedLeft)
         {
-            SpriteRenderer RightRenderer = leftVisual.GetComponent<SpriteRenderer>();
-            RightRenderer.enabled = false;
+            rightVisual.SetActive(false);
         }
 
         else if(!ReachedLeft && !ReachedRight) { 
         
-                SpriteRenderer LeftRenderer = leftVisual.GetComponent<SpriteRenderer>();
-                LeftRenderer.enabled = true;
-
-                SpriteRenderer RightRenderer = leftVisual.GetComponent<SpriteRenderer>();
-                RightRenderer.enabled = true;
+              leftVisual.SetActive(true);
+              rightVisual.SetActive(true);
         }
     }
     public void GoingLeft()
