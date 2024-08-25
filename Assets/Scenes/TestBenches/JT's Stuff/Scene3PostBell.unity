@@ -3002,6 +3002,8 @@ MonoBehaviour:
   moveSpeed: 5
   maxLeft: -10
   maxRight: 10
+  LeftButton: {fileID: 0}
+  RightButton: {fileID: 0}
 --- !u!1 &554561646
 GameObject:
   m_ObjectHideFlags: 0
@@ -9095,7 +9097,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6ae94632edf8fc84992ab0519ab8f3e6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 63de374a26ada944b9fc3714a3358845, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
