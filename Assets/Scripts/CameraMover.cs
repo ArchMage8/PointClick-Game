@@ -1,64 +1,60 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-
 public class CameraMover : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    [SerializeField] private float maxLeft;
-    [SerializeField] private float maxRight;
+    [SerializeField] private int maxLeft;
+    [SerializeField] private int maxRight;
 
-    [SerializeField] private Button leftButton;
-    [SerializeField] private Button rightButton;
+    [SerializeField] private GameObject leftVisual;
+    [SerializeField] private GameObject rightVisual;
+
+    private bool ReachedLeft;
+    private bool ReachedRight;
 
     private bool isMovingLeft = false;
     private bool isMovingRight = false;
-
-    private ClickObjects clickObjects;
-
-    private void Start()
+    void Update()
     {
-        clickObjects = FindObjectOfType<ClickObjects>();
-        if (leftButton != null && rightButton != null)
+        if (isMovingLeft)
         {
-            leftButton.onClick.AddListener(GoingLeft);
-            rightButton.onClick.AddListener(GoingRight);
+            MoveLeft();
         }
-    }
-
-    private void Update()
-    {
-        if (clickObjects.CanClick)
+        else if (isMovingRight)
         {
-            if (isMovingLeft)
-            {
-                MoveLeft();
-            }
-            else if (isMovingRight)
-            {
-                MoveRight();
-            }
+            MoveRight();
         }
 
-        UpdateButtonStates();
-    }
+        if (ReachedLeft && !ReachedRight)
+        {
+            SpriteRenderer LeftRenderer = leftVisual.GetComponent<SpriteRenderer>();
+            LeftRenderer.enabled = false;
+        }
 
+        else if (ReachedRight && !ReachedLeft)
+        {
+            SpriteRenderer RightRenderer = leftVisual.GetComponent<SpriteRenderer>();
+            RightRenderer.enabled = false;
+        }
+
+        else
+        {
+
+        }
+    }
     public void GoingLeft()
     {
         isMovingLeft = true;
     }
-
     public void StoppingLeft()
     {
         isMovingLeft = false;
     }
-
     public void GoingRight()
     {
         isMovingRight = true;
     }
-
     public void StoppingRight()
     {
         isMovingRight = false;
@@ -66,37 +62,29 @@ public class CameraMover : MonoBehaviour
 
     private void MoveLeft()
     {
+        transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
         if (transform.position.x > maxLeft)
         {
+            ReachedLeft = false;
             transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
         }
         else
         {
-            StoppingLeft();
+            ReachedLeft = true;
         }
     }
 
     private void MoveRight()
     {
+        transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
         if (transform.position.x < maxRight)
         {
-            transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
+            ReachedRight = false;
+            transform.Translate(Vector3.right * moveSpeed * Time.deltaTime;
         }
         else
         {
-            StoppingRight();
-        }
-    }
-
-    private void UpdateButtonStates()
-    {
-        if (leftButton != null)
-        {
-            leftButton.interactable = transform.position.x > maxLeft;
-        }
-        if (rightButton != null)
-        {
-            rightButton.interactable = transform.position.x < maxRight;
+            ReachedRight = true;
         }
     }
 }
