@@ -1,19 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class CameraMover : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    [SerializeField] private int maxLeft;
-    [SerializeField] private int maxRight;
+    [SerializeField] private float maxLeft;
+    [SerializeField] private float maxRight;
 
-    [SerializeField] private GameObject LeftButton;
-    [SerializeField] private GameObject RightButton;
-
-    private bool ReachedLeft;
-    private bool ReachedRight;
+    [SerializeField] private Button leftButton;
+    [SerializeField] private Button rightButton;
 
     private bool isMovingLeft = false;
     private bool isMovingRight = false;
@@ -23,9 +20,14 @@ public class CameraMover : MonoBehaviour
     private void Start()
     {
         clickObjects = FindObjectOfType<ClickObjects>();
+        if (leftButton != null && rightButton != null)
+        {
+            leftButton.onClick.AddListener(GoingLeft);
+            rightButton.onClick.AddListener(GoingRight);
+        }
     }
 
-    void Update()
+    private void Update()
     {
         if (clickObjects.CanClick)
         {
@@ -39,28 +41,7 @@ public class CameraMover : MonoBehaviour
             }
         }
 
-        if (transform.position.x <= maxLeft)
-        {
-            EventSystem.current.SetSelectedGameObject(null);
-            LeftButton.SetActive(false);
-        }
-
-        else
-        {
-            
-            LeftButton.SetActive(true);
-        }
-
-        if (transform.position.x >= maxRight)
-        {
-            EventSystem.current.SetSelectedGameObject(null);
-            RightButton.SetActive(false);
-        }
-
-        else
-        {
-            RightButton.SetActive(true);
-        }
+        UpdateButtonStates();
     }
 
     public void GoingLeft()
@@ -87,21 +68,35 @@ public class CameraMover : MonoBehaviour
     {
         if (transform.position.x > maxLeft)
         {
-            ReachedLeft = false;
             transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
         }
-       
+        else
+        {
+            StoppingLeft();
+        }
     }
 
     private void MoveRight()
     {
         if (transform.position.x < maxRight)
         {
-            ReachedRight = false;
             transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
-
         }
+        else
+        {
+            StoppingRight();
+        }
+    }
 
-       
+    private void UpdateButtonStates()
+    {
+        if (leftButton != null)
+        {
+            leftButton.interactable = transform.position.x > maxLeft;
+        }
+        if (rightButton != null)
+        {
+            rightButton.interactable = transform.position.x < maxRight;
+        }
     }
 }
