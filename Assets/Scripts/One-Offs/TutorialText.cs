@@ -38,7 +38,7 @@ public class TutorialText : MonoBehaviour
                 {
                     TextFade.SetActive(false);
                     TutActive = false;
-                    clickObjects.CanClick = true;
+                    StartCoroutine(StartGame());
                 }
             }
 
@@ -92,5 +92,11 @@ public class TutorialText : MonoBehaviour
         clickObjects.CanClick = false;
 
         StartCoroutine(dialogueController.WriteSentence());
+    }
+
+    private IEnumerator StartGame()
+    {
+        yield return new WaitForSeconds(1f);
+        clickObjects.CanClick = true;
     }
 }
