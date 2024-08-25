@@ -17,7 +17,7 @@ public class CameraMover : MonoBehaviour
     private bool isMovingLeft = false;
     private bool isMovingRight = false;
 
-    public bool isMoving;
+    public bool isMoving = false;
 
     private void Awake()
     {
