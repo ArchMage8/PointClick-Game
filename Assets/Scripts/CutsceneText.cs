@@ -46,11 +46,21 @@ public class CutsceneText : MonoBehaviour
             DialogueText.text = "";
             StartCoroutine(WriteSentence());
         }
+
+        else if (isTyping)
+        {
+            DialogueText.text = Sentences[Index];
+            isTyping = false;
+            StopAllCoroutines();
+            Index++;
+        }
+
     }
 
 
     public IEnumerator WriteSentence()
     {
+        
 
         foreach (char Character in Sentences[Index].ToCharArray())
         {

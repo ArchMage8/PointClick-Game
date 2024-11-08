@@ -1,43 +1,56 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class InteractObject : MonoBehaviour
 {
+
     private HasBeenInteractedHolder hasBeenInteractedHolder;
     private PreRequisite preRequisite;
     private ClickObjects clickObjects;
-
-    [Header("Text Settings")]
+    
+    [Header("TextStuffs:")] [Space(10)]
     public DialogueController dialogueController;
-    public string[] sentences;
+    public string[] Sentences;
     public string[] colorHexCodes;
 
-    [Header("Animations")]
+    [Space(20)]
+
+    [Header("Animations:")] [Space(10)]
     [SerializeField] private int failAnimationDelay;
     [SerializeField] private int animationDelay;
-    [SerializeField] private GameObject failNotification;
-    public GameObject visualObject;
-    public GameObject textFade;
-
+    [Space(13)]
+    [SerializeField] private GameObject FailNotification;
+    public GameObject VisualObject;
+    public GameObject TextFade;
+    
+    [Space(20)]
     [SerializeField] private AudioClip soundEffect;
     private AudioSource audioSource;
-    private bool canProceed;
+    private bool CanProceed;
+
+
 
     private void Start()
     {
         hasBeenInteractedHolder = GetComponent<HasBeenInteractedHolder>();
         preRequisite = GetComponent<PreRequisite>();
 
-        preRequisite.CheckConditions();
-        canProceed = preRequisite.conditionsMet;
+        preRequisite.CheckConditions();             //Check if prerequisites are met
+        CanProceed = preRequisite.conditionsMet;
 
         clickObjects = FindObjectOfType<ClickObjects>();
-        failNotification.SetActive(false);
-        visualObject.SetActive(false);
-        textFade.SetActive(false);
+        FailNotification.SetActive(false);
+        VisualObject.SetActive(false);
+        TextFade.SetActive(false);
 
-        audioSource = GameObject.Find("SFXSource")?.GetComponent<AudioSource>();
-        if (audioSource == null)
+        GameObject sfxSourceObject = GameObject.Find("SFXSource");
+
+        if (sfxSourceObject != null)
+        {
+            audioSource = sfxSourceObject.GetComponent<AudioSource>();
+        }
+        else
         {
             Debug.LogWarning("SFXSource GameObject not found in the scene.");
         }
@@ -45,18 +58,24 @@ public class InteractObject : MonoBehaviour
 
     private void Update()
     {
-        if (visualObject.activeSelf && (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)))
+        if (VisualObject.activeSelf)
         {
-            if (dialogueController.Index >= sentences.Length)
+            if (dialogueController.Index >= Sentences.Length)
             {
-                EndDialogue();
+                if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+                {
+                    VisualObject.SetActive(false);
+                    TextFade.SetActive(false);
+                }
             }
-            else
+
+            else if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
             {
                 dialogueController.NextSentence();
-                if (sentences.Length != colorHexCodes.Length)
+
+                if(Sentences.Length != colorHexCodes.Length)
                 {
-                    Debug.LogError("Length of color and text arrays need to be the same");
+                    Debug.LogError("Length of color and text arrays need to be same");
                 }
             }
         }
@@ -64,59 +83,75 @@ public class InteractObject : MonoBehaviour
 
     public void Click_Interact()
     {
-        canProceed = preRequisite.conditionsMet;
-        if (canProceed)
+        CanProceed = preRequisite.conditionsMet;
+        if (CanProceed)
         {
             audioSource.PlayOneShot(soundEffect);
-            dialogueController.ReceiveDialogue(sentences, colorHexCodes);
-            StartCoroutine(StartDialogueSystem());
+            dialogueController.RecieveDialogue(Sentences);
+            dialogueController.RecieveColors(colorHexCodes);
+            StartCoroutine(startSystem());
         }
-        else
+
+        else if(!CanProceed)
         {
-            StartCoroutine(CannotProceed());
+            Debug.Log("Cannot Proceed");
+            StartCoroutine(cannotProceed());
         }
     }
 
-    private void StartDialogue()
+    private void startDialogue()
     {
-        textFade.SetActive(true);
+        Debug.Log("Start");
+
+        TextFade.SetActive(true);
         clickObjects.CanClick = false;
+       
+       
+     
         StartCoroutine(dialogueController.WriteSentence());
         hasBeenInteractedHolder.HasBeenInteracted = true;
     }
 
-    private IEnumerator CannotProceed()
+    private IEnumerator cannotProceed() //Animation for prerequisites not met
     {
-        if (failNotification != null)
+
+        if (FailNotification != null)
         {
-            failNotification.SetActive(true);
-            textFade.SetActive(true);
+            FailNotification.SetActive(true);
+            TextFade.SetActive(true);
             yield return new WaitForSeconds(failAnimationDelay);
-            failNotification.SetActive(false);
-            textFade.SetActive(false);
+            clickObjects.CanClick = false;
+            FailNotification.SetActive(false);
+            TextFade.SetActive(false);
+            clickObjects.CanClick = true;
+        }
+        else
+        {
+            yield return null;
         }
     }
 
-    private IEnumerator StartDialogueSystem()
+    private IEnumerator startSystem()
     {
-        if (visualObject != null && dialogueController.Index == 0)
+        
+        if (VisualObject != null && dialogueController.Index == 0)
         {
-            visualObject.SetActive(true);
+            VisualObject.SetActive(true);
             dialogueController.gameObject.SetActive(true);
             yield return new WaitForSeconds(animationDelay);
-            StartDialogue();
+
+            if (dialogueController.Index == 0)
+            {
+                startDialogue();
+            }
         }
-        else if (dialogueController.Index == 0)
+
+        else if(dialogueController.Index == 0)
         {
-            StartDialogue();
+            yield return new WaitForSeconds(0f);
+            startDialogue();
         }
     }
 
-    private void EndDialogue()
-    {
-        visualObject.SetActive(false);
-        textFade.SetActive(false);
-        clickObjects.CanClick = true;
-        
-    }
+    
 }

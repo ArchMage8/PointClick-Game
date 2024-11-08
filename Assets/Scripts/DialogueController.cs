@@ -1,87 +1,129 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
 public class DialogueController : MonoBehaviour
 {
-    private TextMeshProUGUI dialogueText;
+    private TextMeshProUGUI DialogueText;
+
     private ClickObjects clickObjects;
+    [HideInInspector]public string[] Sentences;
+    [HideInInspector]public string[] colorHexCodes;
 
-    [HideInInspector] public string[] sentences;
-    [HideInInspector] public string[] colorHexCodes;
-
-    [HideInInspector] public int Index = 0;
+    [HideInInspector]public int Index = 0;
     private bool isTyping = false;
     [SerializeField] private float writeSpeed;
 
     private void Start()
     {
         clickObjects = FindObjectOfType<ClickObjects>();
-        dialogueText = transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+        Transform DialogueTextObject = transform.GetChild(0);
+        DialogueText = DialogueTextObject.GetComponent<TextMeshProUGUI>();
+       
     }
 
     private void Update()
     {
-        if (dialogueText.isActiveAndEnabled && (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)))
+        
+        if (DialogueText.isActiveAndEnabled)
         {
-            if (Index >= sentences.Length)
+
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+        {
+
+            if (Index >= Sentences.Length)
             {
-                StartCoroutine(DisableDialogue());
+                StartCoroutine(DisableThis()); // Call your coroutine here
             }
+
         }
+        else
+        {
+            return;
+        }
+
+        }
+        
     }
 
     public void NextSentence()
     {
-        if (Index < sentences.Length && !isTyping)
+        if (Index <= Sentences.Length - 1 && !isTyping)
         {
-            dialogueText.text = "";
+            DialogueText.text = "";
             StartCoroutine(WriteSentence());
         }
+
+        else if (isTyping)
+        {
+            DialogueText.text = Sentences[Index];
+            isTyping = false;
+            StopAllCoroutines();
+            Index++;
+        }
+
     }
 
-    public IEnumerator WriteSentence()
-    {
-        if (isTyping)
-            yield break;
 
+   public IEnumerator WriteSentence()
+    {
         isTyping = true;
-        dialogueText.text = "";
-        foreach (char character in sentences[Index].ToCharArray())
+        DialogueText.text = "";
+        foreach (char character in Sentences[Index].ToCharArray())
         {
             ChangeTextColor(Index);
-            dialogueText.text += character;
+            DialogueText.text += character;
             yield return new WaitForSeconds(writeSpeed);
         }
         isTyping = false;
         Index++;
     }
 
-    public void ReceiveDialogue(string[] sentSentences, string[] colors)
+    public void RecieveDialogue(string[] SentSentences)
     {
-        sentences = sentSentences;
-        colorHexCodes = colors;
+        Sentences = new string[SentSentences.Length];
+        for(int i=0; i<SentSentences.Length; i++)
+        {
+            Sentences[i] = SentSentences[i];
+        }
     }
 
-    private IEnumerator DisableDialogue()
+    public void RecieveColors(string[] colors)
     {
+        colorHexCodes = new string[Sentences.Length];
+        for (int i = 0; i < colors.Length; i++)
+        {
+            colorHexCodes[i] = colors[i];
+        }
+    }
+
+    IEnumerator DisableThis()
+    {
+        //Debug.Log("Disable");
         yield return new WaitForSeconds(0f);
-        dialogueText.text = "";
+
+        DialogueText.text = "";
         clickObjects.CanClick = true;
         Index = 0;
-        sentences = new string[0];
-        gameObject.SetActive(false);
+        Sentences = new string[0];
+        this.gameObject.SetActive(false);
     }
 
     private void ChangeTextColor(int index)
     {
-        if (index >= 0 && index < colorHexCodes.Length && ColorUtility.TryParseHtmlString("#" + colorHexCodes[index], out Color newColor))
+        if (index >= 0 && index < colorHexCodes.Length)
         {
-            dialogueText.color = newColor;
-        }
-        else
-        {
-            dialogueText.color = Color.white;
+            string hexCode = colorHexCodes[index];
+
+            if (string.IsNullOrEmpty(hexCode))
+            {
+                DialogueText.color = Color.white;
+            }
+            else if (ColorUtility.TryParseHtmlString("#" + hexCode, out Color newColor))
+            {
+                DialogueText.color = newColor;
+            }
         }
     }
 }
