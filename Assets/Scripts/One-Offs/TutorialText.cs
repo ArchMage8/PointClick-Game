@@ -1,97 +1,60 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TutorialText : MonoBehaviour
 {
     private ClickObjects clickObjects;
-    private bool TutActive;
+    private bool tutActive;
 
-    [Header("TextStuffs:")]
-    [Space(10)]
+    [Header("Text Settings")]
     public DialogueController dialogueController;
-    public string[] Sentences;
-    
-    [Space(20)]
+    public string[] sentences;
 
     [Header("Effects")]
-    public GameObject TextFade;
+    public GameObject textFade;
     public int startDelay;
 
     private void Start()
     {
-
         clickObjects = FindObjectOfType<ClickObjects>();
         clickObjects.CanClick = false;
-        dialogueController.RecieveDialogue(Sentences);
-        StartCoroutine(Starting());
-       
+        dialogueController.ReceiveDialogue(sentences, null);
+        StartCoroutine(StartTutorial());
     }
 
     private void Update()
     {
-        if (TutActive)
+        if (tutActive && (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)))
         {
-            if (dialogueController.Index >= Sentences.Length)
+            if (dialogueController.Index >= sentences.Length)
             {
-                if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
-                {
-                    TextFade.SetActive(false);
-                    TutActive = false;
-                    StartCoroutine(StartGame());
-                }
+                EndTutorial();
             }
-
-            else if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+            else
             {
                 dialogueController.NextSentence();
             }
         }
     }
 
-    private IEnumerator Starting()
+    private IEnumerator StartTutorial()
     {
         yield return new WaitForSeconds(startDelay);
-        TutDialogue();
+        StartDialogue();
     }
 
-    private void TutDialogue()
+    private void StartDialogue()
     {
-        TextFade.SetActive(true);
-        TutActive = true;
-        StartCoroutine(startSystem());
-    }
-
-    private IEnumerator startSystem()
-    {
-
-        if (dialogueController.Index == 0)
-        {
-           
-            dialogueController.gameObject.SetActive(true);
-            //yield return new WaitForSeconds(animationDelay);
-
-            if (dialogueController.Index == 0)
-            {
-                startDialogue();
-            }
-        }
-
-        else if (dialogueController.Index == 0)
-        {
-            yield return new WaitForSeconds(0f);
-            startDialogue();
-        }
-    }
-
-    private void startDialogue()
-    {
-        Debug.Log("Start");
-
-        TextFade.SetActive(true);
-        clickObjects.CanClick = false;
-
+        textFade.SetActive(true);
+        tutActive = true;
         StartCoroutine(dialogueController.WriteSentence());
+    }
+
+    private void EndTutorial()
+    {
+        textFade.SetActive(false);
+        tutActive = false;
+        StartCoroutine(StartGame());
     }
 
     private IEnumerator StartGame()
