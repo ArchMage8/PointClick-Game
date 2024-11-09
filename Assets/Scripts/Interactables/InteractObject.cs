@@ -4,39 +4,37 @@ using UnityEngine;
 
 public class InteractObject : MonoBehaviour
 {
-
     private HasBeenInteractedHolder hasBeenInteractedHolder;
     private PreRequisite preRequisite;
     private ClickObjects clickObjects;
-    
-    [Header("TextStuffs:")] [Space(10)]
+
+    [Header("TextStuffs:")]
+    [Space(10)]
     public DialogueController dialogueController;
     public string[] Sentences;
     public string[] colorHexCodes;
 
     [Space(20)]
-
-    [Header("Animations:")] [Space(10)]
+    [Header("Animations:")]
+    [Space(10)]
     [SerializeField] private int failAnimationDelay;
     [SerializeField] private int animationDelay;
     [Space(13)]
     [SerializeField] private GameObject FailNotification;
     public GameObject VisualObject;
     public GameObject TextFade;
-    
+
     [Space(20)]
     [SerializeField] private AudioClip soundEffect;
     private AudioSource audioSource;
     private bool CanProceed;
-
-
 
     private void Start()
     {
         hasBeenInteractedHolder = GetComponent<HasBeenInteractedHolder>();
         preRequisite = GetComponent<PreRequisite>();
 
-        preRequisite.CheckConditions();             //Check if prerequisites are met
+        preRequisite.CheckConditions();
         CanProceed = preRequisite.conditionsMet;
 
         clickObjects = FindObjectOfType<ClickObjects>();
@@ -68,12 +66,11 @@ public class InteractObject : MonoBehaviour
                     TextFade.SetActive(false);
                 }
             }
-
             else if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
             {
                 dialogueController.NextSentence();
 
-                if(Sentences.Length != colorHexCodes.Length)
+                if (Sentences.Length != colorHexCodes.Length)
                 {
                     Debug.LogError("Length of color and text arrays need to be same");
                 }
@@ -91,8 +88,7 @@ public class InteractObject : MonoBehaviour
             dialogueController.RecieveColors(colorHexCodes);
             StartCoroutine(startSystem());
         }
-
-        else if(!CanProceed)
+        else if (!CanProceed)
         {
             Debug.Log("Cannot Proceed");
             StartCoroutine(cannotProceed());
@@ -106,16 +102,12 @@ public class InteractObject : MonoBehaviour
         TextFade.SetActive(true);
         clickObjects.CanClick = false;
 
-        if (!dialogueController.isTyping)
-        {
-            dialogueController.NextSentence();
-            hasBeenInteractedHolder.HasBeenInteracted = true;
-        }
+        StartCoroutine(dialogueController.WriteSentence());
+        hasBeenInteractedHolder.HasBeenInteracted = true;
     }
 
-    private IEnumerator cannotProceed() //Animation for prerequisites not met
+    private IEnumerator cannotProceed()
     {
-
         if (FailNotification != null)
         {
             FailNotification.SetActive(true);
@@ -134,7 +126,6 @@ public class InteractObject : MonoBehaviour
 
     private IEnumerator startSystem()
     {
-        
         if (VisualObject != null && dialogueController.Index == 0)
         {
             VisualObject.SetActive(true);
@@ -146,13 +137,10 @@ public class InteractObject : MonoBehaviour
                 startDialogue();
             }
         }
-
-        else if(dialogueController.Index == 0)
+        else if (dialogueController.Index == 0)
         {
             yield return new WaitForSeconds(0f);
             startDialogue();
         }
     }
-
-    
 }

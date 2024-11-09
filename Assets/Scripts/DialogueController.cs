@@ -6,13 +6,13 @@ using TMPro;
 public class DialogueController : MonoBehaviour
 {
     private TextMeshProUGUI DialogueText;
-
     private ClickObjects clickObjects;
-    [HideInInspector]public string[] Sentences;
-    [HideInInspector]public string[] colorHexCodes;
 
-    [HideInInspector]public int Index = 0;
-    [HideInInspector]public bool isTyping = false;
+    [HideInInspector] public string[] Sentences;
+    [HideInInspector] public string[] colorHexCodes;
+
+    [HideInInspector] public int Index = 0;
+    private bool isTyping = false;
     [SerializeField] private float writeSpeed;
 
     private void Start()
@@ -20,56 +20,40 @@ public class DialogueController : MonoBehaviour
         clickObjects = FindObjectOfType<ClickObjects>();
         Transform DialogueTextObject = transform.GetChild(0);
         DialogueText = DialogueTextObject.GetComponent<TextMeshProUGUI>();
-       
     }
 
     private void Update()
     {
-        
         if (DialogueText.isActiveAndEnabled)
         {
-
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
-        {
-
-            if (Index >= Sentences.Length)
             {
-                StartCoroutine(DisableThis()); // Call your coroutine here
+                if (Index >= Sentences.Length)
+                {
+                    StartCoroutine(DisableThis());
+                }
             }
-
+            else
+            {
+                return;
+            }
         }
-        else
-        {
-            return;
-        }
-
-        }
-        
     }
 
     public void NextSentence()
     {
-        isTyping = true;
-        
         if (Index <= Sentences.Length - 1 && !isTyping)
         {
             DialogueText.text = "";
             StartCoroutine(WriteSentence());
         }
-
-        else if (isTyping)
-        {
-            DialogueText.text = Sentences[Index];
-            isTyping = false;
-            StopAllCoroutines();
-            Index++;
-        }
-
     }
 
-
-   public IEnumerator WriteSentence()
+    public IEnumerator WriteSentence()
     {
+        if (isTyping)
+            yield break;
+
         isTyping = true;
         DialogueText.text = "";
         foreach (char character in Sentences[Index].ToCharArray())
@@ -85,7 +69,7 @@ public class DialogueController : MonoBehaviour
     public void RecieveDialogue(string[] SentSentences)
     {
         Sentences = new string[SentSentences.Length];
-        for(int i=0; i<SentSentences.Length; i++)
+        for (int i = 0; i < SentSentences.Length; i++)
         {
             Sentences[i] = SentSentences[i];
         }
@@ -102,7 +86,6 @@ public class DialogueController : MonoBehaviour
 
     IEnumerator DisableThis()
     {
-        //Debug.Log("Disable");
         yield return new WaitForSeconds(0f);
 
         DialogueText.text = "";

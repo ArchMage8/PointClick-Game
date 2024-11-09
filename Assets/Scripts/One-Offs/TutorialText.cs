@@ -11,21 +11,18 @@ public class TutorialText : MonoBehaviour
     [Space(10)]
     public DialogueController dialogueController;
     public string[] Sentences;
-    
-    [Space(20)]
 
+    [Space(20)]
     [Header("Effects")]
     public GameObject TextFade;
     public int startDelay;
 
     private void Start()
     {
-
         clickObjects = FindObjectOfType<ClickObjects>();
         clickObjects.CanClick = false;
         dialogueController.RecieveDialogue(Sentences);
         StartCoroutine(Starting());
-       
     }
 
     private void Update()
@@ -41,7 +38,6 @@ public class TutorialText : MonoBehaviour
                     StartCoroutine(StartGame());
                 }
             }
-
             else if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
             {
                 dialogueController.NextSentence();
@@ -64,19 +60,15 @@ public class TutorialText : MonoBehaviour
 
     private IEnumerator startSystem()
     {
-
         if (dialogueController.Index == 0)
         {
-           
             dialogueController.gameObject.SetActive(true);
-            //yield return new WaitForSeconds(animationDelay);
 
             if (dialogueController.Index == 0)
             {
                 startDialogue();
             }
         }
-
         else if (dialogueController.Index == 0)
         {
             yield return new WaitForSeconds(0f);
