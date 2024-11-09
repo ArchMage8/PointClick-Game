@@ -1743,19 +1743,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[0]
-      value: Someone really need to fix that painting
+      value: Someone really need to fix that painting...
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[1]
-      value: Yeah its getting more and more tilted
+      value: Yeah its getting more and more tilted.
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[2]
-      value: Lets get out of here before it falls
+      value: Lets get out of here before it falls...
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[3]
-      value: Yeah, we're going to get blamed if it falls
+      value: Yeah, we're going to get blamed if it falls!
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[4]
@@ -3034,7 +3034,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[0]
-      value: Wont try that again
+      value: Wont try that again...
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[1]
@@ -3596,11 +3596,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[0]
-      value: I need to get in there
+      value: I need to get in there...
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[1]
-      value: But everyone's gonna see me
+      value: But everyone's gonna see me!
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: colorHexCodes.Array.size
@@ -4763,7 +4763,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[0]
-      value: This is supposed to be my class this year
+      value: This is supposed to be my class this year...
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[1]
@@ -5463,7 +5463,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[0]
-      value: '"Election Day"'
+      value: '"Principal From: "'
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[1]
@@ -6899,7 +6899,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[2]
-      value: An anniversary perhaps..?
+      value: A date important to the principal perhaps..?
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: colorHexCodes.Array.size

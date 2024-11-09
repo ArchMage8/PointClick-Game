@@ -587,7 +587,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[0]
-      value: It's not here.
+      value: This isn't the right one...
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[1]
@@ -2344,7 +2344,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[0]
-      value: It's not here.
+      value: This isn't the right one...
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[1]
@@ -2534,7 +2534,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[0]
-      value: It's not here.
+      value: "Those are not the ones I need\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[1]
@@ -2847,7 +2847,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[0]
-      value: It's not here.
+      value: This isn't the right one...
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[1]
@@ -3460,7 +3460,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[0]
-      value: It's not here.
+      value: "Those are not the ones I need\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[1]
@@ -3683,7 +3683,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[0]
-      value: It's not here.
+      value: "Those are not the ones I need\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[1]
@@ -4076,7 +4076,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[0]
-      value: It's not here.
+      value: This isn't the right one...
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[1]
@@ -5105,7 +5105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[0]
-      value: When will she be back?
+      value: Need to be quick before she comes back...
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[1]
@@ -6183,7 +6183,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[0]
-      value: Thats really loud
+      value: Thats really loud...
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[1]
@@ -6529,7 +6529,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[0]
-      value: It's not here.
+      value: "Those are not the ones I need\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[1]
@@ -6981,11 +6981,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[0]
-      value: Three books
+      value: The subject has 3 books...
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[1]
-      value: I need to find them quick
+      value: I need to find them quick!
       objectReference: {fileID: 0}
     - target: {fileID: 1953099096220437375, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: Sentences.Array.data[2]
