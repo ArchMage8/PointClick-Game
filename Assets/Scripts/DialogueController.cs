@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+
 public class DialogueController : MonoBehaviour
 {
     private TextMeshProUGUI DialogueText;
@@ -15,21 +16,27 @@ public class DialogueController : MonoBehaviour
     private bool isTyping = false;
     [SerializeField] private float writeSpeed;
 
+    private IEnumerator Holder;
+    private bool canProceed = true;
+
     private void Start()
     {
         clickObjects = FindObjectOfType<ClickObjects>();
         Transform DialogueTextObject = transform.GetChild(0);
         DialogueText = DialogueTextObject.GetComponent<TextMeshProUGUI>();
+
+       
     }
 
     private void Update()
     {
         if (DialogueText.isActiveAndEnabled)
         {
-            if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0) && canProceed)
             {
                 if (Index >= Sentences.Length)
                 {
+                    Debug.Log("End");
                     StartCoroutine(DisableThis());
                 }
             }
@@ -44,18 +51,23 @@ public class DialogueController : MonoBehaviour
     {
         if (Index <= Sentences.Length - 1 && !isTyping)
         {
-            DialogueText.text = "";
-            StartCoroutine(WriteSentence());
+            canProceed = false;
+            //DialogueText.text = "";
+
+            Holder = WriteSentence();
+            StartCoroutine(Holder);
+        }
+        else if (isTyping)
+        {
+            StartCoroutine(ShowFull());
         }
     }
 
     public IEnumerator WriteSentence()
     {
-        if (isTyping)
-            yield break;
-
         isTyping = true;
         DialogueText.text = "";
+        
         foreach (char character in Sentences[Index].ToCharArray())
         {
             ChangeTextColor(Index);
@@ -63,6 +75,7 @@ public class DialogueController : MonoBehaviour
             yield return new WaitForSeconds(writeSpeed);
         }
         isTyping = false;
+        canProceed = true;
         Index++;
     }
 
@@ -110,5 +123,18 @@ public class DialogueController : MonoBehaviour
                 DialogueText.color = newColor;
             }
         }
+    }
+
+    private IEnumerator ShowFull()
+    {
+
+        StopCoroutine(Holder);
+        DialogueText.text = "";
+        DialogueText.text = Sentences[Index];
+        isTyping = false;
+        Index++;
+
+        yield return new WaitForSeconds(0.1f);
+        canProceed = true;
     }
 }

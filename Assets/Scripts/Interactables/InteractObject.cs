@@ -102,7 +102,7 @@ public class InteractObject : MonoBehaviour
         TextFade.SetActive(true);
         clickObjects.CanClick = false;
 
-        StartCoroutine(dialogueController.WriteSentence());
+        dialogueController.NextSentence();
         hasBeenInteractedHolder.HasBeenInteracted = true;
     }
 

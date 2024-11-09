@@ -83,7 +83,7 @@ public class TutorialText : MonoBehaviour
         TextFade.SetActive(true);
         clickObjects.CanClick = false;
 
-        StartCoroutine(dialogueController.WriteSentence());
+        dialogueController.NextSentence();
     }
 
     private IEnumerator StartGame()
