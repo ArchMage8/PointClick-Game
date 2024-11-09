@@ -178,6 +178,44 @@ PrefabInstance:
       propertyPath: m_Name
       value: CutsceneTextSystem
       objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: DestinationScene
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: Sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: Sentences.Array.data[0]
+      value: Under pressure, anxiety can make it hard to think clearly or stay focused.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: Sentences.Array.data[1]
+      value: As the pressure builds, small problems start to feel overwhelming, feeding
+        into the panic.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: Sentences.Array.data[2]
+      value: In the midst of it all, rational thoughts start to blur, and decisions
+        become harder to make.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: colorHexCodes.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: colorHexCodes.Array.data[0]
+      value: DDDDFF
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: colorHexCodes.Array.data[1]
+      value: DDDDFF
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: colorHexCodes.Array.data[2]
+      value: DDDDFF
+      objectReference: {fileID: 0}
     - target: {fileID: 6463445929169473376, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: m_SizeDelta.x
       value: 800

@@ -179,6 +179,10 @@ PrefabInstance:
       value: CutsceneTextSystem
       objectReference: {fileID: 0}
     - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: DestinationScene
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: Sentences.Array.size
       value: 14
       objectReference: {fileID: 0}

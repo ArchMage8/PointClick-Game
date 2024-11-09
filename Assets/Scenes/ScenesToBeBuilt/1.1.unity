@@ -178,6 +178,50 @@ PrefabInstance:
       propertyPath: m_Name
       value: CutsceneTextSystem
       objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: DestinationScene
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: Sentences.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: Sentences.Array.data[0]
+      value: Anxiety is a feeling of worry, nervousness, or unease.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: Sentences.Array.data[1]
+      value: It often occurs when we don't know what's going to happen.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: Sentences.Array.data[2]
+      value: Or when we aren't in control of things.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: Sentences.Array.data[3]
+      value: For some, anxiety can be intense and horrible, impacting daily life.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: colorHexCodes.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: colorHexCodes.Array.data[0]
+      value: DDDDFF
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: colorHexCodes.Array.data[1]
+      value: DDDDFF
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: colorHexCodes.Array.data[2]
+      value: DDDDFF
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: colorHexCodes.Array.data[3]
+      value: DDDDFF
+      objectReference: {fileID: 0}
     - target: {fileID: 6463445929169473376, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: m_SizeDelta.x
       value: 800
