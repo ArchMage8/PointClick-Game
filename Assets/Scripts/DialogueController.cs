@@ -12,7 +12,7 @@ public class DialogueController : MonoBehaviour
     [HideInInspector]public string[] colorHexCodes;
 
     [HideInInspector]public int Index = 0;
-    private bool isTyping = false;
+    [HideInInspector]public bool isTyping = false;
     [SerializeField] private float writeSpeed;
 
     private void Start()

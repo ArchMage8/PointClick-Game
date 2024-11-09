@@ -105,9 +105,12 @@ public class InteractObject : MonoBehaviour
 
         TextFade.SetActive(true);
         clickObjects.CanClick = false;
-     
-        dialogueController.NextSentence();
-        hasBeenInteractedHolder.HasBeenInteracted = true;
+
+        if (!dialogueController.isTyping)
+        {
+            dialogueController.NextSentence();
+            hasBeenInteractedHolder.HasBeenInteracted = true;
+        }
     }
 
     private IEnumerator cannotProceed() //Animation for prerequisites not met
