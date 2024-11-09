@@ -567,7 +567,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2043650987
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 625b14c77ac85264296195317b60c35b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2290,7 +2290,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2043650987
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ad62fee2028d7024d91b1b6d504d0c8a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7827,6 +7827,10 @@ PrefabInstance:
     - target: {fileID: 1953099097381422365, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_SortingLayer
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953099097381422365, guid: c010b4df98189434592d83267037a796, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 1953099097381422365, guid: c010b4df98189434592d83267037a796, type: 3}
       propertyPath: m_SortingLayerID
