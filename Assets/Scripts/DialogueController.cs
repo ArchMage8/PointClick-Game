@@ -49,6 +49,8 @@ public class DialogueController : MonoBehaviour
 
     public void NextSentence()
     {
+        isTyping = true;
+        
         if (Index <= Sentences.Length - 1 && !isTyping)
         {
             DialogueText.text = "";
