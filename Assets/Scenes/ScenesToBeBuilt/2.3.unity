@@ -178,6 +178,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: CutsceneTextSystem
       objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: DestinationScene
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: Sentences.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: Sentences.Array.data[0]
+      value: I need to get to the library...!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: Sentences.Array.data[1]
+      value: But that means...
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: Sentences.Array.data[2]
+      value: I'll have to go through the seniors' hallway...
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: Sentences.Array.data[3]
+      value: All my old friends... they'll be there...
+      objectReference: {fileID: 0}
     - target: {fileID: 6463445929327608992, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: DestinationScene
       value: 10

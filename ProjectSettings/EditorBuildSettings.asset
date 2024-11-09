@@ -68,10 +68,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ScenesToBeBuilt/6.1.unity
     guid: e71affa4d56cdec488c681bbf50ee1cc
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ScenesToBeBuilt/6.2.unity
     guid: ec44153f412d45c41bcf756b74bf342f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ScenesToBeBuilt/6.3.unity
     guid: 415d8584ec1da284898c4438ac97740f
   - enabled: 1

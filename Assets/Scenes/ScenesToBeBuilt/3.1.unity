@@ -178,6 +178,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: CutsceneTextSystem
       objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: DestinationScene
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: Sentences.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: Sentences.Array.data[0]
+      value: "The library\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: Sentences.Array.data[1]
+      value: "Let\u2019s just get to the library."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: Sentences.Array.data[2]
+      value: Ethan, how are you, man?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: Sentences.Array.data[3]
+      value: "No... no, no, no\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: colorHexCodes.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: colorHexCodes.Array.data[2]
+      value: 00FF00
+      objectReference: {fileID: 0}
     - target: {fileID: 6463445929169473376, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: m_SizeDelta.x
       value: 800

@@ -262,6 +262,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: CutsceneTextSystem
       objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: Sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670260303685917434, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
+      propertyPath: Sentences.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6463445929169473376, guid: 1cc2ca91898b9bc4cb7b2bece8453be3, type: 3}
       propertyPath: m_SizeDelta.x
       value: 800
