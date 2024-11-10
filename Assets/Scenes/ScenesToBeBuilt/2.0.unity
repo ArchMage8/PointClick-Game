@@ -3797,7 +3797,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 642620391}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 23.25, y: 1.25, z: 0}
+  m_LocalPosition: {x: 23.16, y: 1.277, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -12998,9 +12998,9 @@ MonoBehaviour:
   - 
   failAnimationDelay: 0
   animationDelay: 0
-  FailNotification: {fileID: 0}
-  VisualObject: {fileID: 0}
-  TextFade: {fileID: 0}
+  FailNotification: {fileID: 1953099095825822590}
+  VisualObject: {fileID: 2052020983}
+  TextFade: {fileID: 209708703}
   soundEffect: {fileID: 8300000, guid: ecf1c1ec53cb2e24bb744e14d841f4e6, type: 3}
 --- !u!4 &1953099097350268461
 Transform:
